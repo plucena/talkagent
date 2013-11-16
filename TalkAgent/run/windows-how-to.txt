@@ -1,0 +1,20 @@
+
+Semantic Agent on Windows Instructions
+--------------------------------------
+
+- Install Cygwin Full Version from
+www.redhat.comcygwin
+
+- Create a user called root
+
+- On config tool make sure Java directory and SAAS directory have correct values for Cygwin
+(/cygwindrive/x... etc) or make Cygwin symbolic links for "Java" and TALKAGENT directory
+
+- Delete windows old Java  (X:\windirectory\system32\java.exe)
+
+- Include java directory (X:\j2sdk1.x.x\bin) on windows PATH variable
+
+- replace the scripts located on TALKAGENT/platform/bin/bat for the ones in this zip file.
+
+- Run TALKAGENT/platform/bin/bat/start_ta.sh on cygwin prompt
+

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 (http://www.xmlspy.com) by Percival Lucena (USP) -->
+<doc>
+	<fipa_acl id="
+ACL_ACCEPTPROPOSAL
+" performative="
+accept-proposal
+" description='
+The action of accepting a previously submitted proposal to perform an action. Accept-proposal is a general-purpose acceptance of a proposal that was previously submitted (typically through a propose act). The agent sending the acceptance informs the receiver that it intends that (at some point in the future) the receiving agent will perform the action, once the given precondition is, or becomes, true. The proposition given as part of the acceptance indicates the preconditions that the agent is attaching to the acceptance. A typical use of this is to finalize the details of a deal in some protocol. For example, a previous offer to "hold a meeting anytime on Tuesday" might be accepted with an additional condition that the time of the meeting is 11.00.
+'/>
+	<fipa_acl id="
+ACL_AGREE
+" performative="
+agree
+" description="
+The action of agreeing to perform some action, possibly in the future. Agree is a general-purpose agreement to a previously submitted request to perform some action. The agent sending the agreement informs the receiver that it does intend to perform the action, but not until the given precondition is true. The proposition given as part of the agree act indicates the qualifiers, if any, that the agent is attaching to the agreement. This might be used, for example, to inform the receiver when the agent will execute the action which it is agreeing to perform.
+"/>
+	<fipa_acl id="
+ACL_CANCEL
+" performative="
+cancel
+" description="
+The action of cancelling some previously requested action which has temporal extent, that is, it is not instantaneous. Cancel allows an agent to stop another agent from continuing to perform (or expecting to perform) an action which was previously requested. Note that the action that is the object of the act of cancellation should be believed by the sender to be ongoing or to be planned but not yet executed. In most interaction protocols, attempting to cancel an action that has already been performed should result in a refuse message being sent back to the originator of the request.
+"/>
+	<fipa_acl id="
+ACL_CFP
+" performative="
+cfp
+" description="
+The action of calling for proposals to perform a given action. CFP is a general-purpose action to initiate a negotiation process by making a call for proposals to perform the given action. The actual protocol under which the negotiation process is established is known either by prior agreement, or is explicitly stated in the :protocol parameter of the message. In normal usage, the agent responding to a cfp should answer with a proposition giving the value of the parameter in the original precondition expression (see the statement of cfp's rational effect). For example, the cfp might seek proposals for a journey from Frankfurt to Munich, with a condition that the mode of travel is by train. A compatible proposal in reply would be for the 10.45 express train. An incompatible proposal would be to travel by airplane.
+"/>
+	<fipa_acl id="
+ACL_CONFIRM
+" performative="
+confirm
+" description="
+The sender informs the receiver that a given proposition is true, where the receiver is known to be uncertain about the proposition.
+The sending agent:
+·       believes that some proposition is true,
+·       intends that the receiving agent also comes to believe that the proposition is true, and,
+·       believes that the receiver is uncertain of the truth of the proposition.
+The first two properties defined above are straightforward: the sending agent is sincere[3], and has (somehow) generated the intention that the receiver should know the proposition (perhaps it has been asked). The last pre-condition determines when the agent should use confirm vs. inform vs. disconfirm: confirm is used precisely when the other agent is already known to be uncertain about the proposition (rather than uncertain about the negation of the proposition).
+From the receiver's viewpoint, receiving a confirm message entitles it to believe that:
+·       the sender believes the proposition that is the content of the message, and,    the sender wishes the receiver to believe that proposition also.
+Whether or not the receiver does, indeed, change its mental attitude to one of belief in the proposition will be a function of the receiver's trust in the sincerity and reliability of the sender.
+"/>
+	<fipa_acl id="
+ACL_DISCONFIRM
+" performative="
+disconfirm
+" description="
+The sender informs the receiver that a given proposition is false, where the receiver is known to believe, or believe it likely that, the proposition is true.
+The disconfirm act is used when the agent wishes to alter the known mental attitude of another agent.
+The sending agent:
+·       believes that some proposition is false,
+·       intends that the receiving agent also comes to believe that the proposition is false, and,
+·       believes that the receiver either believes the proposition, or is uncertain of the proposition.
+The first two properties defined above are straightforward: the sending agent is sincere3, and has (somehow) generated the intention that the receiver should know the proposition (perhaps it has been asked). The last pre-condition determines when the agent should use confirm vs. inform vs. disconfirm: disconfirm is used precisely when the other agent is already known to believe the proposition or to be uncertain about it.
+From the receiver's viewpoint, receiving a disconfirm message entitles it to believe that:
+·       the sender believes that the proposition that is the content of the message is false, and,
+·       the sender wishes the receiver to believe the negated proposition also.
+Whether or not the receiver does, indeed, change its mental attitude to one of disbelief in the proposition will be a function of the receiver's trust in the sincerity and reliability of the sender.
+"/>
+	<fipa_acl id="
+ACL_FAILURE
+" performative="
+failure
+" description="
+The action of telling another agent that an action was attempted but the attempt failed. The failure act is an abbreviation for informing that an act was considered feasible by the sender, but was not completed for some given reason. The agent receiving a failure act is entitled to believe that: 
+·         the action has not been done, and,
+·         the action is (or, at the time the agent attempted to perform the action, was) feasible
+The (causal) reason for the failure is represented by the proposition, which is the second element of the message content tuple. It may be the constant true. Often it is the case that there is little either agent can do to further the attempt to perform the action.
+"/>
+	<fipa_acl id="
+ACL_INFORM
+" performative="
+inform
+" description="
+The sender informs the receiver that a given proposition is true.  The sending agent: 
+·       holds that some proposition is true,
+·       intends that the receiving agent also comes to believe that the proposition is true, and,
+·       does not already believe that the receiver has any knowledge of the truth of the proposition.
+The first two properties defined above are straightforward: the sending agent is sincere, and has (somehow) generated the intention that the receiver should know the proposition (perhaps it has been asked). The last property is concerned with the semantic soundness of the act. If an agent knows already that some state of the world holds (that the receiver knows proposition p), it cannot rationally adopt an intention to bring about that state of the world (i.e. that the receiver comes to know p as a result of the inform act). Note that the property is not as strong as it perhaps appears. The sender is not required to establish whether the receiver knows p. It is only the case that, in the case that the sender already happens to know about the state of the receiver's beliefs, it should not adopt an intention to tell the receiver something it already knows. From the receiver's viewpoint, receiving an inform message entitles it to believe that:
+·       the sender believes the proposition that is the content of the message, and,
+·       the sender wishes the receiver to believe that proposition also.
+Whether or not the receiver does, indeed, adopt belief in the proposition will be a function of the receiver's trust in the sincerity and reliability of the sender.
+"/>
+	<fipa_acl id="
+ACL_INFORMIF
+" performative="
+inform-if
+" description="
+A macro action for the agent of the action to inform the recipient whether or not a proposition is true. The inform-if macro act is an abbreviation for informing whether or not a given proposition is believed. The agent which enacts an inform-if macro-act will actually perform a standard inform act. The content of the inform act will depend on the informing agent's beliefs. To inform-if on some closed proposition f: 
+·       if the agent believes the proposition, it will inform the other agent that f, and,
+·       if it believes the negation of the proposition, it informs that f is false, that is, _.
+Under other circumstances, it may not be possible for the agent to perform this plan. For example, if it has no knowledge of f, or will not permit the other party to know (that it believes) f, it will send a refuse message.
+"/>
+	<fipa_acl id="
+ACL_INFORMREF
+" performative="
+inform-ref
+" description='
+A macro action for sender to inform the receiver the object which corresponds to a descriptor, for example, a name.  The inform-ref macro action allows the sender to inform the receiver some object that the sender believes corresponds to a descriptor, such as a name or other identifying description. inform-ref is a macro action, since it corresponds to a (possibly infinite) disjunction of inform acts, each of which informs the receiver that "the object corresponding to name is x" for some given x. For example, an agent can plan an inform-ref of the current time to agent j, and then perform the act "inform j that the time is 10.45". The agent performing the act should believe that the object or set of objects corresponding to the reference expression is the one supplied, and should not believe that the receiver of the act already knows which object or set of objects corresponds to the reference expression.  The agent may elect to send a refuse message if it is unable to establish the preconditions of the act. Inform-ref represents an unbounded, possibly infinite set of possible courses of action, in which i informs j of the referent of x.
+'/>
+	<fipa_acl id="
+ACL_NOTUNDERSTOOD
+" performative="
+not-understood
+" description="
+The sender of the act (for example, i) informs the receiver (for example, j) that it perceived that j performed some action, but that i did not understand what j just did. A particular common case is that i tells j that i did not understand the message that j has just sent to i. The sender received a communicative act that it did not understand. There may be several reasons for this: the agent may not have been designed to process a certain act or class of acts, or it may have been expecting a different message. For example, it may have been strictly following a pre-defined protocol, in which the possible message sequences are predetermined. The not-understood message indicates to that the sender of the original, that is, misunderstood, action that nothing has been done as a result of the message. This act may also be used in the general case for i to inform j that it has not understood j's action. The second element of the message content tuple is a proposition representing the reason for the failure to understand. There is no guarantee that the reason is represented in a way that the receiving agent will understand. However, a co-operative agent will attempt to explain the misunderstanding constructively.
+"/>
+	<fipa_acl id="
+ACL_PROPAGATE
+" performative="
+propagate
+" description="
+The sender intends that the receiver treat the embedded message as sent directly to the receiver, and wants the receiver to identify the agents denoted by the given descriptor and send the received propagate message to them. This is a compound action of the following two actions. First, the sending agent requests the recipient to treat the embedded message in the received propagate message as if it is directly sent from the sender, that is, as if the sender performed the embedded communicative act directly to the receiver. Second, the sender wants the receiver to identify agents denoted by the given descriptor and to send a modified version of the received propagate message to them, as described below. On forwarding, the :receiver parameter of the forwarded propagate message is set to the denoted agent(s) and the :sender parameter is set to the receiver of the received propagate message. The sender and receiver of the embedded communicative act of the forwarded propagate message is also set to the same agent as the forwarded propagate message's sender and receiver, respectively. This communicative act is designed for delivering messages through federated agents by creating a chain (or tree) of propagate messages. An example of this is instantaneous brokerage requests using a proxy message, or persistent requests by a request-when/request-whenever message embedding a proxy message.
+"/>
+	<fipa_acl id="
+ACL_PROPOSE
+" performative="
+propose
+" description="
+The action of submitting a proposal to perform a certain action, given certain preconditions.
+Propose is a general-purpose action to make a proposal or respond to an existing proposal during a negotiation process by proposing to perform a given action subject to certain conditions being true. The actual protocol under which the negotiation process is being conducted is known either by prior agreement, or is explicitly stated in the :protocol parameter of the message.
+The proposer (the sender of the propose) informs the receiver that the proposer will adopt the intention to perform the action once the given precondition is met, and the receiver notifies the proposer of the receiver's intention that the proposer performs the action.
+A typical use of the condition attached to the proposal is to specify the price of a bid in an auctioning or negotiation protocol.
+"/>
+	<fipa_acl id="
+ACL_PROXY
+" performative="
+proxy
+" description="
+The sender wants the receiver to select target agents denoted by a given description and to send an embedded message to them. The sending agent informs the recipient that the sender wants the receiver to identify agents that satisfy the given descriptor, and to perform the embedded communicative act to them, that is, the receiver sends the embedded message to them. On performing the embedded communicative act, the :receiver parameter is set to the denoted agent and the :sender is set to the receiver of the proxy message. If the embedded communicative act contains a :reply-to parameter (for example, in the recruiting case where the :protocol parameter is set to fipa-recruiting), it should be preserved in the performed message. In the case of a brokering request (that is, the :protocol parameter is set to fipa-brokering), the brokerage agent (the receiver of the proxy message) must record some parameters, for example, :conversation-id, :reply-with, :sender, etc.) of the received proxy message to forward back the reply message(s) from the target agents to the corresponding requester agent (the sender of the proxy message).
+"/>
+	<fipa_acl id="
+ACL_QUERYIF
+" performative="
+query-if
+" description="
+The action of asking another agent whether or not a given proposition is true. Query-if is the act of asking another agent whether (it believes that) a given proposition is true. The sending agent is requesting the receiver to inform it of the truth of the proposition. The agent performing the query-if act: 
+·         has no knowledge of the truth value of the proposition, and,
+·         believes that the other agent can inform the querying agent if it knows the truth of the proposition.
+"/>
+	<fipa_acl id="
+ACL_QUERYREF
+" performative="
+query-ref
+" description="
+The action of asking another agent for the object referred to by an referential expression. Query-ref is the act of asking another agent to inform the requester of the object identified by a descriptor. The sending agent is requesting the receiver to perform an inform act, containing the object that corresponds to the descriptor. The agent performing the query-ref act: 
+·         does not know which object or set of objects corresponds to the descriptor, and,
+·         believes that the other agent can inform the querying agent the object or set of objects that correspond to the descriptor.
+"/>
+	<fipa_acl id="
+ACL_REFUSE
+" performative="
+refuse
+" description="
+The action of refusing to perform a given action, and explaining the reason for the refusal. The refuse act is an abbreviation for denying (strictly speaking, disconfirming) that an act is possible for the agent to perform, and stating the reason why that is so. The refuse act is performed when the agent cannot meet all of the preconditions for the action to be carried out, both implicit and explicit. For example, the agent may not know something it is being asked for, or another agent requested an action for which it has insufficient privilege. The agent receiving a refuse act is entitled to believe that:
+·         the action has not been done,
+·         the action is not feasible (from the point of view of the sender of the refusal), and,
+·         the (causal) reason for the refusal is represented by the a proposition which is the second element of the message content tuple, (which may be the constant true). There is no guarantee that the reason is represented in a way that the receiving agent will understand. However, a cooperative agent will attempt to explain the refusal constructively. See the description at not-understood.
+"/>
+	<fipa_acl id="
+ACL_REJECTPROPOSAL
+" performative="
+reject-proposal
+" description="
+The action of rejecting a proposal to perform some action during a negotiation.  Reject-proposal is a general-purpose rejection to a previously submitted proposal. The agent sending the rejection informs the receiver that it has no intention that the recipient performs the given action under the given preconditions. The additional proposition represents a reason that the proposal was rejected. Since it is in general hard to relate cause to effect, the formal model below only notes that the reason proposition was believed true by the sender at the time of the rejection. Syntactically the reason should be treated as a causal explanation for the rejection, even though this is not established by the formal semantics. 
+"/>
+	<fipa_acl id="
+ACL_REQUEST
+" performative="
+request
+" description="
+The sender requests the receiver to perform some action. One important class of uses of the request act is to request the receiver to perform another communicative act.  The sender is requesting the receiver to perform some action. The content of the message is a description of the action to be performed, in some language the receiver understands. The action can be any action the receiver is capable of performing: pick up a box, book a plane flight, change a password, etc. An important use of the request act is to build composite conversations between agents, where the actions that are the object of the request act are themselves communicative acts such as inform. 
+"/>
+	<fipa_acl id="
+ACL_REQUESTWHEN
+" performative="
+request-when
+" description="
+The sender wants the receiver to perform some action when some given proposition becomes true. Request-when allows an agent to inform another agent that a certain action should be performed as soon as a given precondition, expressed as a proposition, becomes true.  The agent receiving a request-when should either refuse to take on the commitment, or should arrange to ensure that the action will be performed when the condition becomes true. This commitment will persist until such time as it is discharged by the condition becoming true, the requesting agent cancels the request-when, or the agent decides that it can no longer honour the commitment, in which case it should send a refuse message to the originator. No specific commitment is implied by the specification as to how frequently the proposition is re-evaluated, nor what the lag will be between the proposition becoming true and the action being enacted. Agents that require such specific commitments should negotiate their own agreements prior to submitting the request-when act.
+"/>
+	<fipa_acl id="
+ACL_REQUESTWHENEVER
+" performative="
+request-whenever
+" description="
+The sender wants the receiver to perform some action as soon as some proposition becomes true and thereafter each time the proposition becomes true again. Request-whenever allows an agent to inform another agent that a certain action should be performed as soon as a given precondition, expressed as a proposition, becomes true, and that, furthermore, if the proposition should subsequently become false, the action will be repeated as soon as it once more becomes true. Request-whenever represents a persistent commitment to re-evaluate the given proposition and take action when its value changes. The originating agent may subsequently remove this commitment by performing the cancel action. No specific commitment is implied by the specification as to how frequently the proposition is re-evaluated, nor what the lag will be between the proposition becoming true and the action being enacted. Agents who require such specific commitments should negotiate their own agreements prior to submitting the request-when act.  
+"/>
+	<fipa_acl id="
+ACL_SUBSCRIBE
+" performative="
+subscribe
+" description="
+The act of requesting a persistent intention to notify the sender of the value of a reference, and to notify again whenever the object identified by the reference changes.  The subscribe act is a persistent version of query-ref, such that the agent receiving the subscribe will inform the sender of the value of the reference, and will continue to send further informs if the object denoted by the description changes. A subscription set up by a subscribe act is terminated by a cancel act. 
+"/>
+</doc>

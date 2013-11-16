@@ -1,0 +1,1440 @@
+20030517T155213: TTROOT not set, assuming <..>
+20030517T155214: opening outtrans.txt
+20030517T155214: opening outlname.txt
+20030517T155214: opening outfname.txt
+20030517T155214: opening outhuman.txt
+20030517T155214: opening outlrn.txt
+20030517T155214: reading ../db/baserule.txt
+20030517T155215: reading ../db/eninfl.txt
+20030517T155216: reading ../db/name.txt
+20030517T155220: reading ../db/fooddrug.txt
+20030517T155222: reading ../db/geog.txt
+20030517T155227: reading ../db/absobj.txt
+20030517T155232: reading ../db/street.txt
+20030517T155233: reading ../db/grid.txt
+20030517T155244: reading ../db/all.txt
+20030517T155244: reading ../db/physics.txt
+20030517T155246: reading ../db/chem.txt
+20030517T155246: reading ../db/trans.txt
+20030517T155249: reading ../db/celest.txt
+20030517T155249: reading ../db/physobj.txt
+20030517T155254: reading ../db/ling.txt
+20030517T155301: reading ../db/relation.txt
+20030517T155305: reading ../db/action.txt
+20030517T155313: reading ../db/attr.txt
+20030517T155315: reading ../db/enum.txt
+20030517T155315: reading ../db/living.txt
+20030517T155316: reading ../db/human.txt
+20030517T155318: reading ../db/clothing.txt
+20030517T155319: reading ../db/mediaobj.txt
+20030517T155321: reading ../db/music.txt
+20030517T155321: reading ../db/tv.txt
+20030517T155323: reading ../db/company.txt
+20030517T155324: reading ../db/elec.txt
+20030517T155326: Load time = 01:11.
+20030517T155330: starting ThoughtTreasure server
+20030517T155331: server started; port = 1832
+20030517T155514: connection from localhost [127.0.0.1]
+20030517T155514: localhost [11]: <SemanticParse z What is an agent. >
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155514: bad Obj
+20030517T155514: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: bad Obj
+20030517T155515: ObjCreateList: element 3 bad
+20030517T155515: localhost [11]: <Generate z [present-indicative [isa object-interrogative-pronoun trial-attorney]]>
+20030517T155515: opening /tmp/ObjReadString.1372.1053197715
+20030517T155515: reading /tmp/ObjReadString.1372.1053197715
+20030517T155515: opening /tmp/Generate.1372.1053197715
+20030517T155515: reading /tmp/Generate.1372.1053197715
+20030517T155516: localhost [11]: <Generate z [present-indicative [isa object-interrogative-pronoun agent]]>
+20030517T155516: opening /tmp/ObjReadString.1372.1053197716
+20030517T155516: reading /tmp/ObjReadString.1372.1053197716
+20030517T155516: opening /tmp/Generate.1372.1053197716
+20030517T155516: reading /tmp/Generate.1372.1053197716
+20030517T155516: localhost [11]: <Generate z [present-indicative [standard-copula object-interrogative-pronoun agent]]>
+20030517T155516: opening /tmp/ObjReadString.1372.1053197716
+20030517T155516: reading /tmp/ObjReadString.1372.1053197716
+20030517T155516: opening /tmp/Generate.1372.1053197716
+20030517T155516: reading /tmp/Generate.1372.1053197716
+20030517T155516: localhost [11]: <Generate z [present-indicative [standard-copula object-interrogative-pronoun trial-attorney]]>
+20030517T155516: opening /tmp/ObjReadString.1372.1053197716
+20030517T155516: reading /tmp/ObjReadString.1372.1053197716
+20030517T155516: opening /tmp/Generate.1372.1053197716
+20030517T155516: reading /tmp/Generate.1372.1053197716
+20030517T155526: localhost [11]: <ConceptToLexEntries present-indicative>
+20030517T155526: localhost [11]: <ConceptToLexEntries standard-copula>
+20030517T155526: localhost [11]: <Parents present-indicative>
+20030517T155526: localhost [11]: <Parents standard-copula>
+20030517T155526: localhost [11]: <Parents object-interrogative-pronoun>
+20030517T155526: localhost [11]: <Parents agent>
+20030517T155531: connection from localhost [127.0.0.1]
+20030517T155531: localhost [12]: <Generate z agent>
+20030517T155531: opening /tmp/ObjReadString.1372.1053197731
+20030517T155531: reading /tmp/ObjReadString.1372.1053197731
+20030517T155531: opening /tmp/Generate.1372.1053197731
+20030517T155531: reading /tmp/Generate.1372.1053197731
+20030517T155531: connection from localhost [127.0.0.1]
+20030517T155531: localhost [12]: closed
+20030517T155531: localhost [13]: <Generate z society-of-mind>
+20030517T155531: opening /tmp/ObjReadString.1372.1053197731
+20030517T155531: reading /tmp/ObjReadString.1372.1053197731
+20030517T155531: opening /tmp/Generate.1372.1053197731
+20030517T155531: reading /tmp/Generate.1372.1053197731
+20030517T155531: connection from localhost [127.0.0.1]
+20030517T155531: localhost [13]: closed
+20030517T155531: localhost [12]: <Generate z society-of-mind>
+20030517T155531: opening /tmp/ObjReadString.1372.1053197731
+20030517T155531: reading /tmp/ObjReadString.1372.1053197731
+20030517T155531: opening /tmp/Generate.1372.1053197731
+20030517T155531: reading /tmp/Generate.1372.1053197731
+20030517T155531: localhost [12]: closed
+20030517T155531: connection from localhost [127.0.0.1]
+20030517T155531: localhost [12]: <Generate z subroutine>
+20030517T155531: opening /tmp/ObjReadString.1372.1053197731
+20030517T155531: reading /tmp/ObjReadString.1372.1053197731
+20030517T155531: opening /tmp/Generate.1372.1053197731
+20030517T155531: reading /tmp/Generate.1372.1053197731
+20030517T155531: connection from localhost [127.0.0.1]
+20030517T155531: localhost [12]: closed
+20030517T155531: localhost [13]: <Generate z society-of-mind>
+20030517T155531: opening /tmp/ObjReadString.1372.1053197731
+20030517T155531: reading /tmp/ObjReadString.1372.1053197731
+20030517T155531: opening /tmp/Generate.1372.1053197731
+20030517T155531: reading /tmp/Generate.1372.1053197731
+20030517T155532: localhost [13]: closed
+20030517T155532: connection from localhost [127.0.0.1]
+20030517T155532: localhost [12]: <Generate z FSM>
+20030517T155532: opening /tmp/ObjReadString.1372.1053197732
+20030517T155532: reading /tmp/ObjReadString.1372.1053197732
+20030517T155532: opening /tmp/Generate.1372.1053197732
+20030517T155532: reading /tmp/Generate.1372.1053197732
+20030517T155532: connection from localhost [127.0.0.1]
+20030517T155532: localhost [12]: closed
+20030517T155532: localhost [13]: <Generate z function>
+20030517T155532: opening /tmp/ObjReadString.1372.1053197732
+20030517T155532: reading /tmp/ObjReadString.1372.1053197732
+20030517T155532: opening /tmp/Generate.1372.1053197732
+20030517T155532: reading /tmp/Generate.1372.1053197732
+20030517T155532: connection from localhost [127.0.0.1]
+20030517T155532: localhost [13]: closed
+20030517T155532: localhost [12]: <Generate z programming-construct-rule>
+20030517T155532: opening /tmp/ObjReadString.1372.1053197732
+20030517T155532: reading /tmp/ObjReadString.1372.1053197732
+20030517T155532: opening /tmp/Generate.1372.1053197732
+20030517T155532: reading /tmp/Generate.1372.1053197732
+20030517T155532: connection from localhost [127.0.0.1]
+20030517T155532: localhost [12]: closed
+20030517T155532: localhost [13]: <Generate z main-program>
+20030517T155532: opening /tmp/ObjReadString.1372.1053197732
+20030517T155532: reading /tmp/ObjReadString.1372.1053197732
+20030517T155532: opening /tmp/Generate.1372.1053197732
+20030517T155532: reading /tmp/Generate.1372.1053197732
+20030517T155532: connection from localhost [127.0.0.1]
+20030517T155532: localhost [13]: closed
+20030517T155532: localhost [12]: <Generate z agent>
+20030517T155532: opening /tmp/ObjReadString.1372.1053197732
+20030517T155532: reading /tmp/ObjReadString.1372.1053197732
+20030517T155532: opening /tmp/Generate.1372.1053197732
+20030517T155532: reading /tmp/Generate.1372.1053197732
+20030517T155533: connection from localhost [127.0.0.1]
+20030517T155533: localhost [12]: closed
+20030517T155533: localhost [13]: <Generate z AI-critic>
+20030517T155533: opening /tmp/ObjReadString.1372.1053197733
+20030517T155533: reading /tmp/ObjReadString.1372.1053197733
+20030517T155533: opening /tmp/Generate.1372.1053197733
+20030517T155533: reading /tmp/Generate.1372.1053197733
+20030517T155533: connection from localhost [127.0.0.1]
+20030517T155533: localhost [13]: closed
+20030517T155533: localhost [12]: <Generate z AI-actor>
+20030517T155533: opening /tmp/ObjReadString.1372.1053197733
+20030517T155533: reading /tmp/ObjReadString.1372.1053197733
+20030517T155533: opening /tmp/Generate.1372.1053197733
+20030517T155533: reading /tmp/Generate.1372.1053197733
+20030517T155533: connection from localhost [127.0.0.1]
+20030517T155533: localhost [12]: closed
+20030517T155533: localhost [13]: <Generate z AI-sprite>
+20030517T155533: opening /tmp/ObjReadString.1372.1053197733
+20030517T155533: reading /tmp/ObjReadString.1372.1053197733
+20030517T155533: opening /tmp/Generate.1372.1053197733
+20030517T155533: reading /tmp/Generate.1372.1053197733
+20030517T155533: connection from localhost [127.0.0.1]
+20030517T155533: localhost [13]: closed
+20030517T155533: localhost [12]: <Generate z AI-expert>
+20030517T155533: opening /tmp/ObjReadString.1372.1053197733
+20030517T155533: reading /tmp/ObjReadString.1372.1053197733
+20030517T155533: opening /tmp/Generate.1372.1053197733
+20030517T155533: reading /tmp/Generate.1372.1053197733
+20030517T155533: connection from localhost [127.0.0.1]
+20030517T155533: localhost [12]: closed
+20030517T155533: localhost [13]: <Generate z AI-demon>
+20030517T155533: opening /tmp/ObjReadString.1372.1053197733
+20030517T155533: reading /tmp/ObjReadString.1372.1053197733
+20030517T155533: opening /tmp/Generate.1372.1053197733
+20030517T155533: reading /tmp/Generate.1372.1053197733
+20030517T155534: connection from localhost [127.0.0.1]
+20030517T155534: localhost [13]: closed
+20030517T155534: localhost [12]: <Generate z UA>
+20030517T155534: opening /tmp/ObjReadString.1372.1053197734
+20030517T155534: reading /tmp/ObjReadString.1372.1053197734
+20030517T155534: opening /tmp/Generate.1372.1053197734
+20030517T155534: reading /tmp/Generate.1372.1053197734
+20030517T155534: connection from localhost [127.0.0.1]
+20030517T155534: localhost [12]: closed
+20030517T155534: localhost [13]: <Generate z PA>
+20030517T155534: opening /tmp/ObjReadString.1372.1053197734
+20030517T155534: reading /tmp/ObjReadString.1372.1053197734
+20030517T155534: opening /tmp/Generate.1372.1053197734
+20030517T155534: reading /tmp/Generate.1372.1053197734
+20030517T155534: connection from localhost [127.0.0.1]
+20030517T155534: localhost [13]: closed
+20030517T155534: localhost [12]: <Generate z NA>
+20030517T155534: opening /tmp/ObjReadString.1372.1053197734
+20030517T155534: reading /tmp/ObjReadString.1372.1053197734
+20030517T155534: opening /tmp/Generate.1372.1053197734
+20030517T155534: reading /tmp/Generate.1372.1053197734
+20030517T155534: connection from localhost [127.0.0.1]
+20030517T155534: localhost [12]: closed
+20030517T155534: localhost [13]: <Generate z AI-specialist>
+20030517T155534: opening /tmp/ObjReadString.1372.1053197734
+20030517T155534: reading /tmp/ObjReadString.1372.1053197734
+20030517T155534: opening /tmp/Generate.1372.1053197734
+20030517T155534: reading /tmp/Generate.1372.1053197734
+20030517T155534: localhost [13]: closed
+20030517T155534: connection from localhost [127.0.0.1]
+20030517T155534: localhost [12]: <Generate z TA>
+20030517T155534: opening /tmp/ObjReadString.1372.1053197734
+20030517T155534: reading /tmp/ObjReadString.1372.1053197734
+20030517T155534: opening /tmp/Generate.1372.1053197734
+20030517T155535: reading /tmp/Generate.1372.1053197734
+20030517T155535: localhost [12]: 

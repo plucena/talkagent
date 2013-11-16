@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# You can redistribute this software and/or modify it under the terms of
+# the Ozone Library License version 1 published by softwarebuero m&b (SMB).
+#
+# The original code and portions created by SMB are
+# Copyright (C) 1997-1999 by softwarebuero m&b (SMB). All rights reserved.
+#
+# $Id: oig,v 1.1 2002/11/27 16:30:28 cvs Exp $
+
+#if test -z $OZONE_HOME; then
+#	echo "\$OZONE_HOME is not set!"
+#	exit;
+#fi
+
+# setup CLASSPATH
+. `dirname $0`/ozoneEnv
+
+$OZONE_JVM org.ozoneDB.tools.OIG $@

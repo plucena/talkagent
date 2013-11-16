@@ -1,0 +1,123 @@
+---------------------------------------------------------------------------
+ThoughtTreasure 0.00022 distribution
+Copyright 1996, 1997, 1998, 1999 Erik Thomas Mueller. All Rights Reserved.
+---------------------------------------------------------------------------
+THOUGHTTREASURE 0.00022 NONCOMMERCIAL USE SOURCE LICENSE AGREEMENT
+
+CAREFULLY READ THE TERMS OF THIS AGREEMENT BEFORE YOU DOWNLOAD THE
+THOUGHTTREASURE 0.00022 SOFTWARE. BY DOWNLOADING A COPY OF THE
+SOFTWARE OR USING THE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE
+TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS
+AGREEMENT, DO NOT DOWNLOAD OR USE THE SOFTWARE.
+
+This license agreement ("Agreement") is made between Erik T. Mueller,
+2533 Waterside Drive NW, Washington, DC 20008 ("Licensor") and you
+("Licensee") with respect to the ThoughtTreasure 0.00022 source code,
+database, documentation, and associated files of the ThoughtTreasure
+0.00022 distribution (collectively referred to as the "Software").
+
+1. GRANT OF LICENSE
+
+1.1 Licensor hereby grants to Licensee a nontransferable,
+nonexclusive, limited license ("License") to use and modify the
+Software for noncommercial purposes only, in accordance with the terms
+and conditions of this Agreement.
+
+1.2 This License may not be sold, leased, assigned, sublicensed, or
+otherwise transferred, in whole or in part, by Licensee.
+
+1.3 Licensor is under no obligation to provide maintenance or support
+for the Software.
+
+2. SCOPE OF LICENSE
+
+2.1 This License is limited to noncommercial use. Noncommercial use
+relates only to personal, educational, research, or evaluation
+purposes. Use of the Software in connection with any business activity
+is commercial use. Commercial use requires a commercial license.
+
+2.2 Licensee may not copy the Software except as is reasonably
+necessary for Licensee's use.
+
+2.3 Licensee may not distribute the Software to any third party.
+
+2.4 Licensor owns all modifications, enhancements, and bug fixes made
+to the Software by or for Licensee.
+
+3. TERM AND TERMINATION
+
+3.1 The term of the License granted by this Agreement is from the date
+Licensee acquires the Software until the Agreement is terminated.
+
+3.2 The License will terminate immediately without notice by Licensor
+if Licensee fails to comply with the terms and conditions of this
+Agreement. Upon termination of this License, use of the Software by
+Licensee shall be immediately discontinued and all copies of the
+Software shall be destroyed by Licensee.
+
+4. OWNERSHIP OF THE SOFTWARE
+
+Licensor owns and retains all title, copyright, and other proprietary
+rights in the Software.
+
+5. FEES
+
+Use of the Software in accordance with the terms of this License shall
+not require payment of a license fee.
+
+6. DISCLAIMER OF WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE, OR NONINFRINGEMENT. THE LICENSEE BEARS ALL RISK RELATING TO THE
+QUALITY AND PERFORMANCE OF THE SOFTWARE.
+
+7. LIMITATION OF LIABILITY
+
+IN NO EVENT WILL LICENSOR BE LIABLE FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL, CONSEQUENTIAL, INDIRECT, OR OTHER
+SIMILAR DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES. SUCH DAMAGES INCLUDE, BUT ARE NOT LIMITED TO, LOSS OF
+REVENUES, PROFITS, OR DATA.
+
+8. EXPORT
+
+Licensee agrees that the Software will not be shipped, transferred, or
+exported into any country or used in any manner prohibited by the
+United States Export Administration Act or any other export laws,
+restrictions, or regulations.
+
+9. GENERAL
+
+9.1 This is the only Agreement between Licensee and Licensor relating
+to the Software.
+
+9.2 This Agreement shall be governed by District of Columbia law,
+except for conflict of law provisions.
+
+9.3 If any provision of this Agreement shall be held to be invalid,
+illegal, or unenforceable, the validity, legality, and enforceability
+of the remaining provisions shall not in any way be affected or
+impaired thereby.
+
+9.4 All rights in the Software not specifically granted in this
+Agreement are reserved by Licensor.
+---------------------------------------------------------------------------
+ThoughtTreasure and Signiform are trademarks of Signiform.
+
+Java and all Java-based trademarks and logos are trademarks or registered
+trademarks of Sun Microsystems, Inc. in the United States and other
+countries.
+
+Linux is a registered trademark of Linus Torvalds.
+
+Red Hat is a registered trademark of Red Hat Software, Inc. in the U.S.
+and other countries.
+
+All brand names and product names are the trademarks or registered
+trademarks of their respective owners and/or manufacturers.
+---------------------------------------------------------------------------
+Any slights of people, places, or organizations are unintentional.
+---------------------------------------------------------------------------

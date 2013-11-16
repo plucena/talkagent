@@ -1,0 +1,202 @@
+#!/bin/tcsh 
+#
+# killer - kill all processes containing specified strings
+#
+#     Written by: Bruce Israel <israel@his.com>, Tue Apr 14 1998
+#
+#  Usage:
+set usage = "$0 [ -u  | -a ] [ -s  ] [ -i | -n ]  ..."
+#
+# At least one string is required.  If multiple strings are specified, then
+# only processes containing all strings will be killed.
+#
+# Options:
+#    -u           - Kill matching procs of specified user
+#    -a                 - Kill matching procs of all users
+#    -s         - use signal for kill
+#    -i                 - ask first before performing kill
+#    -n                 - don't really kill it; acts like a glorified 'ps'.
+#
+# If the interactive option (-i) is given, then a prompt will be given with
+# options to kill or not kill the specified processes, to change the kill
+# signal, and to filter the process set further before killing.
+#
+# The -a and -u are only useful by root due to Unix security restrictions.
+# You can use them when not root, but they won't be able to perform the
+# requested kill.  If neither -u or -a is specified, then the current user
+# is used.  The -s option is used to specify a particular signal to be used
+# to kill the processes.  If a signal is not specified, then -9 is used.
+# The specified signal can be in any form suitable for use by 'kill'
+# (e.g. -9, -INT, etc.).
+#
+# e.g.  'killer prog1', 'killer -u joe netscape www.foo.com'
+#
+# Internal info for differing OSs:
+#
+# 'killer' uses 'ps' to check for processes, but since 'ps' comes in
+# mutually incompatible flavors, it tries to auto-detect which flavor of ps
+# we're running.  The way it does this is to run 'ps -x' (an acceptable
+# option for Berkeley-flavor ps's) and then to see if it ran successfully.
+# If that works, then assume Berkeley-flavor 'ps', otherwise assume a AT&T
+# Sys V flavor 'ps'.
+#
+# Berkeley 'ps' is called as "ps -auxww", and assumed to return the process
+# owner's name in the first column and the process id in the second column.
+# Sys-V 'ps' is called as "ps -elf", which is assumed to return the process
+# owner's name in the third column, and the process id in column four.
+
+set user = `id | awk -F\) '{print $1}' | awk -F\( '{print $2}'`
+
+set interactive = 0
+set strings = ()
+set signal = "-9"
+set operation = "kill"
+
+set args = ( $* )
+
+while ($#argv > 0)
+    set arg = "$argv[1]"
+    shift argv
+    if ("$arg" == "-h" || "$arg" == "-help" ) then
+       echo "$usage"
+       exit 1
+    else if ("$arg" == "-a") then
+        set user = ""
+    else if ("$arg" == "-n") then
+        set operation = "list"
+    else if ("$arg" == "-i") then
+        set interactive = 1
+    else if ("$arg" == "-u") then
+        set user = "$argv[1]"
+        shift argv
+    else if ("$arg" == "-s") then
+        set signal = "$argv[1]"
+        shift argv
+        if ("$signal" !~ -*) then
+            set signal = "-$signal"
+        endif
+    else
+        set strings = ($strings "$arg")
+    endif
+end
+
+if ($operation == "list") then
+    set strings = ($strings "")
+endif
+
+if ($#strings == 0) then
+    echo "Usage: $usage"
+    exit 1
+endif
+
+set tmp = /tmp/killer.$$
+set tmp2 = /tmp/killer2.$$
+
+# check for type of 'ps' by collecting error output
+(ps x >/dev/null) >& $tmp
+
+# if "ps -x" returned no error, then we're BSD style
+if (-z $tmp) then
+    set type = BSD
+else
+# otherwise assume we're running a Sys V ps.
+    set type = SYSV
+endif
+
+rm -f $tmp
+
+if ($type == "BSD") then
+    set psargs = "auxww"
+    set uidcol = 1
+    set pidcol = 2
+else if ($type == "SYSV") then
+    set psargs = "-elf"
+    set uidcol = 3
+    set pidcol = 4
+else if ($type == "") then
+    echo "Couldn't figure out what type of PS this system uses."
+    exit 1
+else
+    echo Unknown PS type $type
+    exit 1
+endif
+
+# generate full process list
+ps $psargs | cut -c 1-2000 | awk '$'$pidcol' != "'$$'"' >$tmp
+
+# filter processes by user
+if ("$user" != "") then
+    awk '$'$uidcol' == "'$user'"' <$tmp >$tmp2
+    mv $tmp2 $tmp
+
+endif
+
+# filter processes by specified strings
+foreach string ( $strings:q )
+    set gopt = ""
+    if ("`uname`" != "SunOS") set gopt = "-e"
+    grep $gopt "$string" $tmp >$tmp2
+    mv $tmp2 $tmp
+end
+
+# collect process ids from resulting process set
+set procs = `cat $tmp | awk '{print $'$pidcol'}'`
+
+# Display PS list
+cat $tmp
+rm -f $tmp
+
+if ($#procs == 0) then
+    echo "No processes found for: $args"
+    exit 1
+endif
+
+# if list only, then display the processes and exit
+if ($operation == "list") then
+    echo "Processes: $procs"
+    exit 0
+endif
+
+if ($interactive == 0) then
+    # non-interactive (default option), automatically kill processes
+    set ans = "y"
+else
+    # interactive (-i option), prompt for desired actions
+    set done = "no"
+    while ($done == "no")
+        echo -n "Do 'kill $signal $procs' (y/n/f/s/?) [y]: "
+        set ans = "$<"
+        if ("$ans" == "") set ans = "y"
+        if ("$ans" == "?" || "$ans" == "help") then
+            echo "Y - Yes, N - No, F - Filter list, S - Change signal"
+        else if ("$ans" == "n" || "$ans" == "N" || \
+                 "$ans" == "y" || "$ans" == "Y") then
+            set done = "yes"
+        else if ("$ans" == "s" || "$ans" == "S") then
+            echo -n "kill signal: "
+            set signal = "$<"
+        else if ("$ans" == "f" || "$ans" == "F") then
+            set nprocs = ()
+            foreach pr ( $procs )
+                echo -n "kill ${pr}: "
+                set ans = "$<"
+                if ("$ans" != "n" && "$ans" != "N" && \
+                    "$ans" != "no" && "$ans" != "NO") then
+                    set nprocs = ( $nprocs $pr )
+                endif
+            end
+            set procs = ( $nprocs )
+        else
+            echo "Unknown option '$ans'"
+        endif
+    end
+endif
+
+if ("$ans" == "y" || "$ans" == "Y") then
+    echo -n "killing ..."
+    kill $signal $procs
+    echo " done."
+endif
+
+# end of file
+

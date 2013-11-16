@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/platform/bin/lib/fipa.jar"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/platform/bin/lib/ozone-1.1.jar"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/platform/bin/lib/ucl.jar"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/platform/bin/lib/xml.jar"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/platform/bin/lib/javabeans.jar"/>
+    <classpathentry kind="lib" path="/root/TALKAGENT/ide/bin/lib/gnu-ftp-client.jar"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

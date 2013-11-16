@@ -1,0 +1,1091 @@
+<html>
+<head>
+<title>ThoughtTreasure: A natural language/commonsense platform</title>
+</head>
+<body bgcolor="#ffffff">
+<h2>ThoughtTreasure: A natural language/commonsense platform</h2>
+<h3>An overview</h3>
+by <a href="/erik">Erik T. Mueller</a>
+<p>
+November 30, 1999
+<hr>
+Since 1994 I've been developing ThoughtTreasure, a comprehensive platform
+for natural language processing (English and French) and commonsense
+reasoning. ThoughtTreasure contains pieces of common sense such as:
+<blockquote>
+A hotel room has a bed, night table, minibar, ...<br>
+A person has zero or one husbands.<br>
+A play lasts about two hours.<br>
+<em>Cassette</em> means cassette tape or cassette recorder.<br>
+Gold hair is called <em>blond</em> hair.<br>
+One hangs up at the end of a phone call.<br>
+People have fingernails.<br>
+Rough synonyms for food are <em>foodstuffs</em>, <em>groceries</em>, <em>chow</em>, <em>grub</em>, ...<br>
+Soda is a drink.<br>
+Someone who is 16 years old is called a teenager.<br>
+The sky is blue.<br>
+</blockquote>
+<p>
+Human commonsense knowledge is huge, probably consisting of over 100 million
+items. So far, ThoughtTreasure only contains 100 thousand items.
+But even a small amount of common sense will improve applications. For
+example, a calendar and contact manager can use ThoughtTreasure to:
+<ul>
+<li>
+guess how long an appointment will last,
+<li>
+understand that <em>my mom</em> and <em>my mother</em> refer to
+the same person,
+<li>
+refer to the user's friends by first name and others by full name, and
+<li>
+map various occupations and hobby descriptions to a shorter, standard
+list.
+</ul>
+<h3>What's in ThoughtTreasure?</h3>
+<p>
+ThoughtTreasure contains a database of 25,000 concepts organized
+into a hierarchy. For example, <tt>Evian</tt> is a type of <tt>flat-water</tt>,
+which is a type of <tt>drinking-water</tt>, which is a type of
+<tt>beverage</tt>, which is a type of <tt>food</tt>, and so on.
+<p>
+Each concept has one or more English and French approximate synonyms, for
+a total of 55,000 words and phrases. For example, associated with the
+<tt>food</tt> concept are the English words <em>food</em> and
+<em>foodstuffs</em> and the French words <em>aliment</em> and
+<em>nourriture</em> (and others).
+<p>
+ThoughtTreasure contains 50,000 assertions about concepts, such as:
+a <tt>green-pea</tt> is a <tt>seed-vegetable</tt>,
+a <tt>green-pea</tt> is <tt>green</tt>,
+a <tt>green-pea</tt> is part of a <tt>pod-of-peas</tt>, and
+a <tt>pod-of-peas</tt> is found in a typical grocery store.
+<p>
+ThoughtTreasure contains about 100 scripts, or computer-understandable
+descriptions of typical activities such as going to a restaurant
+or birthday party.
+<p>
+ThoughtTreasure contains 70,000 lines of C code implementing:
+<ul>
+<li>
+text agents for recognizing words, phrases, names, and phone numbers,
+<li>
+mechanisms for learning new words,
+<li>
+a syntactic parser,
+<li>
+a natural language generator,
+<li>
+a semantic parser for producing a surface-level understanding of
+a sentence,
+<li>
+an anaphoric parser for resolving pronouns,
+<li>
+planning agents for achieving goals on behalf of simulated actors, and
+<li>
+understanding agents for producing a more detailed understanding
+of a discourse.
+</ul>
+<h3>What does ThoughtTreasure do?</h3>
+<p>
+Here's an example Java program that accesses ThoughtTreasure:
+<pre>
+import com.signiform.tt.*;
+public class Example {
+public static void main(String args[])
+{
+  try {
+    TTConnection tt = new TTConnection("somehost");
+    System.out.println(
+      tt.chatterbot(String.valueOf(TT.F_ENGLISH), "Who created Bugs Bunny?"));
+    tt.close();
+  } catch (Exception e) {
+  }
+}
+}
+</pre>
+We first import the ThoughtTreasure <a href="../java/doc">Java-based client
+API</a>. In the program's main method, we create a connection to a
+ThoughtTreasure server, which we have previously started running on a Linux
+PC somewhere. Then we invoke the <tt>chatterbot</tt> method with a question
+in English, and print the results. Finally we close the connection.
+<p>
+When we run the program on any machine that supports Java with a
+net connection to the Linux PC, it prints:
+<pre>
+Tex Avery created him.
+</pre>
+<p>
+How did ThoughtTreasure produce this answer? First, text agents look
+at the question <em>Who created Bugs Bunny?</em>
+and identify words and phrases. In this case, we have
+the word <em>Who</em> which can be a pronoun or it can be a noun as
+in the rock group the Who. The word <em>created</em> can either be a
+preterit or a past participle. <em>Bugs</em> can be either the plural
+of <em>bug</em> or the singular of the first name <em>Bugs</em>. In
+addition, the entire phrase <em>Bugs Bunny</em> is picked up as a
+singular noun and <em>bunny</em> is picked up as a single word
+noun:
+<pre>
+[H &lt;Who.Hz:who 0-3:&lt;Who&gt;]
+[N &lt;Who.SNz 0-3:&lt;Who&gt;]
+[V &lt;created.iVz:create 4-11:&lt;created&gt;]
+[V &lt;created.dVz:create 4-11:&lt;created&gt;]
+[N &lt;Bugs.PNz:bug 12-16:&lt;Bugs&gt;]
+[N &lt;Bugs.SNz¸ 12-16:&lt;Bugs&gt;]
+[N &lt;Bugs Bunny.SMNz&lt;?\n 12-23:&lt;Bugs Bunny?\n&gt;]
+[N &lt;Bunny.SNz:bunny&lt;?\n 17-23:&lt;Bunny?\n&gt;]
+</pre>
+The syntactic parser then takes the parse nodes produced by the text
+agents and builds parse trees. Among them are two parses that differ as
+to whether <em>Who</em> is a noun or pronoun:
+<pre>
+[Z [X [H &lt;Who.Hz:who&gt;]]
+ [W [W [V &lt;created.iVz:create&gt;]]
+    [X [N &lt;Bugs Bunny.SMNz&gt;]]]]
+
+[Z [X [N &lt;Who.SNz&gt;]]
+ [W [W [V &lt;created.iVz:create&gt;]]
+    [X [N &lt;Bugs Bunny.SMNz&gt;]]]]
+</pre>
+The semantic parser takes the parse trees produced by the syntactic
+parser and converts them into assertions. Here we have four possible
+interpretations: <em>Who created Bugs Bunny, the character?</em> or
+<em>Who created the Bugs Bunny cartoon?</em> or <em>Did the rock group
+the Who create the Bugs Bunny character?</em> or <em>Did the rock group
+the Who create the Bugs Bunny cartoon?</em>:
+<pre>
+1.0:[create human-interrogative-pronoun Bugs-Bunny]
+0.9:[create human-interrogative-pronoun Bugs-Bunny-cartoon]
+0.6:[create rock-group-the-Who Bugs-Bunny] ?
+0.5:[create rock-group-the-Who Bugs-Bunny-cartoon] ?
+</pre>
+Then the question understanding agents run on each of these interpretations.
+One agent does a database lookup to find a person that
+created Bugs Bunny and it finds that Tex Avery created Bugs Bunny. The agent
+assigns a make sense rating of 1.0 to the first interpretation, since an
+answer was found:
+<pre>
+1.0:[create Tex-Avery Bugs-Bunny]
+</pre>
+Another question agent looks in the database to see whether
+the rock group the Who created Bugs Bunny and determines that it did not,
+and so it returns the answer, <em>No, the rock group the Who did not create
+Bugs Bunny</em> and assigns a low make sense rating to that interpretation
+of the question:
+<pre>
+.11:[not [create rock-group-the-Who Bugs-Bunny]]
+.10:[not [create rock-group-the-Who Bugs-Bunny-cartoon]]
+</pre>
+After the question answering agents have run on each of the interpretations,
+the one with the highest make sense rating is selected as the correct
+interpretation, and the corresponding answer is returned, in this case
+<em>Tex Avery created him</em>:
+<pre>
+"Tex Avery created him."
+("No, the Who did not create him.")
+("No, the Who did not create it.")
+</pre>
+<p>
+From Java using the
+<a href="../java/doc/com.signiform.tt.TTConnection.html">TTConnection</a>
+class and other languages using the
+<a href="ttsp.htm">ThoughtTreasure server protocol</a>,
+you can also:
+<ul>
+<li>
+ask whether one concept is an instance of another concept,
+<li>
+ask whether one concept is a part of another concept,
+<li>
+retrieve the parents, children, ancestors, and descendants of a concept,
+<li>
+retrieve an arbitrary assertion from the database,
+<li>
+convert a natural language phrase into a ThoughtTreasure concept,
+<li>
+convert a ThoughtTreasure concept into natural language,
+<li>
+perform part-of-speech tagging of text,
+<li>
+generate syntactic parse trees of text, and
+<li>
+generate semantic parses of text.
+</ul>
+<h3>How does one extend ThoughtTreasure?</h3>
+<p>
+When the information necessary for your application is not yet in
+ThoughtTreasure, you can add it! I came up with a compact notation
+that makes entry fast. Here is a portion of the database file
+<tt>physics.txt</tt> that defines some subatomic particles:
+<pre>
+==hadron.z//strongly#B interacting# particle*.z/hadron.My/
+===baryon.z//qqq.tz/
+====unflavored#A baryon*.z//|strangeness-of=0u|charm-of=0u|bottomness-of=0u|
+=====nucleon.z/fermion/|spin-of=.5u|isospin-of=.5u|
+======neutron.z//n.tz/n# baryon*.z/neutron.My/|electric-charge-of=0u|
+baryon-number-of=1u|part-of¤up-quark,down-quark,down-quark|
+======antineutron.z//antineutron.My/|electric-charge-of=0u|baryon-number-of=-1u|antiparticle-of=neutron|
+======proton.z//p.tz/proton.My/|electric-charge-of=1u|baryon-number-of=1u|
+part-of¤up-quark,up-quark,down-quark|
+======antiproton.z//antiproton.My/|electric-charge-of=-1u|baryon-number-of=-1u|
+antiparticle-of=proton|
+</pre>
+The level of indentation shows the hierarchy: a <tt>baryon</tt> is a type
+of <tt>hadron</tt>; a <tt>neutron</tt>, <tt>antineutron</tt>, <tt>proton</tt>,
+and <tt>antiproton</tt> are all a type of nucleon.
+<p>
+Words for concepts are defined at the same time concepts are defined. The
+leftmost word or phrase is also used as the name of the concept.
+So, <tt>hadron</tt> is a concept, and words for this concept are
+<em>hadron</em> in English, <em>strongly interacting particle</em> in
+English, and <em>hadron</em> in French.
+<p>
+If there is a conflict, you can define the concept name without defining
+a word:
+<pre>
+==particle-hadron//hadron.z/
+</pre>
+<p>
+<p>
+Single characters are used to represent features. For example,
+lower case <tt>z</tt> means English. Lower case <tt>y</tt> means French.
+The feature character <tt>A</tt> means adjective and <tt>B</tt> means
+adverb. (See the <a href="quickref.htm">complete list of feature
+characters</a>.) Lexical entries are assumed to be nouns unless otherwise
+specified.
+<p>
+In this notation inheritance is represented by indentation, but
+some concepts have several parents. The second element of each line in
+between the slashes can be used to indicate additional parents. For
+example, a <tt>nucleon</tt> is a <tt>fermion</tt> as well as an
+<tt>unflavored-baryon</tt>:
+<pre>
+====unflavored#A baryon*.z//|strangeness-of=0u|charm-of=0u|bottomness-of=0u|
+=====nucleon.z/fermion/|spin-of=.5u|isospin-of=.5u|
+</pre>
+<p>
+So we can define words, phrases, and concepts all at the same time and
+show their inheritance. We can also easily add assertions. For example,
+we can define some assertions on a proton: its electric charge is 1,
+its baryon number is 1, and it consists of two up quarks and a down quark:
+<pre>
+======proton.z//p.tz/proton.My/|electric-charge-of=1u|baryon-number-of=1u|
+part-of¤up-quark,up-quark,down-quark|
+</pre>
+<p>
+Single character feature codes are also used to represent the
+argument structure of verbs. For example, <tt>&eacute;</tt> indicates
+that a verb takes a direct object:
+<pre>
+call.V&eacute;z/
+
+V = verb
+&eacute; = takes direct object
+z = English
+</pre>
+<p>
+Each word in a phrase is followed by either a star or number sign,
+which indicates whether that word is inflected. We say <em>I call
+up</em> but <em>he calls up</em>:
+<pre>
+call* &oslash; up#R.V&Agrave;&eacute;z/
+
+* = inflects
+# = does not inflect
+R = preposition
+&oslash; = location of direct object
+V = verb
+&Agrave; = Americanism
+</pre>
+<p>
+<tt>&oslash;</tt> indicates the location of the direct object: we say
+<em>call him up</em> and not <em>call up him</em>.
+<p>
+Some verbs take prepositional phrase arguments, such as <em>lie on</em>
+as in <em>I was lying on the couch</em>. A plus sign after the preposition
+indicates it is required; an underscore indicates it is optional:
+<pre>
+lie* on+.Vz/
+lie* down#R on_.Vz/
+
++ = required preposition
+_ = optional preposition
+</pre>
+There are a number of other single character codes for encoding verbs:
+<pre>
+Verb features
+
+&uacute; = subject assigned to slot 2
+&uuml; = subject assigned to slot 3
+&egrave; = object assigned to slot 1
+&eacute; = object assigned to slot 2
+&euml; = object assigned to slot 3
+÷ = indicative "(that) he goes"
+O = subjunctive "(that) he go"
+&Iuml; = infinitive "(for him) to go"
+± = present participle "(him) going"
+</pre>
+<p>
+Elsewhere I describe in detail how to extend ThoughtTreasure for a
+sample application, <a href="navext.htm">information extraction for movie
+reviews</a>.
+<h3>How is commonsense knowledge represented in ThoughtTreasure?</h3>
+<p>
+Concluding from years of AI research that there is no single, "right"
+representation, I decided to use multiple representation schemes in
+ThoughtTreasure:
+<ul>
+<li>
+Grids for stereotypical settings.
+<li>
+Finite-state machines/code for rules of thumb, device behavior, and mental
+processes.
+<li>
+Assertions for encyclopedic facts and linguistic knowledge.
+</ul>
+<h4>Stereotypical settings</h4>
+<p>
+Settings such as the ground floor of a theater are represented
+in ThoughtTreasure as grids (a kind of ASCII art):
+<pre>
+==Opera-Comique-Rez/floor/|col-distance-of=.3m|row-distance-of=.6m|level-of=0u|
+orientation-of=south|part-of=Opera-Comique|polity-of=2arr|has-ceiling|
+@19980201:na&ETH;|GS=
+ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+ w      wuu2uuuw                               wuu3uuuwuuuuuuw
+ w      wuuuuuuw                               wuuuuuuwuuuuuuw
+ w      wuuuuuuw                               wuuuuuuwuuuuuuw
+ wCC    wuuuuuuw                               wuuuuuuwuuuuCCw
+ w      wC     w                               w     Cw      w
+ w      w      wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww      w      p
+ w      w      CC X                           CC      w      w
+ p      p      p                               p      p      P
+ p      p      ttt                           ttt      p      P
+ p      p      ttt     A                     ttt      p      P
+ w      w      tttttttRTtttttttttttttttttttttttt      w      w
+ w      w      ttttttttttttttttttttttttttttttttt      w      w
+ w      w              B                              w      w
+ p      p                                             p      P
+ p      p                                             p      P
+ p      p                                             p      P1
+ w      w                                             w      w
+ wwwwwwww                                             w      p
+5Q      w                                             w      w
+ Q      w                                             wuuuuuuw
+ wuuuuuuw                   c  c  c                   wuuuuuuw
+ wCu4uuCwC     CMMMMC     CMMMMMMMMMC     CMMMMC     CwCuuuuCw
+ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+.
+p:door
+t:counter
+u:stairs-up
+w:wall
+A:employee-side-of-counter
+B:customer-side-of-counter
+C:column
+M:mirror
+P:revolving-door
+Q:stage-entrance
+R:&amp;Opera-Comique-cash-register
+T:&amp;Opera-Comique-ticket-box
+X.tpCw:&amp;Opera-Comique-box-office
+1:&amp;Opera-Comique-Entrance1
+2:&amp;Opera-Comique-0To1A
+3:&amp;Opera-Comique-0To1B
+4:&amp;Opera-Comique-0To1Stage
+5:&amp;Opera-Comique-Stage-Entrance
+.
+|
+</pre>
+<p>
+This grid can be taken literally as a particular ground floor of a theater
+in Paris, or used to guess how any theater ground floor might be arranged.
+<p>
+The definition consists of the name of the grid and then several assertions
+about the grid: The distance between each successive grid element
+horizontally is .3 meters; the distance between each grid element
+vertically is .6 meters; this is the ground floor, level 0; its
+orientation is south; it is part of the Opera Comique building; it
+is located in the 2nd arrondissement of Paris; and it has a ceiling.
+<p>
+Then we define the state of this grid as of February 1, 1998. Each character
+is defined at the bottom: The character <tt>w</tt> indicates a new instance
+of an object of type <tt>wall</tt>. <tt>p</tt> defines an object of type
+<tt>door</tt>.
+<p>
+On the left are some doors leading into the middle lobby area. When this
+definition is read in, contiguous instances of the same letter are single
+objects. So the three <tt>p</tt>s in a row on the left constitute a single
+door. These next three <tt>p</tt>s constitute another door.
+<p>
+<tt>t</tt> indicates an object of type <tt>counter</tt>. In the middle we
+have a large contiguous ticket counter. Once these objects are defined,
+they can potentially be moved in the grid.
+<p>
+Something called a <em>wormhole</em> allows us to define a bunch of grids
+separately. We define the grid for the ground floor of this
+theater, and then we define the grid for the first floor of the theater,
+and then we connect those grids using wormholes.
+<p>
+At the top you will notice there is a <tt>2</tt>. Down in the legend,
+<tt>2</tt> is defined as being a wormhole which connects the ground floor
+to the first floor. The first floor, which is defined by another grid,
+also contains that same wormhole. So if an actor wants to get from the
+ground floor to the first floor, they would go through that wormhole.
+<p>
+Grids make it easy to code new stereotypical settings. They also
+allow certain 2-D spatial operations to be performed efficiently.
+For example, a grid representation lends itself toward finding
+paths through a space containing many obstacles. Paths are used
+in ThoughtTreasure to make inferences about whether it's possible
+to walk from one location to another, or whether two people can
+hear each other.
+<p>
+ThoughtTreasure can use grids and wormholes to plan a trip such
+as one starting from a street in Paris, to New York:
+<ol>
+<li>walk to subway stop in <tt>street</tt> grid,
+<li>take subway on <tt>subway</tt> grid,
+<li>board plane in <tt>airport</tt> grid, and
+<li>fly along Atlantic Ocean in <tt>earth</tt> grid.
+</ol>
+<h4>Rules of thumb</h4>
+<p>
+Rules of thumb such as the following are represented procedurally
+in ThoughtTreasure:
+<pre>
+Buy tickets at the box office.
+Look both ways before crossing the street.
+Turn the shower on before getting in.
+Don't wear the same clothes two days in a row.
+Don't leave home without your wallet.
+At the end of a phone conversation, say bye and hang up.
+</pre>
+<p>
+Let's take just the first example, <em>Buy tickets at the box office</em>,
+and show how it is represented in the following planning agent for
+purchasing a ticket P on behalf of actor A:
+<pre>
+purchase-ticket(A, P) :-
+    dress(A, purchase-ticket),
+    RETRIEVE building-of(P, BLDG);
+      near-reachable(A, BLDG),
+    near-reachable(A, FINDO(box-office)),
+    near-reachable(A, FINDO(customer-side-of-counter)),
+2:  interjection-of-greeting(A, B = FINDO(human NEAR employee-side-of-counter)),
+    WAIT FOR may-I-help-you(B, A)
+      OR WAIT 10 seconds AND GOTO 2,
+5:  request(A, B, P),
+6:  WAIT FOR I-am-sorry(B) AND GOTO 13
+      OR WAIT FOR describe(B, A, TKT = ticket) AND GOTO 8
+      OR WAIT 20 seconds AND GOTO 5,
+8:  WAIT FOR propose-transaction(B, A, TKT, PRC = currency),
+    IF TKT and PRC are OK accept(A, B) AND GOTO 10
+    ELSE decline(A, B) AND GOTO 6,
+10: pay-in-person(A, B, PRC),
+    receive-from(A, B, TKT) ON FAILURE GOTO 13,
+    ASSERT owner-of(TKT, A),
+    post-sequence(A, B),
+    SUCCESS,
+13: post-sequence(A, B),
+    FAILURE.
+</pre>
+<p>
+A planning agent is an arbitrary finite-state machine that can loop
+around, wait for various conditions, and so forth. This planning
+agent works as follows: First a subgoal is activated for A to get
+dressed for purchasing a ticket. That invokes another planning agent
+for dressing which causes A to select clothes that are appropriate to
+purchasing a ticket and then to get dressed. Once that subgoal is
+achieved then another subgoal is activated for A to be near the box
+office.
+<p>
+Of course there could be other plans for purchasing a ticket. This
+particular planning agent only knows about the plan of going to the
+box office to purchase the ticket.
+<p>
+A goes to the box office. Then A goes to the customer side of the
+counter in the box office. <tt>FINDO</tt> (find object) finds a nearby
+object of a particular type and returns it. That is, once you get to
+the box office, you can then locate the customer side of the counter.
+<p>
+Then state 2 of the finite-state machine is as follows: A says hello
+to the human who is located on the employee side of the counter. Then
+the planning agent waits until that person, called B, says <em>may I help
+you</em>, or any other lexical item defined for the <tt>may-I-help-you</tt>
+concept. Or it waits 10 seconds and then goes back to state 2. This
+planning agent will say hello every 10 seconds until it gets
+some service.
+<p>
+Then once B says <em>may I help you</em>, A requests the ticket and then
+the planning agent waits for an <tt>I-am-sorry</tt> response such as
+<em>We're all sold out</em> in which case this finite-state machine goes
+to state 13 and A then says goodbye to B and this subgoal fails.
+<p>
+Or, the planning agent waits for B to describe a particular ticket to A
+in which case it goes to state 8. The agent then waits for B to specify
+a price for the ticket. A then has to decide whether the date, time, and
+location of the ticket are acceptable. If they are acceptable, A accepts
+and the planning agent goes to state 10.
+<p>
+Then the subgoal for A to pay B the agreed upon amount in activated.
+That then activates a planning agent for paying, using various techniques
+such as cash, check, and credit card.
+<p>
+Then once it is paid, the agent activates the subgoal for A to receive the
+ticket from B. The receive planning agent involves extending a hand to
+receive the ticket from the other person and then grabbing it and putting
+it away. Then the fact that this ticket is now owned by A is asserted.
+<p>
+A says goodbye to B and then this planning agent terminates with success.
+So this subgoal would then succeed in that case. If the ticket is not
+received then the subgoal fails.
+<p>
+Corresponding to the planning agent of the customer is a planning
+agent for the employee working the box office:
+<pre>
+work-box-office(B, F) :-
+     dress(B, work-box-office),
+     near-reachable(B, F),
+     TKTBOX = FINDO(ticket-box);
+       near-reachable(B, FINDO(employee-side-of-counter)),
+/* HANDLE NEXT CUSTOMER */
+100: WAIT FOR attend(A = human, B) OR
+       pre-sequence(A = human, B),
+     may-I-help-you(B, A),
+/* HANDLE NEXT REQUEST OF CUSTOMER */
+103: WAIT FOR request(A, B, R) AND GOTO 104
+       OR WAIT FOR post-sequence(A, B) AND GOTO 110,
+104: IF R ISA tod {
+       current-time-sentence(B, A) ON COMPLETION GOTO 103
+     } ELSE IF R ISA performance {
+       GOTO 105
+     } ELSE {
+       interjection-of-noncomprehension(B, A)
+       ON COMPLETION GOTO 103
+     }
+105: find next available ticket TKT in TKTBOX for R;
+       IF none {
+         I-am-sorry(B, A) ON COMPLETION GOTO 103
+       } ELSE {
+         describe(B, A, TKT) ON COMPLETION GOTO 106
+       },
+106: propose-transaction(B, A, TKT, TKT.price),
+     WAIT FOR accept(A, B) AND GOTO 108
+       OR WAIT FOR decline(A, B) AND GOTO 105
+       OR WAIT 10 seconds AND GOTO 105,
+108: collect-payment(B, A, TKT.price, FINDO(cash-register)),
+109: hand-to(B, A, TKT),
+110: post-sequence(B, A) ON COMPLETION GOTO 100.</PRE>
+</pre>
+<p>
+B dresses appropriately for the job and goes to the box office and
+goes to the employee side of the counter, waits for a customer A to
+look at B or say <em>hello</em>. Then B says <em>may I help you</em>
+and waits for a request and upon obtaining a request, tries to handle
+that request.
+<p>
+If the request is <em>What time is it?</em>, B will answer with the
+time and the planning agent will go back to state 103 to wait for another
+request.
+<p>
+If the request is a <tt>performance</tt>, then B will try to find
+the next available ticket for that performance. If there are none
+left, B will say <em>I'm sorry, we don't have any</em>. Otherwise B will
+describe the attributes of that ticket and its price, and either wait
+for A to accept or decline.
+<p>
+If A accepts, B collects the payment and hands A the ticket. If the
+customer declines, the planning agent goes back to state 105 to suggest
+another possible ticket. If the request is not understood, B says
+<em>What?</em> to A and another request is awaited. When A says goodbye,
+B says goodbye and the planning agent goes back to state 100 to wait
+for other customers.
+<p>
+Finite-state machines provide an efficient way of simulating the
+behavior of actors, which is useful in applications such as interactive
+fiction or controlling a robot.
+<p>
+The following planning agents are currently defined:
+<dl>
+<dt> paatrans.c
+<dd>PA_PurchaseTicket, PA_PayInPerson, PA_PayCash, PA_PayByCard,
+PA_PayByCheck, PA_WorkBoxOffice, PA_CollectPayment, PA_CollectCash.
+<dt>pacloth.c
+<dd>PA_Strip, PA_Dress, PA_Wearing, PA_PutOn, PA_TakeOff, PA_PlaceObjectAt,
+PA_PullOn, PA_PullOff.
+<dt>paenter.c
+<dd>PA_SEntertainment, PA_AttendPerformance, PA_TVSetOn, PA_TVSetOff,
+PA_WatchTV.
+<dt>pagrasp.c
+<dd>PA_MoveObject, PA_SmallContainedObjectMove, PA_HeldObjectMove,
+PA_GrasperMove, PA_ActorMove, PA_LargeContainerMove, PA_Grasp,
+PA_Release, PA_Inside, PA_MoveTo, PA_NearGraspable, PA_Holding,
+PA_Open, PA_Closed, PA_ActionOpen, PA_ActionClose, PA_ConnectedTo,
+PA_Connect, PA_Rub, PA_Pour, PA_KnobPosition, PA_SwitchX,
+PA_FlipTo, PA_GestureHere, PA_HandTo, PA_ReceiveFrom.
+<dt>pamtrans.c
+<dd>PA_Mtrans, PA_ObtainPermission, PA_HandleProposal, PA_OnlineChat.
+<dt>paphone.c
+<dd>PA_Call, PA_HandleCall, PA_OffHook, PA_OnHook, PA_PickUp, PA_HangUp,
+PA_Dial.
+<dt>paptrans.c
+<dd>PA_NearReachable, PA_GridWalk, PA_Sitting, PA_Standing, PA_Lying, PA_Sit,
+PA_Stand, PA_Lie, PA_Warp, PA_Drive, PA_GridDriveCar, PA_MotorVehicleOn,
+PA_MotorVehicleOff, PA_NearAudible, PA_Stay, PA_Pack, PA_Unpack.
+</dl>
+<p>
+Declarative versions of planning agents called
+<a href="script.htm">scripts</a> are also defined.
+<h4>Behavior of electronic devices</h4>
+<p>
+Knowledge about the behavior of electronic devices such as:
+<pre>
+When an idle phone line goes off hook, the phone gives a dialtone.
+When a ringing phone goes off hook, the phone stops ringing and is
+connected to the caller.
+</pre>
+is represented within the phone object planning agent:
+<pre>
+H = FINDP(phone-handset, T)
+IF condition(T, W) and W < 0 { /* T broken */
+  ASSERT idle(T)
+} ELSE IF idle(T) {
+  IF off-hook(H) ASSERT dialtone(T)
+} ELSE IF dialtone(T) {
+  IF on-hook(H) ASSERT idle(T) ...  
+} ELSE IF ringing(T, CLG = phone) {
+  IF off-hook(H) {
+    ASSERT voice-connection(CLG, T)
+    ASSERT voice-connection(T, CLG)
+  }
+...
+</pre>
+<p>
+Human mental processes are also represented procedurally. If someone learns
+of the success of a friend, the emotion
+understanding agent will generate a positive emotion for that person.
+This agent also causes emotions to decay over time.
+<h4>Encyclopedic facts</h4>
+<p>
+As we saw above, encyclopedic facts such as:
+<pre>
+Washington is the capital of the U.S.
+Mushrooms have stems.
+Peas are green.
+747s are made by Boeing.
+</pre>
+are represented as assertions:
+<pre>
+=====747.¹®z//|product-of¤Boeing|
+======747#®-400#®.®z//|travel-crew-of=2u|
+travel-passengers-of=412¯509u|
+travel-cargo-capacity-of=6030lbs|
+length-of=211ft|width-of=231.9ft|height-of=63.5ft|
+weight-of=870000lbs|travel-max-speed-of=630mph|
+travel-max-distance-of=8380mi|
+@198805|create¤Boeing|
+</pre>
+<h4>Common linguistic knowledge</h4>
+<p>
+Some linguistic knowledge is hardcoded, such as the fact that
+<em>you</em> refers to the listener of the conversation.
+<p>
+The fact that a question of the form:
+<pre>
+Is NOUN ADJECTIVE?
+</pre>
+requires a response of <em>yes</em> or <em>no</em> is coded
+in the Yes-No question understanding agent.
+<p>
+The fact that we call gold hair <em>blond hair</em> is a selectional
+restriction, which is represented as an assertion:
+<pre>
+==yellow#-orange*.NAz//jaune*-orange*.My/
+|frequency-of=587.9ang|
+===gold.NAz//couleur* d#R'or#NM.Fy/
+====blond.Az//blond.Ay/|r1=hair|
+</pre>
+<p>
+The fact that <em>tonight</em> refers to the night of the current day
+is represented as an assertion and used by the time text agent to parse
+temporal expressions, and the generator to generate temporal expressions:
+<pre>
+==relative-day-and-part-of-the-day/temporal/
+|unit1-of=day|unit2-of=tod|
+===last#A night*.Éz//
+|min-value1-of=-1u|max-value1-of=-1u|
+min-value2-of=NUMBER:tod:2100|
+max-value2-of=NUMBER:tod:2400|
+===tonight.Éz//ce#D soir#.ÉMy/
+|min-value1-of=0u|max-value1-of=0u|
+min-value2-of=NUMBER:tod:2100|
+max-value2-of=NUMBER:tod:2400|
+</pre>
+<p>
+The fact that an X-<em>phile</em> is someone who likes X is represented
+as an assertion and used by ThoughtTreasure's word formation mechanisms to
+learn new words:
+<pre>
+==phile.»z//|lhs-pos-of=Adjective|
+rhs-pos-of=Noun|rhs-class-of=human|
+[rhs-assertion-of phile [like rhs-obj lhs-obj]]|
+</pre>
+<p>
+ThoughtTreasure currently contains 152 English affixes associated with
+38 derivational rules.
+<h3>Natural language understanding with ThoughtTreasure</h3>
+<p>
+Getting a computer to understand natural language text is a very
+difficult problem. Why is this? An important reason is that natural
+language is highly ambiguous. Consider the text:
+<pre>
+I am
+</pre>
+This could be a pronoun followed by a form of the verb <em>be</em>,
+or the Roman numeral <em>I</em> followed by the abbreviation for
+before noon. <em>Pierre</em> could be a human name or the capital of
+South Dakota. Even short sentences can have hundreds of parses!
+A computer has no way of knowing which one is right.
+<p>
+Or does it? Couldn't one have the computer keep interpretations that
+make sense, and discard those that don't? That is in fact what
+ThoughtTreasure's understanding agents attempt to do.
+<p>
+Understanding agents decide whether a given input concept makes sense
+given the current context. Each understanding agent returns a number
+which indicates how much an input concept makes sense along with
+reasons why that concept makes or does not make sense.
+<h4>Understanding emotions</h4>
+<p>
+Let's look at an example of how ThoughtTreasure's understanding agents
+work to understand a text involving emotions and interpersonal relations.
+First, we input the text <em>Jacques is an enemy of Fran&ccedil;ois</em>.
+The friend understanding agent accepts and stores that assertion:
+<pre>
+> Jacques is an enemy of Fran&ccedil;ois.
+[enemy-of Francois Jacques]
+</pre>
+We then input that <em>Jacques hates Fran&ccedil;ois</em>. The
+friend understanding agent then returns that this makes sense because hating
+is consistent with being an enemy of, and that is generated in English
+as <em>Right, he's an enemy of Fran&ccedil;ois</em>:
+<pre>
+> He hates Fran&ccedil;ois.
+[like-human Jacques Francois NUMBER:u:-0.55]
+  ----UA_Friend----
+  makes sense because
+  [enemy-of Francois Jacques]
+Right, he is an enemy of Fran&ccedil;ois.
+</pre>
+Then we input <em>He uses tu with Fran&ccedil;ois</em>. Now, this does not
+make sense to the friend understanding agent because in French enemies
+do not typically use <em>tu</em> with each other unless they are being very
+disrespectful. So ThoughtTreasure generates <em>But I thought that he was an
+enemy of Fran&ccedil;ois</em>. Still it is the only interpretation that
+ThoughtTreasure finds, so it is accepted:
+<pre>
+> He uses tu with Fran&ccedil;ois.
+[tutoyer Jacques Francois]
+  ----UA_Friend----
+  does not make sense because
+  [enemy-of Francois Jacques]
+But I thought that he was an enemy of Fran&ccedil;ois.
+</pre>
+Then another input is entered, which is again stored by the friend agent:
+<pre>
+> Lionel is an enemy of Jacques.
+[enemy-of Jacques Lionel]
+</pre>
+Then we input that <em>Lionel uses tu with Jacques</em> and this makes sense
+to the understanding agent because they both went to the &Eacute;cole
+nationale d'administration, and people from that school use <em>tu</em> with
+each other:
+<pre>
+> He uses tu with Jacques.
+[tutoyer Lionel Jacques]
+  ----UA_Friend----
+  makes sense because
+  [diploma-of Lionel promotion-Stendhal na ENA]
+  [diploma-of Jacques promotion-Vauban na ENA]
+Right, Lionel holds a "promotion Stendhal" from the "&Eacute;cole nationale
+d'administration" and he holds a "promotion Vauban" from the "&Eacute;cole
+nationale d'administration".
+</pre>
+Then we input that <em>Jacques succeeded at being elected President of
+France</em>, which is stored:
+<pre>
+> Jacques succeeded at being elected President of France.
+[succeeded-goal Jacques [President-of France Jacques]]
+</pre>
+Then the fact that <em>Jacques is happy</em> is input. Now, this makes sense
+to the emotion understanding agent because a positive emotion had
+already been generated earlier when that goal succeeded:
+<pre>
+> He is happy.
+[happiness Jacques]
+  ----UA_Emotion----
+  makes sense because
+  [succeeded-goal Jacques [President-of France Jacques]]
+Right, he succeeds at being the president of France.
+</pre>
+Then <em>Lionel is resentful toward Jacques</em> is entered, which makes
+sense to the emotion understanding agent because a goal succeeded for
+Jacques and Jacques is an enemy of Lionel:
+<pre>
+> Lionel is resentful toward Jacques.
+[resentment Lionel Jacques]
+  ----UA_Emotion----
+  makes sense because
+  [succeeded-goal Jacques [President-of France Jacques]]
+  [enemy-of Jacques Lionel]
+Right, he succeeds at being the president of France and Lionel is his
+enemy.
+</pre>
+Then we input <em>Fran&ccedil;ois is happy for Jacques</em> and this makes
+sense to the extent that Jacques experienced a goal outcome, but does
+not make sense because Jacques is an enemy of Fran&ccedil;ois.
+<pre>
+> Fran&ccedil;ois is happy for Jacques.
+[happy-for Francois Jacques]
+  ----UA_Emotion----
+  makes sense because
+  [succeeded-goal Jacques [President-of France Jacques]]
+  does not make sense because
+  [enemy-of Francois Jacques]
+True, he succeeds at being the president of France.
+But I thought that he was an enemy of Fran&ccedil;ois.
+</pre>
+<p>
+The emotion understanding agent makes
+reference to a number of emotion concepts, which are listed in the
+emotion ontology. There are 650 emotion words
+in French and English attached to 83 emotion concepts, organized into
+positive and negative emotions, amusement, contentment, ecstasy, enjoyment,
+gloating, gratitude, gratification, happiness, and so on.
+<h4>Story understanding</h4>
+<p>
+The output of the semantic parser consists of basic assertions that are
+fairly close to the input text. <em>Jacques is an enemy of
+Fran&ccedil;ois</em> becomes <tt>enemy-of</tt> Jacques Fran&ccedil;ois.
+That's not really semantics.
+<p>
+If the computer could instead construct a simulation of what is going
+on in the input text and keep that simulation in sync with that input
+text, then the computer would be able to understand at a detailed
+level. It could easily answer questions by examining the state of the
+simulation.
+<p>
+We can think of the story understanding process as lining up cylinders
+of a combination lock. We can think of each planning agent as a
+cylinder that is in a given position. For example, the <tt>work-box-office</tt>
+planning agent discussed above could be in the state where it is
+handling a certain customer's request, say state 3. What the
+understanding agents try to do is to line up those planning agent
+cylinders given each new input:
+<pre>
+           PA1 PA2 PA3
+          +---+---+---+
+          |  8|  8|  8|
+          |  9|  9|  9|
+    state-|  0|  0|  0|
+          |  1|  1|  1|
+          |  2|  2|  2|
+          +---+---+---+
+               |
+               | UAs
+               |
+               V
+          +---+---+---+
+          |  8|  1|  6|
+          |  9|  2|  7|
+    state-|  0|  3|  8|
+          |  1|  4|  9|
+          |  2|  5|  0|
+          +---+---+---+
+</pre>
+<p>
+If we have a story that says <em>The ticket seller gave a
+ticket to the customer</em> then the <tt>work-box-office</tt> understanding
+agent would line up the <tt>work-box-office</tt> planning agent to that
+state. And of course other understanding agents such as
+<tt>purchase-ticket</tt> would line up their corresponding planning agents
+to their appropriate states.
+<p>
+So we have these planning agent cylinders and given every input, the
+understanding agents try to line them up.
+<p>
+Here is an example handled by ThoughtTreasure using this scheme.
+We input <em>Jim Garnier was sleeping</em>. Now, we have already entered
+into the database a lot of information about this character Jim Garnier:
+where he lives, what the apartment he lives in contains, and so forth.
+When this is input, the sleep understanding agent spins the sleep planning
+agent to the SLEEP state.
+<p>
+When we spin a planning agent to a state, we also have to perform some
+of the subgoals leading up to that state. So as part of the process of
+spinning the sleep planning agent to the SLEEP state, a subgoal for
+Jim to be in his bed is activated and achieved, so that Jim is then
+located in his bed in the grid:
+<pre>
+> Jim Garnier was sleeping.
+UA_Sleep--PA_Sleep in SLEEP state
+           --PA_Ptrans--Jim located in bed:
+
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+&amp;                                                               wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;
+&amp;                                                     wwwwwwwwwww  tttwsss   ht     Aswcccccccccw&amp;
+&amp;                                   wwwwwwwwwwwwwwwwwww         w  tttwmss            wcccccccccw&amp;
+&amp;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwccccccccw        w         w   smwmss            wcc       w&amp;
+&amp;w  llllllll ss   g Ecccc  ssssssssswccccccccw        w         w   smwmss            wcv       w&amp;
+&amp;wa llllllll ss       s    ssssssssswccccccccw        wwww   wwwww   wwmss            wcc       w&amp;
+&amp;wA  Jc                           sswccccccccw                        wwwww    wwwwwwwwww    wwww&amp;
+&amp;w   cc                           sswccccccccw                                                  w&amp;
+&amp;wr                               sswwwwwwwwww                                                  w&amp;
+&amp;wr                                 w         **************************************            w&amp;
+&amp;wr                                         **wwwwwwwwwwwwwwwwwwwwwwwwwttttttttttttl*          lw&amp;
+&amp;w                                         *   ssw                    wttttttttttttt *         tw&amp;
+&amp;w                                       **    ssw                    wttttttttttttt  *         w&amp;
+&amp;w J                                w  **      ssw                    wA    s          *JJJJJJJJw&amp;
+&amp;w                                  w**        Rsw                    w                JJJJJJJJJw&amp;
+&amp;w             s                    w           sw                    wls              JJJJJJJJJw&amp;
+&amp;w         ttttttttt                wwwwww    wwww                    w s              JJJJJJJJJw&amp;
+&amp;wr       sttttttttts      ss     ssw            w                    w s              JJJJJJJJJw&amp;
+&amp;wr        ttttttttt       ss     ssw                                 w                JJJJJJJJJw&amp;
+&amp;wr            s           ss      Aw                                 w                JJJJJJJJJw&amp;
+&amp;w    s                    ss       w                                 w   E            JJJJJJJJJw&amp;
+&amp;w  tttt      sssssssssss  ss     rrw                                 w     ttttttJt   JJJJJJJJJw&amp;
+&amp;w A          sssssssssss  ss     rrw            w                    w    rrrrr        rrrrr  Aw&amp;
+&amp;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww    wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+</pre>
+<p>
+Then we enter <em>He woke up</em>. The sleep understanding agent
+then spins the sleep planning agent to the AWAKE state:
+<pre>
+> He woke up.
+UA_Sleep--PA_Sleep in AWAKE state
+</pre>
+<p>
+Then we input that <em>Jim poured shampoo on his hair</em>. The shower
+understanding agent spins the shower planning agent to the READY-TO-LATHER
+state, in other words the state just after shampoo is poured on the hair.
+In the process of spinning that shower planning agent to the READY-TO-LATHER
+state, a number of subgoals first must be achieved: Jim must get up out
+of the bed, walk to the shower, and turn on the shower:
+<pre>
+> He poured shampoo on his hair.
+UA_Shower--PA_Shower in READY TO LATHER state
+            --PA_Ptrans--Jim located in shower:
+            --PA_ShowerOn
+
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+&amp;                                                               wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;
+&amp;                                                     wwwwwwwwwww  tttwsss   ht  *  Aswcccccccccw&amp;
+&amp;                                   wwwwwwwwwwwwwwwwwww         w  tttwmss      *     wcccccccccw&amp;
+&amp;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwccccccccw        w         w   smwmss      *     wcc       w&amp;
+&amp;w  llllllll ss   g Ecccc  ssssssssswccccccccw        w         w   smwmss     *      wcv       w&amp;
+&amp;wa llllllll ss       s    ssssssssswccccccccw        wwww   wwwww   wwmss     *      wcc       w&amp;
+&amp;wA  Jc                           sswccccccccw                        wwwww   *wwwwwwwwww    wwww&amp;
+&amp;w   cc                           sswccccccccw                                 ***              w&amp;
+&amp;wr                               sswwwwwwwwww                                    *             w&amp;
+&amp;wr                                 w                                              *            w&amp;
+&amp;wr                                           wwwwwwwwwwwwwwwwwwwwwwwwwttttttttttttl*          lw&amp;
+&amp;w                                             ssw                    wttttttttttttt *         tw&amp;
+&amp;w                                             ssw                    wttttttttttttt  *         w&amp;
+&amp;w J                                w          ssw                    wA    s          *JJJJJJJJw&amp;
+&amp;w                                  w          Rsw                    w                JJJJJJJJJw&amp;
+&amp;w             s                    w           sw                    wls              JJJJJJJJJw&amp;
+&amp;w         ttttttttt                wwwwww    wwww                    w s              JJJJJJJJJw&amp;
+&amp;wr       sttttttttts      ss     ssw            w                    w s              JJJJJJJJJw&amp;
+&amp;wr        ttttttttt       ss     ssw                                 w                JJJJJJJJJw&amp;
+&amp;wr            s           ss      Aw                                 w                JJJJJJJJJw&amp;
+&amp;w    s                    ss       w                                 w   E            JJJJJJJJJw&amp;
+&amp;w  tttt      sssssssssss  ss     rrw                                 w     ttttttJt   JJJJJJJJJw&amp;
+&amp;w A          sssssssssss  ss     rrw            w                    w    rrrrr        rrrrr  Aw&amp;
+&amp;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww    wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&amp;
+&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+</pre>
+Now we can ask questions of ThoughtTreasure regarding the simulation up
+to this point:
+<pre>
+> Jim lay down on his bed when?
+He lay down on his bed on Thursday January 15, 1998 at midnight.
+> Jim was asleep when?
+He was asleep between Thursday January 15, 1998 at midnight and Thursday
+January 15, 1998 at seven am.
+> Jim stood up when?
+He stood up on Thursday January 15, 1998 at seven am. He stood up on Thursday
+January 15, 1998 at midnight.
+> Jim was awake when?
+He was awake on Thursday January 15, 1998 at seven am. He was awake on Thursday
+January 15, 1998 at midnight.
+</pre>
+<p>
+Everything in the simulation is stored using specific timestamps. In fact,
+everything in the simulation is concrete. Arbitrary decisions are made
+in the simulation that are subject to later modification. Now, people have
+designed systems where only what is explicitly stated in the input is
+asserted and then inferences are made on demand in question answering.
+Here we are attempting another approach which is to generate the exact
+state of the world up to a certain level of granularity in advance of
+any question answering.
+<p>
+We can ask more questions:
+<pre>
+> Jim was in his foyer when?
+He was in his foyer on Thursday January 15, 1998 at midnight.
+> Jim was in his bedroom when?
+He was in his bedroom between Thursday January 15, 1998 at midnight and
+Thursday January 15, 1998 at seven am.
+> Jim was in his bathroom when?
+He was in his bathroom on Thursday January 15, 1998 at seven am.
+</pre>
+In the simulation it turns out Jim was in the foyer before he went to
+sleep. That is where he was placed by default because the simulation did
+not know where he was initially. Then ThoughtTreasure assumed he woke up at
+some normal time, assumed arbitrarily to be 7 a.m.
+<p>
+That is the basic approach to story understanding in ThoughtTreasure.
+Of course, coding the understanding agents and the planning agents is a
+very time-consuming process because there are so many natural language
+constructions which correspond to so many different configurations of
+the simulation.
+<p>
+But I do not really see any way around it. What we have to do is look
+at every natural language construction and figure out how it maps to
+simulations. Just for the sleep agents, we have:
+<pre>
+Mary is sleeping.
+Mary is lying awake in her bed.
+Mary was lying asleep in her bed.
+Mary was asleep and Peter did not want to wake her.
+At ten in the morning, Mary was still asleep.
+Mary had only slept a few hours.
+...
+</pre>
+<h3>Further reading</h3>
+<ul>
+<li><a href="script.htm">A database and lexicon of scripts for ThoughtTreasure</a>
+<li><a href="addsense.htm">Adding common sense to applications using ThoughtTreasure's Java-based client API</a>
+<li><a href="navext.htm">Navigating and extending ThoughtTreasure</a>
+<li><a href="book.htm">Natural language processing with ThoughtTreasure</a>
+<li><a href="/erik/pubs/sensical.htm">A calendar with common sense</a>
+<li><a href="ttkb.htm">ThoughtTreasure Knowledge Base (TTKB)</a>
+<li><a href="ttsp.htm">ThoughtTreasure Server Protocol (TTSP)</a>
+<li><a href="../java/doc">ThoughtTreasure Java-based client API</a>
+</ul>
+<hr>
+<center>
+<a href="tt.htm">ThoughtTreasure home page</a>
+</center>
+<hr>
+<center><font size=2>Questions or comments?
+<a href="mailto:webmaster@signiform.com">webmaster@signiform.com</a><br>
+<a href="/index/legal.htm">Copyright &copy; 2000 Signiform.
+All Rights Reserved. Terms of use.</a>
+</font></center>
+<hr>
+</body>
+</html>

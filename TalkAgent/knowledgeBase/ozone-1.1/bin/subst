@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# This script helps you converting package names of Java
+# sources that use the old DE.softwarebuero package names.
+# ""
+# "usage: subst <files>"
+
+for FILE in $@; do
+   echo -n "converting" $FILE"... "
+   sed -e /"DE.softwarebuero.ozone"/s//"org.ozoneDB"/ $FILE > /tmp/subst.tmp
+   sed -e /"DE.softwarebuero.DxLib"/s//"org.ozoneDB.DxLib"/ /tmp/subst.tmp > /tmp/subst2.tmp
+   mv $FILE $FILE".orig"
+   echo "(orginal saved in $FILE.orig)"
+   cp /tmp/subst2.tmp $FILE
+done
+

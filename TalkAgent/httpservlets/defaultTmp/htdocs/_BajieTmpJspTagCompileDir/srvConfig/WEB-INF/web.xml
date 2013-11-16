@@ -1,0 +1,25 @@
+
+<web-app>
+    <servlet>
+        <servlet-name>
+            srvConfig 
+        </servlet-name>
+        <servlet-class>
+            com.BajieSoft.HttpSrv.config.srvConfig
+        </servlet-class>
+    </servlet>    <servlet-mapping>
+        <servlet-name>
+            srvConfig
+        </servlet-name>
+        <url-pattern>
+            /config
+        </url-pattern>
+    </servlet-mapping>    <servlet-mapping>
+        <servlet-name>
+            srvConfig
+        </servlet-name>
+        <url-pattern>
+            /*
+        </url-pattern>
+    </servlet-mapping>
+</web-app>

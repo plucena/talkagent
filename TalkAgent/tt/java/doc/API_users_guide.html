@@ -1,0 +1,69 @@
+<html>
+<head><title>ThoughtTreasure Java-based client API</title></head>
+<body text="#000000" bgcolor="#ffffff">
+<h2>ThoughtTreasure Java-based client API</h2>
+<h3>Version 0.00022</h3>
+by <a href="/erik">Erik T. Mueller</a>
+<hr>
+The ThoughtTreasure Java-based client API allows a Java program to
+communicate with the <a href="/tt/htm/tt.htm">ThoughtTreasure</a>
+natural language/commonsense
+server. It consists of a <a href="tree.html">collection of Java classes</a>
+(see especially <a href="com.signiform.tt.TTConnection.html">TTConnection</a>)
+that implement the
+<a href="/tt/htm/ttsp.htm">ThoughtTreasure Server Protocol (TTSP)</a>.
+(A Python client API is also provided in the ThoughtTreasure 
+<a href="/tt/htm/download.htm">distribution</a> and Perl and Tcl client
+APIs are in progress.)
+<p>
+Here is a simple Java program that uses ThoughtTreasure:
+<pre>
+/* Tell Java to use the ThoughtTreasure Java-based client API. */
+import com.signiform.tt.*;
+public class Example {
+public static void main(String args[])
+{
+  try {
+    /* Create a connection to the ThoughtTreasure server running
+     * on the machine "somehost" and listening on the TTSP
+     * port number 1832.
+     */
+    TTConnection tt = new TTConnection("somehost");
+
+    /* Ask ThoughtTreasure whether Evian is a beverage and print
+     * the response.
+     */
+    System.out.println(tt.ISA("beverage", "Evian"));
+
+    /* Close the connection. */
+    tt.close();
+  } catch (Exception e) {
+  }
+}
+}
+</pre>
+<p>
+See also the <a href="../Example.java">longer example program</a>
+and the article on
+<a href="/tt/htm/addsense.htm">adding common sense to applications</a> using
+the API.
+<p>
+The Java-based client API is provided in the <tt>java</tt> directory
+of the ThoughtTreasure <a href="/tt/htm/download.htm">distribution</a>.
+<hr>
+<center>
+<a href="tree.html">Classes</a>
+|
+<a href="AllNames.html">Index</a>
+|
+<a href="/tt/htm/download.htm">Download</a>
+</center>
+<hr>
+<center>
+<font size=2>Questions or comments?
+<a href="mailto:webmaster@signiform.com">webmaster@signiform.com</a>
+<br><a href="/index/legal.htm">Copyright &copy; 2000 Signiform.
+All Rights Reserved. Terms of use.</a></font></center>
+<hr>
+</body>
+</html>

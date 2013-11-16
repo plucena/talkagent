@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sentence>
+  <uw id="uw2" head="present-indicative">
+    <icl direction="to">
+      <uw head="present-tense" />
+    </icl>
+  </uw>
+  <uw id="uw4" head="standard-copula">
+    <icl direction="to">
+      <uw head="copula" />
+    </icl>
+  </uw>
+  <uw id="uw5" head="object-interrogative-pronoun">
+    <icl direction="to">
+      <uw head="nonhuman-pronoun" />
+    </icl>
+  </uw>
+  <uw id="uw7" head="dog">
+    <icl direction="to">
+      <uw head="Canis" />
+    </icl>
+  </uw>
+  <relation id="uw1" label="icl" id1="uw2" id2="uw6" />
+  <relation id="uw6" label="icl" id1="uw3" id2="uw7" />
+  <relation id="uw3" label="agt" id1="uw4" id2="uw5" />
+</sentence>
+

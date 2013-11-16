@@ -1,0 +1,1 @@
+ozone.bat -c -d../kb

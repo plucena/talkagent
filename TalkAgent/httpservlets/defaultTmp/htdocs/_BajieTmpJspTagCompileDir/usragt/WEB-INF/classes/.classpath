@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+    <classpathentry kind="lib" path="/root/ta/0.0.1/platform/bin/lib/servlet.jar"/>
+    <classpathentry kind="lib" path="/root/ta/0.0.1/platform/bin/lib/fipa.jar"/>
+    <classpathentry kind="lib" path="/root/ta/0.0.1/platform/bin/lib/ta-lib-common.jar"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

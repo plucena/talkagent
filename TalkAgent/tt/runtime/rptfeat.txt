@@ -1,0 +1,111 @@
+
+  ENG         feature           part of speech   
+_ ___________ _________________ _________________
+%             entry to be enter other feature    
++ REQ                 mandatory other feature    
+0 EXPL                expletive part of speech   
+1 1                first person grammatical perso
+2 2               second person grammatical perso
+3 3                third person grammatical perso
+6 POSITIVE      positive degree absolute degree  
+7 COMPAR      comparative degre relative degree  
+8 SUPERL      superlative degre relative degree  
+9 ELEMENT               element part of speech   
+? NA              empty feature other feature    
+@ TODO        entry which needs other feature    
+_ OPT                facultatif other feature    
+_ OPT                facultatif other feature    
+À US           American English dialect          
+a SL                      slang language style   
+A ADJ                 adjective part of speech   
+b PREPOSED    preposed adjectiv other grammatical
+B ADV                    adverb part of speech   
+ç CAN                       CAN dialect          
+C NEUT                   neuter gender           
+c CONDIT      conditional tense inflection tense 
+d PP            past participle inflection tense 
+D DET                determiner part of speech   
+é             object at index 2 object location  
+è             object at index 1 object location  
+É ZEROART     zero article take other grammatical
+e PRESP                  gerund inflection tense 
+F F                    feminine gender           
+f INF                infinitive inflection tense 
+g GB            British English dialect          
+G INDIC         indicative mood grammatical mood 
+h DEROG         derogatory word connotation      
+H PRON                  pronoun part of speech   
+î REGION      other regional di dialect          
+I IMPER         imperative mood grammatical mood 
+i PAST              simple past inflection tense 
+J SUBJ         subjunctive mood grammatical mood 
+j BORR                borrowing other feature    
+k DEFART      definite article  other grammatical
+K CONJ              conjunction part of speech   
+l ETRE               être taker other grammatical
+m U              non-count noun other grammatical
+M M                   masculine gender           
+N N                        noun part of speech   
+O +SUBJ       subjunctive taker clausal tense-moo
+ô NR                         NR other grammatical
+Ó EPITH       attributive adjec predicative-attri
+o OLD FASH           dated word dialect          
+P PL                     plural grammatical numbe
+p PRES            present tense inflection tense 
+q RARE          infrequent word linguistic freque
+Q QUES        interrogative sen sentence         
+R PREP              preposition part of speech   
+S SING                 singular grammatical numbe
+s SIMPP            passé simple inflection tense 
+T INFML           informal word language style   
+t FML            technical word language style   
+ü             subject at index  subject location 
+ù             subject at indice subject location 
+u FUT                    future inflection tense 
+U INTERJ           interjection part of speech   
+v PROV                  proverb other feature    
+V V                        verb part of speech   
+w COORD             coordinator conjunction      
+x SENTENCE    sentence acting a part of speech   
+y FR                     French Francien         
+z ENG                   English                  
+§             masculine and fem processing instru
+© COORD             coordinator rule block subcat
+ª GENONLY               GENONLY linguistic freque
+« PRE                    prefix part of speech   
+® TDMK               brand name noun             
+° BZZ                 BZZ block rule block subcat
+± +PRESP      present participl clausal tense-moo
+² TUTOIEMENT         tutoiement mode of address  
+µ MODAL         modal auxiliary grammatical modal
+¶             no inflection ins processing instru
+· REALLY        true inflection other feature    
+¸ CHECKED     word with checked other feature    
+¹ FREQ            frequent word linguistic freque
+º             multilingual name processing instru
+» SUFF                   suffix part of speech   
+¾ TRANSONLY           TRANSONLY linguistic freque
+¿ ZBZ                 ZBZ block rule block subcat
+Á ELISION               elision alternative form 
+Ä PREVOWEL       pre-vowel form alternative form 
+Æ BEE                 BEE block rule block subcat
+È ASP                 aspirated phonetic feature 
+Ì VOC                   vocalic phonetic feature 
+Í CONTRACTION       contraction alternative form 
+Î ISM          abstract quality lexical parallel 
+Ï +INF         infinitive taker clausal tense-moo
+Ô NOTPROGR    progressive nonta other grammatical
+× VOUVOIEMENT       vouvoiement mode of address  
+Ú PRED        predicative adjec predicative-attri
+Þ BWW                 BWW block rule block subcat
+ß INV            invariant word processing instru
+ë             object at index 3 object location  
+ï C           common inflection other grammatical
+ð WBW                 WBW block rule block subcat
+ñ HUMOR           humorous word connotation      
+õ             indirect object s indirect object s
+ö             indirect object s indirect object s
+÷ +INDIC       indicative taker clausal tense-moo
+ú             subject at index  subject location 
+ÿ FUS                     fused processing instru
+107 entries

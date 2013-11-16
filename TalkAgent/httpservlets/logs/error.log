@@ -1,0 +1,1980 @@
+Thu Oct 10 19:05:07 BRT 2002 HttpSrv: requestError on /usragt
+java.io.FileNotFoundException: WAP /usragt file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:06:04 BRT 2002 HttpSrv: requestError on /usragt
+java.io.FileNotFoundException: WAP /usragt file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:11:40 BRT 2002 HttpSrv: requestError on /usragt/
+java.io.FileNotFoundException: WAP /usragt file / not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:13:05 BRT 2002 HttpSrv: requestError on /usragt/
+java.io.FileNotFoundException: WAP /usragt file / not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:13:13 BRT 2002 HttpSrv: requestError on /usragt/
+java.io.FileNotFoundException: WAP /usragt file / not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:14:25 BRT 2002 HttpSrv: requestError on /usragt/
+java.io.FileNotFoundException: WAP /usragt file / not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 10 19:14:52 BRT 2002 HttpSrv: requestError on /usragt
+java.io.FileNotFoundException: WAP /usragt file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Oct 12 17:47:03 BRT 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Oct 13 17:06:32 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:120)
+	at br.usp.talkagent.useragent.UclAgtConnector.init(UclAgtConnector.java:67)
+	at br.usp.talkagent.useragent.UclAgtConnector.<init>(UclAgtConnector.java:46)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:295)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:164)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:90)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:42)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Oct 16 13:56:43 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Oct 16 15:07:06 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Oct 16 16:02:50 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 17 23:27:35 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:120)
+	at br.usp.talkagent.useragent.UclAgtConnector.init(UclAgtConnector.java:67)
+	at br.usp.talkagent.useragent.UclAgtConnector.<init>(UclAgtConnector.java:46)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:309)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:164)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:90)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:42)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 17 23:27:52 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:120)
+	at br.usp.talkagent.useragent.UclAgtConnector.init(UclAgtConnector.java:67)
+	at br.usp.talkagent.useragent.UclAgtConnector.<init>(UclAgtConnector.java:46)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:309)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:164)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:90)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:42)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 17 23:27:57 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:120)
+	at br.usp.talkagent.useragent.UclAgtConnector.init(UclAgtConnector.java:67)
+	at br.usp.talkagent.useragent.UclAgtConnector.<init>(UclAgtConnector.java:46)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:309)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:164)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:90)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:42)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 17 23:28:10 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:120)
+	at br.usp.talkagent.useragent.UclAgtConnector.init(UclAgtConnector.java:67)
+	at br.usp.talkagent.useragent.UclAgtConnector.<init>(UclAgtConnector.java:46)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:309)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:164)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:90)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:42)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Oct 20 06:42:37 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Oct 29 12:52:50 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Oct 29 14:19:31 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 31 02:43:12 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 31 05:47:44 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Oct 31 12:52:11 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 01 22:23:22 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 00:12:14 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 00:12:14 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 00:12:14 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 05:26:36 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 13:38:44 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 18:08:37 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 18:08:38 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 02 18:08:38 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 00:05:57 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 00:05:57 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 00:05:57 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 02:55:55 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 02:55:55 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 02:55:55 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 19:19:25 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: Bad request CONNECT mailin-01.mx.aol.com:25 HTTP/1.0
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 04 20:51:48 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 14:11:11 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 14:11:12 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 14:11:13 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 16:38:48 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 16:38:49 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 16:38:49 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 22:28:10 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 22:28:10 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 05 22:28:10 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 06 13:38:46 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 06 13:38:47 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 06 13:38:47 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 07 14:25:00 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 07 14:25:00 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 07 14:25:00 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Nov 09 23:43:12 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoSuchMethodError: br.usp.talkagent.basicagent.AmsClient.listAgents()Ljava/util/Vector;
+	at br.usp.talkagent.useragent.UserAgent.writeAMS(UserAgent.java:433)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:324)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:88)
+	at br.usp.talkagent.useragent.GetUsrInput.doGet(GetUsrInput.java:23)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Nov 10 15:15:33 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoSuchMethodError: br.usp.talkagent.basicagent.AmsClient.listAgents()Ljava/util/Vector;
+	at br.usp.talkagent.useragent.UserAgent.writeAMS(UserAgent.java:433)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:324)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:88)
+	at br.usp.talkagent.useragent.GetUsrInput.doGet(GetUsrInput.java:23)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Nov 10 15:29:31 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoSuchMethodError: br.usp.talkagent.basicagent.AmsClient.listAgents()Ljava/util/Vector;
+	at br.usp.talkagent.useragent.UserAgent.writeAMS(UserAgent.java:433)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:324)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:88)
+	at br.usp.talkagent.useragent.GetUsrInput.doGet(GetUsrInput.java:23)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Nov 10 18:57:37 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 12:42:13 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 12:42:13 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 12:42:13 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 13:06:29 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 16:58:59 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:126)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.init(UclInterpreterConnector.java:65)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.<init>(UclInterpreterConnector.java:44)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:355)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:91)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:43)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Nov 11 16:59:30 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:126)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.init(UclInterpreterConnector.java:65)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.<init>(UclInterpreterConnector.java:44)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:355)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:91)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:43)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 13 21:30:47 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 09:28:31 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 09:59:26 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 10:46:42 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 17:01:00 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:126)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.init(UclInterpreterConnector.java:65)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.<init>(UclInterpreterConnector.java:44)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:355)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:91)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:43)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 17:01:26 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:126)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.init(UclInterpreterConnector.java:65)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.<init>(UclInterpreterConnector.java:44)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:355)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:91)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:43)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Nov 15 17:01:32 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.lang.NoClassDefFoundError: fipaos/ont/fipa/fipaman/AgentID
+	at br.usp.talkagent.basicagent.SharpAgent.setId(SharpAgent.java:126)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.init(UclInterpreterConnector.java:65)
+	at br.usp.talkagent.useragent.UclInterpreterConnector.<init>(UclInterpreterConnector.java:44)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:355)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:91)
+	at br.usp.talkagent.useragent.GetUsrInput.doPost(GetUsrInput.java:43)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 19 11:06:06 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 19 11:06:06 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 19 11:06:10 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 19 16:39:10 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 13:10:21 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 13:10:21 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 13:10:21 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../../winnt/system32/cmd.exe?af../w
+java.lang.StringIndexOutOfBoundsException: String index out of range: 116
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:06:32 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:27 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:27 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:27 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/../../httpodbc.dll
+com.BajieSoft.HttpSrv.gzHttpException: Error: request line went bwlow root
+	at com.BajieSoft.HttpSrv.httpRequestHandler.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/..\../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/..\../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/..\../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:31 BRST 2002 HttpSrv: requestError on /scripts/..\../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 107
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Nov 20 20:09:34 BRST 2002 HttpSrv: requestError on /scripts/..\../httpodbc.dll
+com.BajieSoft.HttpSrv.gzHttpException: Error: request line went bwlow root
+	at com.BajieSoft.HttpSrv.httpRequestHandler.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Nov 24 03:48:34 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: Bad request OPTIONS / HTTP/1.1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Nov 26 21:36:17 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 28 00:15:43 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 28 00:15:43 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Nov 28 00:15:43 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Dec 01 12:18:08 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Dec 01 19:50:52 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 02 01:51:12 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 49
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 02 01:51:12 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 69
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 02 01:51:12 BRST 2002 HttpSrv: requestError on /_vti_bin/../../../../../../../../../../../../../..//winnt/system32/cmd.exe?..%c0%af..%c0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 152
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 02 09:43:04 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 02 16:11:41 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 04 12:45:36 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 04 19:11:35 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 14:56:10 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 20:14:57 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 21:55:10 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 21:55:14 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 21:55:21 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 09 21:55:33 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 06:51:38 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 06:53:52 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 16:18:38 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 18:28:39 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:03:09 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:09:16 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:09:20 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:09:21 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:09:22 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 10 23:09:31 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinput
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinput not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 01:17:41 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:27:22 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:32 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:32 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:43 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:43 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:46 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:46 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:47 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 09:55:47 BRST 2002 HttpSrv: requestError on /usragt/servlet/img/ta.png
+java.io.FileNotFoundException: WAP /usragt file /servlet/img/ta.png not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 10:01:19 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 16:23:53 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 16:49:25 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 51
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 11 16:49:25 BRST 2002 HttpSrv: requestError on /msadc/../../../../../../winnt/system32/cmd.exe?m3
+java.lang.StringIndexOutOfBoundsException: String index out of range: 71
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Dec 12 11:28:44 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Dec 12 21:04:24 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Dec 13 06:50:28 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Dec 13 22:29:01 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Dec 14 07:22:34 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Dec 14 08:49:54 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Dec 14 13:18:17 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Dec 14 18:57:04 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sat Dec 14 20:20:11 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Sun Dec 15 17:59:25 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 16 17:54:12 BRST 2002 HttpSrv: requestError on /scripts/../../winnt/system32/cmd.exe?
+java.lang.StringIndexOutOfBoundsException: String index out of range: 53
+	at java.lang.String.substring(String.java:1477)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.m7(Unknown Source)
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Mon Dec 16 18:56:07 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 17 08:12:57 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 17 15:23:03 BRST 2002 HttpSrv: requestError on /usragt/servlet/usrinpurt
+java.io.FileNotFoundException: WAP /usragt file /servlet/usrinpurt not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Tue Dec 17 16:19:12 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 18 04:39:57 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Wed Dec 18 14:27:37 BRST 2002 HttpSrv: requestError on null
+java.text.ParseException: bad request length -1
+	at com.BajieSoft.HttpSrv.htmlRequestParser.parseHTTPRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.gzHttpServletRequest.parseRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Apr 18 16:41:32 BRT 2003 HttpSrv: requestError on /usragt
+java.io.FileNotFoundException: WAP /usragt file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Fri Apr 18 16:42:25 BRT 2003 HttpSrv: requestError on /talkagent/index.jsp
+java.io.IOException: Can't find file: /talkagent/index.jsp for jsp processing 
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.m6(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.m5(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 18:47:45 BRT 2003 HttpSrv: requestError on /talkagent
+java.io.FileNotFoundException: WAP /talkagent file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 18:47:56 BRT 2003 HttpSrv: requestError on /talkagent
+java.io.FileNotFoundException: WAP /talkagent file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 18:48:00 BRT 2003 HttpSrv: requestError on /talkagent
+java.io.FileNotFoundException: WAP /talkagent file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 18:48:13 BRT 2003 HttpSrv: requestError on /talkagent
+java.io.FileNotFoundException: WAP /talkagent file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:01:55 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:01:55 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:02:23 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:02:23 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:02:36 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:02:36 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:17 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:17 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:19 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:19 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:52 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:03:52 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:05:27 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:05:27 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:05:38 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:05:38 PDT 2003 HttpSrv: requestError on /talkagent/index.jsp
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:11 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:11 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:18 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:18 PDT 2003 HttpSrv: requestError on /talkagent/
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:26 PDT 2003 HttpSrv: bJspServlet: exception java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2compiler output is 
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:26 PDT 2003 HttpSrv: requestError on /talkagent/index.jsp
+java.io.IOException: CreateProcess: javac -classpath jzHttpSrv.jar;D:\ta-bu-cvs\builts\0.32n\platform\bin\usragt\httpservlets\defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\classes;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\fipa.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\ta-lib-common.jar;defaultTmp\htdocs\_BajieTmpJspTagCompileDir\talkagent\WEB-INF\lib\tabean.jar -d defaultTmp/htdocs/_BajieJspTemp/talkagent/ defaultTmp/htdocs/_BajieJspTemp/talkagent/_s_index_D_jsp.java error=2
+	at java.lang.Win32Process.create(Native Method)
+	at java.lang.Win32Process.<init>(Win32Process.java:63)
+	at java.lang.Runtime.execInternal(Native Method)
+	at java.lang.Runtime.exec(Runtime.java:566)
+	at java.lang.Runtime.exec(Runtime.java:428)
+	at java.lang.Runtime.exec(Runtime.java:364)
+	at java.lang.Runtime.exec(Runtime.java:326)
+	at com.BajieSoft.util.gzProcessHandler.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent$javaCmpl.<init>(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.m6(Unknown Source)
+	at com.BajieSoft.jspCompiler.gzJspComponent.getJspServlet(Unknown Source)
+	at com.BajieSoft.jspCompiler.bJspServlet.getJspServlet(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:09:44 PDT 2003 HttpSrv: requestError on /talkagent/index.html
+java.io.FileNotFoundException: WAP /talkagent file /index.html not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:12:23 PDT 2003 HttpSrv: requestError on /talkagent
+java.io.FileNotFoundException: WAP /talkagent file  not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Thu Apr 24 19:12:45 PDT 2003 HttpSrv: requestError on /talkagent/index.htm
+java.io.FileNotFoundException: WAP /talkagent file /index.htm not found
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+

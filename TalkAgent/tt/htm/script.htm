@@ -1,0 +1,863 @@
+<HTML>
+<HEAD>
+<TITLE>A database and lexicon of scripts for ThoughtTreasure</TITLE>
+</HEAD>
+<BODY LINK="#0000ff">
+<BODY BGCOLOR="#FFFFFF">
+<H2>A database and lexicon of scripts for ThoughtTreasure</H2>
+by <A HREF="/erik">Erik T. Mueller</A>
+<P>
+November 30, 1999
+<HR>
+<B>Abstract</B><BR>
+Since scripts were proposed in the 1970's as an inferencing mechanism
+for AI and natural language processing programs, there have been few
+attempts to build a database of scripts. This paper describes a
+database and lexicon of scripts that has been added to the
+ThoughtTreasure commonsense platform. The database provides the
+following information about scripts: sequence of events, roles, props,
+entry conditions, results, goals, emotions, places, duration,
+frequency, and cost. English and French words and phrases are linked
+to script concepts.
+<HR>
+<H3>Introduction</H3>
+<P>
+Scripts are data structures that represent typical situations or
+activities such as eating at a restaurant or attending a birthday
+party. Scripts were invented in the 1970's as a way of structuring
+knowledge and reducing search in AI programs (Minsky, 1974; Schank
+&amp; Abelson, 1977; Wilks, 1975). For example, in a story
+understanding program, scripts help with pronoun resolution, word
+sense disambiguation, and filling in missing details (Dyer, 1983).
+Since the invention of scripts, few have attempted to build a
+database of scripts. This may be because entering scripts is tedious
+and requires many choices to be made about naming of concepts, level
+of detail, and what alternatives to include.
+<P>
+We have built a database of about 100 scripts within the
+ThoughtTreasure commonsense platform (Mueller, 1998). Each script
+contains information about the events that make up the script, roles
+played by people and physical objects, entry conditions, results of
+performing the script, personal goals satisfied by the script,
+emotions associated with the script, where the script is performed,
+how long it takes to perform the script, how often the script is
+performed, and the cost of the script.
+<P>
+The remainder of the paper is organized as follows: First we describe
+the ThoughtTreasure platform into which scripts have been
+integrated. We then discuss the representation of scripts in
+ThoughtTreasure. Next we discuss some problems that arise when
+entering scripts and strategies for dealing with them. We then
+describe some simple applications of the script database. Finally we
+review related databases.
+<H3>The ThoughtTreasure platform</H3>
+<P>
+The ThoughtTreasure platform for commonsense reasoning, begun in 1994,
+contains 27,093 atomic concepts, 35,020 English words and phrases,
+21,529 French words and phrases, and 51,305 assertions.
+<P>
+Concepts are organized into a hierarchy. The top-level hierarchy is
+as follows:
+<BLOCKQUOTE>
+<PRE>
+concept
+  =&gt; object
+     =&gt; abstract-object
+     =&gt; physical-object
+        =&gt; animate-object
+  =&gt; situation
+     =&gt; action
+     =&gt; state
+        =&gt; relation
+        =&gt; attribute 
+</PRE>
+</BLOCKQUOTE>
+Each concept is linked to zero or more roughly synonymous lexical
+entries (words and phrases):
+<BLOCKQUOTE>
+<TT>schnapps</TT> = <EM>Holland gin</EM>, <EM>Hollands gin</EM>, <EM>Hollands</EM>, <EM>schnapps</EM>
+</BLOCKQUOTE>
+Each lexical entry is linked to zero or more concepts:
+<BLOCKQUOTE>
+<EM>orange</EM> = <TT>color-orange</TT>, <TT>fruit-orange</TT>
+</BLOCKQUOTE>
+An assertion is of the form:</P>
+<BLOCKQUOTE>
+<TT>[</TT><EM>predicate</EM> <EM>argument1</EM> <EM>argument2</EM>
+...<TT>]</TT>
+</BLOCKQUOTE>
+For physical objects, assertions provide information about parts and
+typical attributes such as size, shape, and color:
+<BLOCKQUOTE>
+<PRE>
+[part-of pod-of-peas green-pea]
+[diameter-of green-pea .25in]
+[green green-pea]
+[sphere green-pea]
+</PRE>
+</BLOCKQUOTE>
+The arrangement of objects in locations such as hotel rooms, kitchens,
+and theaters is represented using 2-dimensional grids such as:
+<BLOCKQUOTE>
+<PRE>
+==hotel-room1//
+wwwwwwwwwwww    b:bed
+wbbbbb    mw    d:lockable-door
+wbbbbb     w    m:minibar
+wx        Zw    w:wall 
+wwwwwwdddwww    x:phone 
+w               x:night-table 
+wwwwwwwwwwww    Z.wd:hotel-room
+</PRE>
+</BLOCKQUOTE>
+ThoughtTreasure contains <EM>planning agents</EM>, or procedures for
+achieving goals, such as making a telephone call, on behalf of actors
+in a simulated world. Since planning agents are written in C and can
+invoke any function in ThoughtTreasure, they are difficult for other
+programs to analyze and use. Scripts provide a simpler, declarative
+alternative to planning agents. We have converted the existing
+planning agents into scripts, and added new scripts.
+<H3>Representation of scripts</H3>
+<P>
+Schank and Abelson (1977) originally defined a script as a data structure consisting of the following elements:
+<UL>
+<LI>The <EM>name</EM> of the script (such as restaurant).
+<LI>The <EM>track</EM> (such as fancy restaurant or cafeteria).
+<LI>A set of <EM>roles</EM> (such as waiter).
+<LI>A set of <EM>props</EM> (such as menu).
+<LI>A set of <EM>locations</EM>.
+<LI>A set of <EM>entry conditions</EM> (such as that the customer is hungry).
+<LI>A set of <EM>results</EM> (such as that the customer is satiated).
+<LI>A list of <EM>scenes</EM> (such as entering, ordering, eating, and
+exiting). Scenes are in turn broken down into actions.
+</UL>
+We mostly adopt the Schank and Abelson representation. To ease the
+task of entering many scripts, we do not attempt to represent
+alternative paths through a script. Since scripts are entered into
+ThoughtTreasure's concept hierarchy, script tracks (such as
+<TT>eat-in-fast-food-restaurant</TT>) are naturally implemented as
+specializations of more general scripts (such as
+<TT>eat-in-restaurant</TT>). The sequence of events is not divided
+into scenes.
+<P>
+A simple ThoughtTreasure script is as follows:
+<BLOCKQUOTE>
+<PRE>
+Object blackout
+
+[English] power failure, blackout; [French] black out,
+panne de courant, panne d &eacute;lectricit&eacute;
+[ako ^ disaster]
+[duration-of ^ NUMBER:second:3600]
+[emotion-of ^ [anger human]]
+[emotion-of ^ [unhappy-surprise human]]
+[emotion-of ^ [worry human]]
+[event01-of ^ [anger human]]
+[event01-of ^ [electronic-device-broken
+               electricity-network]]
+[event01-of ^ [unhappy-surprise human]]
+[event01-of ^ [worry human]]
+[event02-of ^ [fetch-from human na light-source]]
+[performed-in ^ apartment]
+[performed-in ^ house]
+[performed-in ^ office]
+[period-of ^ NUMBER:second:3.1536e+07]
+[role01-of ^ human]
+[role02-of ^ electricity-network]
+</PRE>
+</BLOCKQUOTE>
+The script concept is <TT>blackout</TT>. It is located under
+<TT>disaster</TT> in the hierarchy. Lexical entries for the script
+include <EM>power failure</EM> in English and <EM>panne de
+courant</EM> in French.
+<P>
+The script has two roles: the human experiencing the blackout and the
+electricity network. The role numbers correspond to positions in an
+assertion about an instance of a script:
+<BLOCKQUOTE>
+<PRE>
+[blackout John electricity-network1]
+</PRE>
+</BLOCKQUOTE>
+<P>
+Emotions associated with the script include <TT>anger</TT>,
+<TT>unhappy-surprise</TT>, and <TT>worry</TT> for the human. Note that
+these are emotion concepts, located in the <TT>emotion</TT> hierarchy
+and linked to lexical entries not shown above. <TT>Anger</TT> is a
+kind of <TT>negative-emotion</TT> associated with the noun
+<EM>anger</EM> and the adjectives <EM>angry</EM>, <EM>pissed</EM>, and
+others. The other concepts shown above (such as
+<TT>electricity-network</TT>) are also placed at appropriate points in
+the hierarchy and associated with lexical entries.
+<P>
+The script consists of two events: (1) the power outage and
+corresponding emotional reaction and (2) obtaining an alternative
+lighting source. The script typically occurs in an apartment, house,
+or office once a year for an hour.
+<P>
+In general a script consists of the following fields:
+<DL>
+
+<DT>
+<B>Roles</B> (<TT>role<EM>NN</EM>-of</TT>)
+<DD>
+A human or physical object that participates in the script. Role 1 is
+the role from whose viewpoint the script is described. Role 1 of the
+<TT>eat-in-restaurant</TT> script is the <TT>customer</TT>.
+
+<DT>
+<B>Role scripts</B> (<TT>role<EM>NN</EM>-script-of</TT>)
+<DD>
+A link to a script described from the viewpoint of a role other than
+role 1. The viewpoint of the <TT>waiter</TT> role in the
+<TT>eat-in-restaurant</TT> script is described by the
+<TT>wait-tables</TT> script.
+
+<DT>
+<B>Entry conditions</B> (<TT>entry-condition-of</TT>)
+<DD>
+The entry conditions of the script. For example:<BR>
+<TT>[entry-condition-of attend-class [enroll student course]]</TT>
+
+<DT>
+<B>Results</B> (<TT>result-of</TT>)
+<DD>
+The results of performing the script. For example:<BR>
+<TT>[result-of sleep [restedness sleeper]]</TT>
+
+<DT>
+<B>Goals</B> (<TT>goal-of</TT>)
+<DD>
+The personal goals achieved by the script. Personal goals are defined
+in the <TT>goal</TT> hierarchy and include the achievement,
+preservation, and satisfaction goals defined by Schank and Abelson
+(1977). For example:<BR>
+<TT>[goal-of eat-in-restaurant [s-hunger customer]]</TT>
+
+<DT>
+<B>Emotions</B> (<TT>emotion-of</TT>)
+<DD>
+The emotions associated with the script.
+
+<DT>
+<B>Location</B> (<TT>performed-in</TT>)
+<DD>
+The locations where the script is performed.
+
+<DT>
+<B>Duration</B> (<TT>duration-of</TT>)
+<DD>
+The duration of the script.
+
+<DT>
+<B>Period</B> (<TT>period-of</TT>)
+<DD>
+The duration between occurrences of the script for role 1.
+
+<DT>
+<B>Cost</B> (<TT>cost-of</TT>)
+<DD>
+The cost of performing the script for role 1.
+
+<DT>
+<B>Events</B> (<TT>event</TT><EM>NN</EM>-of</TT>)
+<DD>
+The events of the script.
+</DL>
+Events are listed in chronological order, with multiple events for a
+given number considered roughly simultaneous. For example:
+<BLOCKQUOTE>
+<PRE>
+[event01-of S A1]
+[event01-of S A2]
+[event02-of S B1]
+[event02-of S B2]
+</PRE>
+</BLOCKQUOTE>
+specifies that <TT>A1</TT> and <TT>A2</TT> occur simultaneously,
+followed by <TT>B1</TT> and <TT>B2</TT> which occur
+simultaneously. Priority and simultaneity are the only temporal
+relations that can be represented.
+<P>
+The <TT>goto</TT> predicate can be used to indicate repetition. For example:
+<BLOCKQUOTE>
+<PRE>
+[event01-of S A]
+[event02-of S B]
+[event03-of S [goto event01-of]]
+</PRE>
+</BLOCKQUOTE>
+specifies the event sequence <TT>A</TT>, <TT>B</TT>, <TT>A</TT>,
+<TT>B</TT>, <TT>A</TT>, <TT>B</TT>, ... No mechanism for exiting the
+loop is currently provided.
+<P>
+We have so far entered 93 scripts. As we entered these scripts we
+noticed and filled in a number of missing concepts and lexical entries
+in ThoughtTreasure. We also encountered several difficulties.
+<H3>Difficulties in entering scripts</H3>
+<P>
+How should the enterer deal with variations in scripts such as mailing
+a letter in a mailbox versus handing it to a postal clerk?
+<P>
+If the variations involve major differences in the sequence of events
+or other fields of the script such as the goal or result, each
+variation can be entered as a specialization of a more general script:
+<BLOCKQUOTE>
+<PRE>
+mail-letter
+  =&gt; mail-letter-at-mailbox
+  =&gt; mail-letter-at-post-office
+</PRE>
+</BLOCKQUOTE>
+Variations that do not make a big difference can be ignored for the
+time being. Thus the current script for reading a book does not
+specify whether the reader is reading in bed or in a chair.
+<P>
+If the variations of a script involve a single physical object that
+can be generalized, the generalization can be entered: When confronted
+with the choice between <TT>pen</TT> and <TT>pencil</TT>, the enterer
+can code <TT>writing-instrument</TT>.
+<P>
+More variations become apparent as the enterer focuses on more
+detail. The enterer can limit the level of detail in a script by
+invoking other scripts: Instead of entering all the details about how
+one reaches a mailbox, a reference can be made to a transportation
+script. The transportation script can then be defined with
+specialization scripts for different modes of transportation such as
+walking and driving. The driving script can invoke an action for
+putting the key in the ignition. At this point, the enterer may
+consider the level of detail sufficient and move on.
+<P>
+It is not always clear exactly when a script begins and ends, but the
+enterer must make some choice: At the beginning of the script for
+teaching a class, should the teacher prepare for the class? Or is that
+part of another script? At the beginning of the script for walking a
+dog, should the dog walker put a leash on the dog?
+<P>
+Entering scripts requires many judgment calls by the enterer, and it
+is likely the results will contain various errors and confusions. As
+applications are built we will learn which imperfections of the
+database are most in need of perfecting.
+<H3>Applications</H3>
+<P>
+We have implemented two simple web-based applications using the script
+database, as a precursor to more advanced applications.
+<P>
+The first application answers the following commonsense questions:
+<BLOCKQUOTE>
+What does a ___ do? (human)<BR>
+What is a ___ used for? (physical object)<BR>
+Where is a ___ found? (human or physical object)<BR>
+What does ___ consist of?<BR>
+What is the result of ___?<BR>
+Where does one ___?<BR>
+How long does ___ take?<BR>
+How often does one ___?<BR>
+How much does ___ cost?
+</BLOCKQUOTE>
+The second application performs a shallow search from concepts
+activated by text to scripts, in order to determine the most likely
+scripts for some English text entered by the user. Given:
+<BLOCKQUOTE>
+<PRE>
+John poured shampoo on his hair.
+</PRE>
+</BLOCKQUOTE>
+the application produces:
+<BLOCKQUOTE>
+<PRE>
+score 2.0 for script take-shower based on shampoo, hair
+score 2.0 for script go-for-a-haircut based on shampoo, hair
+</PRE>
+</BLOCKQUOTE>
+A more advanced script recognition algorithm would perform a deep
+search (Leacock &amp; Chodorow, 1998).
+<H3>Related work</H3>
+<P>
+In this section, we compare ThoughtTreasure scripts with related
+databases: Cyc, FrameNet, Gordon's Expectation Packages, and WordNet.
+<H4>Cyc</H4>
+<P>
+Cyc (Lenat, 1995) is a commonsense knowledge base begun in 1984. In
+1996 it contained 39,665 atomic concepts and 290,995 assertions.
+<P>
+Cyc's <TT>Event</TT>s are similar to scripts. Whereas scripts are
+represented in ThoughtTreasure using a convenient
+relational-database-like format, Cyc represents events using arbitrary
+first-order predicate calculus assertions. This leads to considerable
+variation in the representation of subevents. Sometimes the subevent
+appears only in the left-hand side of an inference rule:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (and (subEvents ?X ?U) (isa ?U Staining))
+    (isa ?X WoodRefinishing))
+</PRE>
+</BLOCKQUOTE>
+while other times the subevent appears only in the right-hand side:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (and (isa ?U ShapingSomething) (subEvents ?U ?X))
+         (isa ?X CuttingSomething))
+</PRE>
+</BLOCKQUOTE>
+(Cyc assertions and statistics in this paper are based on the Cyc C
+distribution of April 4, 1997.)
+<P>
+The mapping from the roles of a script to the roles of its subevents
+is not always provided. When the mapping is provided, several formats
+are used. For example, the following rule specifies that the person
+opening the presents at a birthday party is the same person honored by
+the party:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (and (isa ?OPENING OpeningPresents)
+         (subEvents ?PARTY ?OPENING)
+         (eventHonors ?PARTY ?HONOR)
+         (isa ?PARTY BirthdayParty))
+    (performedBy ?OPENING ?HONOR))
+</PRE>
+</BLOCKQUOTE>
+<P>
+The following rule specifies that a dental hygienist performs the
+teeth cleaning in a dental exam:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (and (isa ?CLE TeethCleaning)
+         (performedBy ?CLE ?AGT)
+         (subEvents ?EXM ?CLE)
+         (isa ?EXM DentalExam))
+    (isa ?AGT DentalHygienist))
+</PRE>
+</BLOCKQUOTE>
+Information about the roles, places, and duration of a script is
+represented in a more uniform fashion:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (isa ?U Dancer)
+    (actsInCapacity ?U performedBy DancingProcess-Human
+                         HobbyCapacity))
+(=&gt; (isa ?FM Firefighter)
+    (actsInCapacity ?FM performedBy ExtinguishingAFire
+                         JobCapacity))
+
+(=&gt; (and (isa ?U ChangingOil) (eventOccursAt ?U ?X))
+    (isa ?X ServiceStation))
+(=&gt; (and (isa ?U ProducingAnAlcoholicBeverage)
+              (eventOccursAt ?U ?X))
+    (isa ?X Brewery))
+
+(=&gt; (isa ?X WeddingCeremony)
+         (duration ?X (HoursDuration 0.5 2)))
+(=&gt; (isa ?U ResearchProject)
+    (duration ?U (YearsDuration 0.5 10)))
+</PRE>
+</BLOCKQUOTE>
+<H4>FrameNet</H4>
+<P>
+The goal of the three-year FrameNet project (Baker, Fillmore, &amp;
+Lowe, 1998), begun in 1997, is to build a collection of frames and
+annotate sentences in a corpus with links to roles of those frames. 20
+frames and 28 unique roles have been defined (Johnson, 1998).
+<P>
+The frames, which focus on the areas of perception, cognition,
+communication, and motion, are:
+<BLOCKQUOTE>
+<PRE>
+Arriving, Awareness, Behaver-evaluating, Cogitation,
+Conversation, Departing, Encoding, Inchoative, Judgment,
+Noise, Path-shape, Placing, Questioning, Removing, Request,
+Response, Self-motion, Statement, Static, Transportation
+</PRE>
+</BLOCKQUOTE>
+<P>The Transportation frame consists of the following roles:
+<BLOCKQUOTE>
+<PRE>
+<B>Role              Example
+</B>Driver            <EM>Kim</EM> drove through the woods
+Cargo &amp; Passenger Kim drove <EM>the kids</EM> to the store
+Vehicle           Kim drove <EM>the truck</EM> to the store
+Source            Kim drove <EM>out of the garage
+</EM>Path              Kim drove <EM>down the street
+</EM>Goal              Kim drove <EM>into the woods
+</EM>Manner            Kim drove <EM>dangerously
+</EM>Distance          Kim drove <EM>500 miles
+</EM>Area              Kim drove <EM>throughout the countryside
+</EM>(Johnson, 1998)
+</PRE>
+</BLOCKQUOTE>
+<P>
+FrameNet frames lack information about subevents (such as "starting
+the Vehicle" in the Transportation frame), locations, tracks, entry
+conditions, and results.
+<H4>Gordon's Expectation Packages</H4>
+<P>
+Gordon (1999) developed a database of 768 simplified scripts called
+Expectation Packages (EPs) to be used as part of a system for browsing
+photographic libraries. Each EP contains slots for Events, Places
+(locations and tracks), People (roles), Things (props), and Misc
+(entry conditions and results). Slot values are taken from the Library
+of Congress Thesaurus for Graphic Materials (LCTGM), which contains
+5,760 subject terms.
+<P>
+A sample EP is:
+<BLOCKQUOTE>
+<PRE>
+28. Commuting on a crowded expressway
+Events  Automobile driving, Automobile travel,
+        Radio broadcasting, Traffic congestion
+Places  Express highways, Toll roads
+People  Commuters
+Things  Automobiles, Helicopters, Horns (Communication devices)
+Misc    Air pollution
+(Gordon, 1999, p. 194)
+</PRE>
+</BLOCKQUOTE>
+<P>
+Since slot values must be LCTGM subject terms and not assertions, the
+EPs are unable to represent arguments to subevents. Thus the fact that
+the "Commuter" is doing the "Automobile driving" is not captured in
+the above EP. Because LCTGM terms do not exist for many concepts, EPs
+often lack important common subevents, props, and roles of a
+script. EP Events often refer not to subevents, but to generalizations
+of the script:
+<BLOCKQUOTE>
+<PRE>
+<B>Script                               Event</B>
+Commuting on a crowded expressway    Automobile driving
+Going polka dancing in a dance hall  Folk dancing
+Hunting for alligators in a swamp    Alligator hunting
+</PRE>
+</BLOCKQUOTE>
+<P>
+Gordon (1999) writes that "the purpose of Expectation Packages is not
+to accurately represent scripts, but rather to interconnect existing
+terms in a thesaurus" (p. 111).
+<H4>WordNet</H4>
+<P>
+WordNet (Fellbaum, 1998) is a lexical database begun in 1985. Version
+1.6 contains 129,509 lexical entries, 99,642 synonym sets, and 140,475
+relations (not including inverses). It differs from ThoughtTreasure in
+several ways:
+<UL>
+<LI>
+WordNet is a lexical, rather than conceptual, database. World
+knowledge and scripts are explicitly excluded (pp. 5-6). Typical
+object properties, such as the fact that the sky is blue, are not
+included (p. 40).
+<LI>
+WordNet contains separate databases for nouns, verbs, adjectives, and
+adverbs. Few relations are provided from one database to another
+(p. 9). Unlike in ThoughtTreasure there is no connection between the
+noun <EM>happiness</EM> and the adjective <EM>happy</EM>, or the noun
+<EM>agreement</EM> and the verb <EM>agree</EM>.
+<LI>
+Unlike ThoughtTreasure, WordNet lacks a root concept and top-level
+hierarchy for organizing all concepts. Even within the individual
+databases, there are multiple "unique beginners" (pp. 28, 71).
+</UL>
+<P>
+Scripts are not included in WordNet since concepts such as <EM>eating
+at a restaurant</EM> and <EM>going to a birthday party</EM> are not
+lexicalized in English (p. 100).
+<P>
+All that being said, since some English verbs can be decomposed into
+subevents, WordNet version 1.6 does break down 427 verb synonym sets
+into verb synonym sets via the entailment relation (pp. 77-81). 19
+events are broken down into 2 or more subevents. They are:
+<BLOCKQUOTE>
+<PRE>
+arraign:       indict charge
+board:         feed consume
+breathe:       inhale exhale
+buy:           pay choose
+cast:          film stage perform
+eat:           chew swallow
+master:        understand drill learn
+maul:          mutilate injure
+postpone:      cancel reschedule
+push:          press move
+quilt:         pad sew
+settle:        move migrate
+sky_dive:      glide jump descend
+smoke:         inhale exhale
+stampede:      run rush
+sublime:       condense evaporate
+tease:         arouse disappoint
+trade:         buy sell
+wine_and_dine: eat drink
+</PRE>
+</BLOCKQUOTE>
+<H4>Summary</H4>
+<P>
+This table summarizes the above databases along with ThoughtTreasure:
+<P>
+<TABLE BGCOLOR=PINK BORDER>
+
+<TR>
+<TD><B>Name</B></TD>
+<TD><B>Scripts (#)</B></TD>
+<TD><B>Subevents (#/script)</B></TD>
+<TD><B>Roles (#/script)</B></TD>
+<TD><B>Places (#/script)</B></TD>
+<TD><B>Other (#/script)</B></TD>
+</TR>
+
+<TR>
+<TD>Cyc</TD>
+<TD ALIGN="RIGHT">185</TD>
+<TD ALIGN="RIGHT">1.71</TD>
+<TD ALIGN="RIGHT">0.032</TD>
+<TD ALIGN="RIGHT">0.092</TD>
+<TD ALIGN="RIGHT">15.76</TD>
+</TR>
+
+<TR>
+<TD>FrameNet</TD>
+<TD ALIGN="RIGHT">20</TD>
+<TD ALIGN="RIGHT">0</TD>
+<TD ALIGN="RIGHT">4.94</TD>
+<TD ALIGN="RIGHT">0</TD>
+<TD ALIGN="RIGHT">0</TD>
+</TR>
+
+<TR>
+<TD>Gordon's Eps</TD>
+<TD ALIGN="RIGHT">768</TD>
+<TD ALIGN="RIGHT">3.12</TD>
+<TD ALIGN="RIGHT">6.14</TD>
+<TD ALIGN="RIGHT">1.71</TD>
+<TD ALIGN="RIGHT">1.29</TD>
+</TR>
+
+<TR>
+<TD>ThoughtTreasure</TD>
+<TD ALIGN="RIGHT">93</B></TD>
+<TD ALIGN="RIGHT">8.57</B></TD>
+<TD ALIGN="RIGHT">5.30</B></TD>
+<TD ALIGN="RIGHT">0.86</B></TD>
+<TD ALIGN="RIGHT">6.10</B></TD>
+</TR>
+
+<TR>
+<TD>WordNet 1.6</TD>
+<TD ALIGN="RIGHT">427</TD>
+<TD ALIGN="RIGHT">1.06</TD>
+<TD ALIGN="RIGHT">0</TD>
+<TD ALIGN="RIGHT">0</TD>
+<TD ALIGN="RIGHT">0</TD>
+</TR>
+</TABLE>
+<P>
+The Scripts column shows the number of scripts in the database. Cyc
+contains 3071 event constants. Only those events having one or more
+subevents are considered scripts here. FrameNet frames are considered
+scripts. ThoughtTreasure contains 2247 action concepts. Only those
+actions having one or more subevents are considered scripts
+here. WordNet 1.6 contains 12,127 verb synonym sets. Only those verb
+synonym sets having outgoing entailment links are considered scripts
+here.
+<P>
+The Subevents column shows the average number of subevents per
+script. ThoughtTreasure subevents include arguments, unlike Gordon's
+EPs, WordNet, and sometimes Cyc. For example, the driving script
+includes:
+<BLOCKQUOTE>
+<PRE>
+[put-in driver key ignition-switch]
+[turn driver ignition-switch]
+[motor-vehicle-on motor-vehicle]
+</PRE>
+</BLOCKQUOTE>
+instead of simply the atomic concept "Starting an Automobile".
+<P>
+The Roles column shows the average number of roles per script. Roles
+are called frame elements in FrameNet. For Gordon's EPs, Roles
+includes People and Things.
+<P>
+The Places column shows the average number of locations per script.
+<P>
+The Other column shows the average number of other pieces of
+information provided for each script, such as entry conditions and
+results. For Gordon's EPs, Other is the Misc slot. Entry conditions,
+results, goals, and emotions are provided as assertions rather than
+atomic concepts in ThoughtTreasure.
+<P>
+Cyc statistics were obtained as follows: <TT>Event</TT> constants were
+obtained using the Hierarchical Browser starting from <TT>Event</TT>
+with microtheories set to ALL and depth set to 10. A total of 3071
+unique <TT>Event</TT> constants were obtained. Each constant was then
+queried using the View Constant command of the Cyc Navigator. Links to
+"more rules" were followed. The 17,596 assertions from these queries
+were then collected together in a file. Subevent, Role, and Place
+tuples were then extracted from these assertions by looking for
+formulas whose predicate was <TT>subEvents</TT>,
+<TT>actsInCapacity</TT>, and <TT>eventOccursAt</TT>,
+respectively. Variables were instantiated by looking for <TT>isa</TT>
+formulas in the same assertion. For example given:
+<BLOCKQUOTE>
+<PRE>
+(=&gt; (and (isa ?Z TurningOffWater)
+         (isa ?Y WashingHair)
+         (subEvents ?X ?Z)
+         (subEvents ?X ?Y)
+         (isa ?X Bathing))
+    (startsAfterEndingOf ?Z ?Y))
+</PRE>
+</BLOCKQUOTE>
+the following tuples were extracted:
+<BLOCKQUOTE>
+<PRE>
+Bathing:subEvents:TurningOffWater
+Bathing:subEvents:WashingHair
+</PRE>
+</BLOCKQUOTE>
+If it was not possible to extract any tuples from an assertion, then
+an Other tuple was generated for each <TT>Event</TT> mentioned in the
+assertion. 16,665 unique tuples resulted. The tuples for each
+<TT>Event</TT> were collected together. Only <TT>Event</TT>s having at
+least one <TT>subEvents</TT> tuple were considered to be scripts. For
+each of these 185 Events, the number of Subevents
+(<TT>subEvents</TT>), Roles (<TT>actsInCapacity</TT>), Places
+(<TT>eventOccursAt</TT>), and Others were counted.
+<H3>Future work</H3>
+<P>
+In future work we will add more scripts and 2-dimensional grids for
+representing locations where those scripts are performed. The grid
+locations of human and physical object roles should also be
+represented for each event of a script. For example, the
+<TT>waiter</TT> is located near the <TT>restaurant-table</TT> when
+taking the <TT>customer</TT>'s order in the <TT>wait-tables</TT>
+script.
+<H3>Conclusion</H3>
+<P>
+We have constructed a database and lexicon of typical situations or
+scripts. The database provides a rich network of interconnections that
+can be used in computational linguistics tasks. We also hope the
+database will prove useful in building context-aware digital devices.
+<H3>Appendix A: mail-letter-at-post-office</H3>
+<PRE>
+[ako ^ mail-letter]
+[cost-of ^ NUMBER:USD:0.33]
+[duration-of ^ NUMBER:second:600]
+[event01-of ^ [pick-up sender snail-mail-letter]]
+[event02-of ^ [ptrans sender na post-office]]
+[event03-of ^ [wait-in-line sender]]
+[event04-of ^ [ptrans-walk sender na postal-counter]]
+[event05-of ^ [pre-sequence postal-clerk sender]]
+[event05-of ^ [pre-sequence sender postal-clerk]]
+[event06-of ^ [hand-to sender postal-clerk snail-mail-letter]]
+[event07-of ^ [weigh postal-clerk snail-mail-letter]]
+[event08-of ^ [postmark postal-clerk snail-mail-letter]]
+[event09-of ^ [post-sequence postal-clerk sender]]
+[event09-of ^ [post-sequence sender postal-clerk]]
+[event10-of ^ [ptrans sender post-office na]]
+[goal-of ^ [owner-of snail-mail-letter recipient]]
+[goal-of ^ [s-employment postal-clerk]]
+[performed-in ^ post-office]
+[period-of ^ NUMBER:second:604800]
+[role01-of ^ sender]
+[role02-of ^ recipient]
+[role03-of ^ snail-mail-letter]
+[role04-of ^ post-office]
+[role05-of ^ postal-counter]
+[role06-of ^ postal-clerk]
+</PRE>
+<H3>Appendix B: have-filling-done</H3>
+<PRE>
+[ako ^ dentist-appointment]
+[cost-of ^ NUMBER:USD:200]
+[duration-of ^ NUMBER:second:3600]
+[emotion-of ^ [nervousness role-patient]]
+[emotion-of ^ [pain role-patient]]
+[event01-of ^ [ptrans role-patient na dental-office]]
+[event02-of ^ [ptrans-walk role-patient na waiting-room]]
+[event03-of ^ [wait role-patient]]
+[event04-of ^ [action-call dental-assistant na role-patient]]
+[event05-of ^ [ptrans-walk role-patient waiting-room
+               dental-operatory]]
+[event06-of ^ [sit-in role-patient dental-chair]]
+[event07-of ^ [inject dentist novocaine mouth]]
+[event08-of ^ [wait role-patient]]
+[event09-of ^ [drill-tooth dentist tooth dental-drill]]
+[event09-of ^ [listen role-patient elevator-music]]
+[event10-of ^ [fill-tooth dentist tooth dental-filling]]
+[event11-of ^ [ptrans role-patient dental-operatory na]]
+[goal-of ^ [p-health role-patient]]
+[goal-of ^ [s-profit dentist]]
+[performed-in ^ dental-office]
+[period-of ^ NUMBER:second:1.5768e+08]
+[role01-of ^ role-patient]
+[role02-of ^ dentist]
+[role03-of ^ dental-assistant]
+[role04-of ^ tooth]
+[role05-of ^ mouth]
+[role06-of ^ dental-office]
+[role07-of ^ waiting-room]
+[role08-of ^ dental-chair]
+[role09-of ^ dental-operatory]
+[role10-of ^ dental-filling]
+[role11-of ^ novocaine]
+</PRE>
+<H3>References</H3>
+<P>
+Baker, Collin F., Fillmore, Charles J., &amp; Lowe, John
+B. (1998). The Berkeley FrameNet Project. In <EM>Proceedings of
+COLING-ACL '98</EM>. pp. 86-90. Association for Computational
+Linguistics. Available:
+<A HREF="http://www.icsi.berkeley.edu/~framenet/docs/acl98.ps">http://www.icsi.berkeley.edu/~framenet/docs/acl98.ps</A>.
+<P>
+Dyer, Michael G. (1983). <EM>In-depth understanding</EM>. Cambridge,
+MA: MIT Press.
+<P>
+Fellbaum, Christiane. (Ed.). (1998). <EM>WordNet: An electronic
+lexical database</EM>. Cambridge, MA: MIT Press. Available (earlier
+versions of some chapters):
+<A HREF="http://www.cogsci.princeton.edu/~wn/papers/">http://www.cogsci.princeton.edu/~wn/papers/</A>.
+<P>
+Gordon, Andrew S. (1999). <EM>The design of knowledge-rich browsing
+interfaces for retrieval in digital libraries</EM>. Doctoral
+dissertation, Northwestern University, Evanston, IL. Available:
+<A HREF="http://www.ils.nwu.edu/~gordon/Dissertation.pdf">http://www.ils.nwu.edu/~gordon/Dissertation.pdf</A>.
+<P>
+Johnson, Christopher. (1998). <EM>Syntactic and semantic principles of
+FrameNet annotation</EM> (Online). University of California,
+Berkeley. Available:
+<A HREF="http://www.icsi.berkeley.edu/~framenet/docs/train/annomanual/anno_manual.html">http://www.icsi.berkeley.edu/~framenet/docs/train/annomanual/anno_manual.html</A>.
+<P>
+Leacock, Claudia, and Chodorow, Martin. (1998). Combining lexical
+context and WordNet similarity for word sense identification. In
+Fellbaum, Christiane. (Ed.), <EM>WordNet: An electronic lexical
+database</EM>. pp. 265-283. Cambridge, MA: MIT Press.
+<P>
+Lenat, D. B. (1995). CYC: A large-scale investment in knowledge
+infrastructure. <EM>Communications of the ACM</EM>, <EM>38</EM>(11),
+33-48.
+<P>
+Minsky, Marvin. (1974). <EM>A framework for representing
+knowledge</EM> (AI Laboratory Memo 306). Artificial Intelligence
+Laboratory, Massachusetts Institute of Technology. Available:
+<A HREF="ftp://publications.ai.mit.edu/ai-publications/0-499/AIM-306.ps">ftp://publications.ai.mit.edu/ai-publications/0-499/AIM-306.ps</A>.
+<P>
+Mueller, Erik T. (1998). <EM>Natural language processing with
+ThoughtTreasure</EM>. New York: Signiform.
+<P>
+Schank, Roger C., and Abelson, Robert P. (1977). <EM>Scripts, plans,
+goals, and understanding</EM>. Hillsdale, NJ: Lawrence Erlbaum.
+<P>
+Wilks, Yorick. (1975). A preferential, pattern-seeking, semantics for
+natural language inference. <EM>Artificial
+Intelligence</EM>. <EM>6</EM>(1), 53-74.
+<HR>
+<CENTER>
+<A HREF="doc.htm">ThoughtTreasure documentation</A> |
+<A HREF="tt.htm">ThoughtTreasure home</A>
+</CENTER>
+<HR>
+Copyright &copy; 2000
+Erik T. Mueller
+(<A HREF="mailto:erik@signiform.com">erik@signiform.com</A>,
+<A HREF="/erik">www.signiform.com/erik</A>).
+All Rights Reserved.
+<HR>
+</BODY>
+</HTML>

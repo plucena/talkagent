@@ -1,0 +1,61 @@
+<html>
+		<body>
+		<head>
+		<SCRIPT LANGUAGE='JavaScript'>
+		function help()
+		{ window.location = '../help.html'; }
+		</script>
+		</head>
+		
+		<form name='form1' method='post' action=''>		
+		<table width='100%' border='1'>
+		<tr><td>	
+		<table width='100%' border='0'>
+		<tr>	
+		<td>		
+		<img src='../img/ta.png'> <HR>		
+		</td></tr>
+		<tr>
+		<td colspan='2'> 
+		<form name='form1' method='post' action='" +  createReplyAddr(request) + "'>
+		<b>Request</b>: <BR>
+		<textarea name='input' rows='4' cols='40'></textarea>
+		out.print("<p><b>Action</b>: <BR> 
+		
+		/* 
+		out.print("<select name='commAct' onChange=''>
+		<option value='ACL_QUERYREF' selected>Query KB</option>
+		<option value='ACL_QUERYIF'>Validate Information</option>
+		<option value='ACL_INFORM'>Inform</option>
+		<option value='ACL_REQUEST'>Request Action</option>
+		</select></p>
+		*/
+		
+		out.print("<input type='radio' name='radiobutton' value='ACL_QUERYREF'> <B>Query </B><I>(What,How, Who, When)</I><BR>  
+		out.print("<input type='radio' name='radiobutton' value='ACL_QUERYIF'> <B>Validate Information</B> <I>(Validates wheather a fact is true or false)</I> <BR>  
+		out.print("<input type='radio' name='radiobutton' value='ACL_INFORM'> <B>Inform</B> <I>(Teaches Talk Agent a new informormation)</I> <BR> 
+		out.print("<input type='radio' name='radiobutton' value='ACL_REQUEST'> <B>Request Action</B><I> (Makes Talk Agent do something for you)</I> 
+		
+		
+	 	<input type='hidden' name='hiddenField' value='" + sessionID + "'>
+		<p><input type='submit' name='Submit' value='Go'>
+		<input type='button' name='Submit2' value='Help' onClick='help()'></p>
+		</form> <br>&nbsp
+		</td></tr>		
+		</table>
+		
+		</td></tr>
+		<tr> <td bgcolor='#ffffcc' valign='top' rowspan='1' colspan='2'>
+		Tip: Sentences should end with <b>. or ! or ?</b> <br>
+        E.g.: [Query] What is a beer<b>?</b> <br>
+		E.g.: [Query] Agent, list animals<b>.</b><br>
+		E.g.: [Inform] &quot;Mango&quot; is a fruit<b>.</b><br>
+		E.g.: [Validate Information] A camel is an animal<b>.</b><br>
+		<A HREF='../help.html'> Help </A> ; 		
+		</td></tr>	
+			
+	    </table>		 
+		</form>
+		
+		</body>
+		<html>

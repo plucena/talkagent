@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<!-- Copyright (c) 2002 by ObjectLearn. All Rights Reserved. -->
+<web-app>
+
+	<!-- Remove the comments below to define a servlet.          -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!--     <servlet>                                           -->
+	<!--       <servlet-name>MyServlet</servlet-name>            -->
+	<!--       <servlet-class>examples.MyServlet</servlet-class> -->
+	<!--       <init-param>                                      -->
+	<!--         <param-name>myparam</param-name>                -->
+	<!--         <param-value>12345</param-value>                -->
+	<!--       </init-param>                                     -->
+	<!--     </servlet>                                          -->
+	<!--                                                         -->
+	<!--                                                         -->
+	<!--     <servlet-mapping>                                   -->
+	<!--           <servlet-name>MyServlet</servlet-name>        -->
+	<!--           <url-pattern>/mine/*</url-pattern>            -->
+	<!--     </servlet-mapping>                                  -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+	<servlet>
+        <servlet-name>usrinput</servlet-name>
+        <servlet-class>
+            br.usp.semanticagent.talkagent.GetUsrInput
+        </servlet-class>
+	</servlet>
+	
+	<servlet-mapping>                                
+	<servlet-name>usrinput</servlet-name>        
+	<url-pattern>/agent</url-pattern>           
+	</servlet-mapping>    
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>error.jsp</location>
+	</error-page>
+
+</web-app>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE trade-batch SYSTEM "servers.dtd">
+
+<!-- #[START] -->
+<!-- Copyright (c) 2002 by ObjectLearn. All Rights Reserved. -->
+
+
+<servers>
+	<server>
+		<name>A Tomcat Server...</name>
+		<launcherClass>org.apache.catalina.startup.Bootstrap</launcherClass>
+		<workingDirectory>C:/Program Files/Apache Group/Tomcat 4.1</workingDirectory>
+		<vmParameters>-DJAVA_HOME="C:/Program Files/JAVA/j2sdk1.4.1_01" -Dcatalina.base="C:/Program Files/Apache Group/Tomcat 4.1" -Dcatalina.home="C:/Program Files/Apache Group/Tomcat 4.1" -Djava.io.tmpdir="C:/Program Files/Apache Group/Tomcat 4.1\temp" -Djava.endorsed.dirs="C:/Program Files/Apache Group/Tomcat 4.1\bin;C:/Program Files/Apache Group/Tomcat 4.1\common\endorsed"</vmParameters>
+		<programArguments>start</programArguments>
+		<appendClasspath></appendClasspath>
+		<address>127.0.0.1</address>
+		<port>8080</port>
+		
+		<stopClass>org.apache.catalina.startup.Bootstrap</stopClass>
+		<stopVmParameters>-DJAVA_HOME="C:/Program Files/JAVA/j2sdk1.4.1_01" -Dcatalina.base="C:/Program Files/Apache Group/Tomcat 4.1" -Dcatalina.home="C:/Program Files/Apache Group/Tomcat 4.1" -Djava.io.tmpdir="C:/Program Files/Apache Group/Tomcat 4.1\temp" -Djava.endorsed.dirs="C:/Program Files/Apache Group/Tomcat 4.1\bin;C:/Program Files/Apache Group/Tomcat 4.1\common\endorsed"</stopVmParameters>
+		<stopProgramArguments>stop</stopProgramArguments>
+		
+	</server>
+</servers>

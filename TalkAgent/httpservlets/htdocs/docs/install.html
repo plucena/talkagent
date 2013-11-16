@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+  <META NAME="Author" CONTENT="Gang Zhang">
+  <TITLE>Installation Guide</TITLE>
+</HEAD>
+
+<body bgcolor=#aaaabb>
+<br><b>Install:</b><br><br>
+Unzip httpsrv.zip to a directory of your choice. 
+Edit config/jzHttpSrv.properties to configure your webserver (you can leave it as is)<br>
+You need JDK1.1.6 and above or Microsoft's JVM (jview).  
+Microsoft's JVM comes with Internet explorer 5.0.  However, to use JSP features, 
+You need to make sure jdk1.2's javac is in the path. <br><br>
+
+You can start the http server by:<br>
+<ul>
+<li> Jdk1.2 on Windows: double click on jzHttpSrv.jar<br>
+<li> Jdk1.2 on other platforms: type "java -jar jzHttpSrv.jar" 
+<li> To start the server in console, use java -jar jzHttpSrv.jar -noui
+<li> To start the server in console and enable to terminate it by typing a enter, use
+java -jar jzHttpSrv.jar -noui -con
+for 1.1x JVMs:<br>
+<li> for GUI:
+<li> type: java -cp .;jzHttpSrv.jar com.BajieSoft.HttpSrv.startGUI 
+<li> (Windows only) type: jview -cp .;jzHttpSrv.jar com.BajieSoft.HttpSrv.startGUI
+<li> To start the console version:
+<li> type: java -cp .;jzHttpSrv.jar com.BajieSoft.HttpSrv.jzHttpSrv
+<li> (Windows only) type: jview -cp .;jzHttpSrv.jar com.BajieSoft.HttpSrv.jzHttpSrv
+<li> <b> For UNIX or Linux, replace the ';' with ':'.</b>
+</ul>
+<br>
+<br>
+I haven't tried it on Mac yet, but the server should work on all platforms that supports
+java.  If you have tried it on Mac, please let me know the install process.  Thanks!
+
+<br>
+<br>
+<b>Note: Afte start the server, please connect to http://localhost/
+and click on the first link (http://localhost/srvConfig/), which starts the config servlet. 
+The login name is admin, password is also admin.  Change your password there.
+</b>
+<br>
+After change your password, click on "Edit Common Properties" (at upper left) and
+change <b>Set perl interpreter location</b> to enable perl. 
+Then change <b>JSP compile string</b>, replace javac to full path to the java compiler (example, c:\jdk1.x\bin\javac) on your machine
+so the jsp compiler know where to find java compiler.
+
+</body>
+</html>

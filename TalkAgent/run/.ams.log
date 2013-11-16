@@ -1,0 +1,15 @@
+New message: Register
+*AMS* 127.0.0.1:5044 - sharp_ucl_converter
+New message: Register
+*AMS* 127.0.0.1:5042 - sharp_ucl_converter_router
+New message: Register
+*AMS* 127.0.0.1:5046 - sharp_ucl_interpreter
+New message: Register
+*AMS* 127.0.0.1:5050 - sharp_component_manager
+New message: Register
+*AMS* 127.0.0.1:5049 - sharp_xkt_kb
+New message: Register
+*AMS* 127.0.0.1:5030 - ide
+New message: getAddress: sharp_xkt_kb
+New message: getAddress: sharp_component_manager
+New message: getAddress: sharp_xkt_kb

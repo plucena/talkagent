@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+   <TITLE>Welcome Home Page </TITLE>
+</HEAD>
+<BODY bgcolor=#aaaaee>
+<center><H1>Webserver is working!</H1></center>
+
+<BR>
+
+
+
+This page has been accessed <img src="/servlet/gifCounter?username=gzhang&fgcolor=ffffff&bgcolor=aaaaee"></img> times<br>
+<ul>
+<b>Please following these steps if you want to use the server in production mode instead of debugging mode:<br>
+<li>Trun auto reload servlet off. Click <a href="docs/faq.html#SetAutoReloadOff"> here to see how</a>
+<li>On the UI, in "File" menu, unselect all options.  Those options displays information in the UI and slows the server down.
+<li>Remove the example servlets that come with the server in "servlets/" directory.
+</ul>
+<ul>
+  <li><a href="docs/quickhowto.html">Quick Howto Help</a>
+  <li><a href="/srvConfig/">Config the server</a>, <b>After login, click on <i>Edit user list</i> link and change the admin password first!!</b>
+  <li><a href="msg.html">Leave me a message</a>
+  <li><a href="upload.html">Upload a file (need to map the upload servlet first to use)</a>
+  <li><a href="/docs/faq.html">FAQ</a><br>
+  <li><a href="tests.html">Tests for servlets</a>
+  <li><a href="http://www.geocities.com/gzhangx/websrv/"> update </a>
+  <li><a href="java/JinlinBench/JinlinBench.html">a java benchmark for your pc</a>
+  <li><a href="cgi/bin/test.txt">CGI Perl Script test (need perl to run, use config servlet, set common server properties to set perl location)</a>
+</ul>
+  <br>
+  <b>Note: auto servlet reload greatly reduce performence.  Please turn it off in production mode
+     use the config servlet. </b>  Click on <b>Edit Common Properties</b> , set <i>Set Auto Servlet reload </i> to OFF and click on
+     the save button.
+  <br>
+<br>
+
+<br>
+</BODY>
+</HTML>

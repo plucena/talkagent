@@ -1,0 +1,557 @@
+<html>
+<head>
+<title>ThoughtTreasure FAQ</title>
+</head>
+<body bgcolor="#ffffff">
+<center>
+<font size=6 color="#ff0000">ThoughtTreasure</font>
+<font size=5>FAQ</font>
+</center>
+<hr>
+<ul>
+<li><b>How many pieces of common sense are in ThoughtTreasure?</b>
+<p>
+Here are some statistics for version 0.00022:
+<pre>
+DECLARATIVE
+database assertions       22,487
+hierarchical (ISA) links  28,818
+lexical entry features   126,511
+inflection features       99,637
+================================
+total                    277,453
+
+lexical entries           56,552
+verified inflections      33,407
+concepts                  27,093
+================================
+total                    117,052
+
+PROCEDURAL
+lines of C code           71,967
+</pre>
+<p>
+<li><b>How does the size of ThoughtTreasure compare with other related
+systems?</b>
+<p>
+Here is comparison of ThoughtTreasure 0.00022 with WordNet
+<a href="biblio.htm">(Miller, 1995b)</a>,
+Cyc <a href="biblio.htm">(Lenat, 1995)</a>,
+EDR <a href="biblio.htm">(Yokoi, 1995)</a>,
+and LADL's electronic dictionary
+<a href="biblio.htm">(Courtois and Silberztein, 1990)</a>:
+<pre>
+                TT   WordNet       Cyc     EDR    LADL
+            ______ _________ _________ _______ _______
+languages      E,F         E         E     E,J       F
+le          56,552   129,509           600,000 170,000
+infl        33,407                             600,000
+obj         27,093    99,642    39,665 400,000
+&lt;le, obj&gt;   53,896   166,000
+polysemy      6.8%       17%
+assertions  51,305   140,475   290,995
+code lines  71,967
+effort           3                 100
+</pre>
+(WordNet numbers are based on WordNet 1.6 of February 20, 1998.
+Cyc numbers are based on the Cyc C distribution of April 4, 1997.)
+<p>
+<dl>
+<dt>languages 
+<dd>The languages addressed by the system. (E = English, F = French,
+J = Japanese.) 
+<dt>le 
+<dd>The number of lexical entries, including words and phrases. For
+bilingual systems such as ThoughtTreasure and EDR, the numbers shown
+are the total for the two languages.
+<dt>infl 
+<dd>The number of validated inflections. ThoughtTreasure contains
+162,210 automatically generated inflections of which only 
+33,407 have been checked for correctness by a human. 
+<dt>obj 
+<dd>The number of atomic objects or word senses.
+<dt>&lt;le, obj> 
+<dd>The number of links between lexical entries and objects. (17.2 percent
+of the lexical entries in ThoughtTreasure are not linked to any object,
+due to the presence in phrases of words which are not defined in isolation.) 
+<dt>polysemy 
+<dd>The percentage of lexical entries linked to more than one object.
+<dt>code lines
+<dd>The number of lines of code not including function prototype declaration
+files, but including comments.
+<dt>assertions 
+<dd>The number of assertions (facts containing atomic objects) in the
+system. For ThoughtTreasure, only database assertions and hierarchical
+(ISA) links are included in this figure. Lexical entry features,
+inflection features, and knowledge hardcoded in C are not included.
+<dt>effort 
+<dd>The number of person-years spent developing the system.
+</dl>
+<p>
+<li><b>How do I install ThoughtTreasure under Windows 95/98?</b>
+<p>
+First, uncompress the <a href="download.htm">downloaded</a> file using
+a shareware decompression utility. You can download many such utilities
+from <a href="http://www.windows95.com">http://www.windows95.com</a>.
+<p>
+Second, untar the decompressed file using a shareware tar utility,
+also available from
+<a href="http://www.windows95.com">http://www.windows95.com</a>.
+Place the ThoughtTreasure distribution in a convenient location on your
+hard disk such as C:\ThoughtTreasure.
+<p>
+Next, compile ThoughtTreasure.
+(See "How do I compile ThoughtTreasure under Windows 95/98?")
+<p>
+Now from the Start menu, start an MS-DOS window ([MS-DOS Prompt] under
+[Programs]).
+<p>
+Click on the [Properties] icon. (In Windows 95/98, if you place the cursor
+on an icon, its name will be displayed underneath it.)
+<p>
+Click on the [Memory] tab.
+<p>
+Type "65535" after "Total:" under "MS-DOS protected-mode (DPMI) memory."
+<p>
+Click on the [Apply] button.
+<p>
+Exit the MS-DOS window because the changes made do not take effect until
+a new MS-DOS window is started.
+<p>
+<li><b>How do I install ThoughtTreasure under Unix?</b>
+<p>
+First, bring up a shell and uncompress the
+<a href="download.htm">downloaded</a> file by typing:
+<pre>
+gunzip /tmp/tt.tar.gz
+</pre>
+if <tt>/tmp/tt.tar.gz</tt> is where you placed the downloaded file.
+<p>
+(If your system does not have <tt>gunzip</tt>, download a copy from
+a GNU archive site. See the list of sites at
+<a href="http://www.cs.pdx.edu/~trent/gnu/sites.html">http://www.cs.pdx.edu/~trent/gnu/sites.html</a>.)
+<p>
+Second, create a new directory for the ThoughtTreasure distribution and untar
+the decompressed file into the directory:
+<pre>
+mkdir tt
+cd tt
+tar xvf /tmp/tt.tar
+</pre>
+<p>
+Now compile ThoughtTreasure.
+(See "How do I compile ThoughtTreasure under Unix?")
+<p>
+<li><b>How do I compile ThoughtTreasure under Windows 95/98?</b>
+<p>
+Download and install DJGPP version 2.01 or higher from one of the sites
+listed at
+<a href="http://www.delorie.com/djgpp/">http://www.delorie.com/djgpp/</a>.
+DJGPP is a complete C/C++ development system for PCs that includes ports
+of many GNU development utilities including the <tt>gcc</tt> compiler.
+<p>
+A <tt>makefile</tt> is present in the <tt>src</tt> directory of the
+ThoughtTreasure distribution. Edit the makefile for your platform,
+as explained in the makefile.
+<p>
+Then to compile ThoughtTreasure, type <tt>make</tt> in the <tt>src</tt>
+directory.
+<p>
+Then type <tt>make install</tt> to install the <tt>tt.exe</tt>
+executable into the <tt>bin</tt> directory.
+<p>
+<li><b>How do I compile ThoughtTreasure under Unix?</b>
+<p>
+A <tt>makefile</tt> is present in the <tt>src</tt> directory of the
+ThoughtTreasure distribution. ThoughtTreasure distribution. Edit the
+makefile for your platform, as explained in the makefile.
+<p>
+Then to compile ThoughtTreasure, type <tt>make</tt> in the <tt>src</tt>
+directory.
+<p>
+Then type <tt>make install</tt> to install the <tt>tt</tt> executable into
+the <tt>bin</tt> directory.
+<p>
+<li><b>How do I start ThoughtTreasure under Windows 95/98?</b>
+<p>
+Make sure ThoughtTreasure is installed and compiled. (See "How do I install
+ThoughtTreasure under Windows 95/98?" and "How do I compile ThoughtTreasure
+under Windows 95/98?")
+<p>
+Start an MS-DOS window.
+<p>
+Type:
+<pre>
+cd C:\ThoughtTreasure\bin
+tt
+</pre>
+<p>
+if <tt>C:\ThoughtTreasure</tt> is where the ThoughtTreasure distribution is
+installed.
+<p>
+<li><b>How do I start ThoughtTreasure under Unix?</b>
+<p>
+Make sure ThoughtTreasure is installed and compiled. (See "How do I install
+ThoughtTreasure under Unix?" and "How do I compile ThoughtTreasure under
+Unix?")
+<p>
+Type:
+<pre>
+cd &lt;the location of the ThoughtTreasure distribution&gt;
+cd bin
+./tt
+</pre>
+<p>
+<li><b>How do I start ThoughtTreasure on a non-Windows DOS machine?</b>
+<p>
+Follow the procedure for downloading, installing, and running ThoughtTreasure
+under Windows 95/98. Skip the steps dealing with starting and configuring
+the MS-DOS window. You will have to choose a shorter name for the directory
+containing the ThoughtTreasure distribution.
+<p>
+The DPMI host <tt>CWSDPMI.EXE</tt>, provided in the ThoughtTreasure
+<tt>bin</tt> directory, can be used to enable ThoughtTreasure to run under
+DOS. Make sure <tt>CWSDPMI.EXE</tt> is in the same directory as the
+<tt>tt.exe</tt> executable or in a directory listed in the <tt>PATH</tt>.
+Consult the DJGPP site at
+<a href="http://www.delorie.com/djgpp/">http://www.delorie.com/djgpp/</a>
+for further information on running programs compiled with DJGPP (such as
+ThoughtTreasure).
+<p>
+<li><b>How do I make it more convenient to start ThoughtTreasure?</b>
+<p>
+You can add the ThoughtTreasure <tt>bin</tt> directory to your <tt>PATH</tt>,
+so you can run ThoughtTreasure from any directory simply by typing
+<tt>tt</tt>.
+<p>
+Under Windows 95/98, add the ThoughtTreasure <tt>bin</tt> directory to your
+<tt>PATH</tt> in your <tt>AUTOEXEC.BAT</tt> file and then reboot.
+<p>
+Under Unix, add the ThoughtTreasure <tt>bin</tt> directory to your
+<tt>PATH</tt> in your <tt>.profile</tt>, <tt>.bash_profile</tt>,
+or equivalent (depending on what shell you use), and then log in again.
+<p>
+<li><b>How do I start ThoughtTreasure from an arbitrary directory?</b>
+<p>
+Use the <tt>TTROOT</tt> environment variable to tell ThoughtTreasure where
+to look for its database files.
+<p>
+Under Windows 95/98, type:
+<pre>
+set TTROOT=C:\ThoughtTreasure
+</pre>
+if <tt>C:\ThoughtTreasure</tt> is where the ThoughtTreasure distribution is
+installed.
+<p>
+Under Unix, type:
+<pre>
+export TTROOT=/u/erik/tt
+</pre>
+if <tt>/u/erik/tt</tt> is where the ThoughtTreasure distribution is installed.
+(This assumes you are using the Korn shell or Bash. The syntax for other
+shells may be different.)
+<p>
+<li><b>How do I use ThoughtTreasure from my program?</b>
+<p>
+There are three ways of doing this:
+<p>
+<ol>
+<li>
+Your program can read the ThoughtTreasure knowledge base (TTKB) files.
+A Python interface is provided in the <a href="download.htm">distribution</a>.
+Otherwise, your program can read in the files according to the
+<a href="ttkb.htm">TTKB specification</a>.
+<li>
+Your program can communicate over a socket connection to a ThoughtTreasure
+server using the ThoughtTreasure Server Protocol (TTSP).
+<a href="../java/doc">Java</a> and Python client APIs and incomplete Perl
+and Tcl client APIs are available. Otherwise, your
+program can communication with ThoughtTreasure according to the
+<a href="ttsp.htm">TTSP specification</a>.
+<li>
+You can link ThoughtTreasure into your program and invoke the C API
+functions in the file <tt>toolapi.c</tt>.
+</ol>
+<p>
+<li><b>How do I start the ThoughtTreasure server?</b>
+<p>
+Start ThoughtTreasure and then issue the command <tt>server</tt> or
+<tt>server -port PORT</tt> (where <tt>PORT</tt> is the desired listen port).
+<p>
+<li><b>How long does ThoughtTreasure take to load?</b>
+<p>
+Here are some numbers for version 0.00021, including how much
+memory is used after loading:
+<pre>
+============================
+        Load time     Memory
+        MM:SS  MM:SS      KB
+          (2)    (3)     (2)
+============================
+E+L (1) 00:38  06:57  15,348
+E+G     00:42         18,196
+E+F+L   00:52         21,132
+E+F+G   01:14         28,776
+============================
+
+E = English
+F = French
+L = algorithmic morphology
+G = analogical morphology
+1 = default configuration
+2 = Red Hat Linux 5.2, 100MHz Pentium, 64 MB RAM
+3 = Windows 95, 120MHz Pentium, 48 MB RAM
+</pre>
+<p>
+Version 0.00020 loaded (for E+L) in 01:00 on Solaris 2.4, dual 100 MHz
+Pentium, 64 MB RAM, and 06:26 on Windows 95, 120 MHz Pentium, 48 MB RAM.
+<p>
+<li><b>How can I make ThoughtTreasure load more quickly?</b>
+<p>
+If you don't need all the database files for your application, you can
+invoke ThoughtTreasure with the <tt>-l</tt> option, which prevents the
+loading of inflection and database files. Then you can manually load
+the needed files according to the following example:
+<pre>
+loadbegin 
+loadinf -f db/eninfl.txt
+loadpolity -f db/geog.txt
+loadisa -f db/absobj.txt
+loadisa -f db/attr.txt
+...
+loadend
+</pre>
+<p>
+<li><b>What commands does ThoughtTreasure accept?</b>
+<p>
+To have a conversation with ThoughtTreasure, type <tt>chateng</tt> at the
+asterisk ("*") prompt. You may then ask it questions such as <i>How are
+you?</i>, <i>What time is it?</i>, <i>What color is the sky?</i>, and
+<i>What is a cat?</i>
+<p>
+For a complete list of ThoughtTreasure shell commands, see the
+ThoughtTreasure <a href="quickref.htm">quick reference</a>.
+<p>
+<li><b>Where does ThoughtTreasure place its output?</b>
+<p>
+ThoughtTreasure writes to standard output and places a number of output
+files in the current directory, including a <tt>log</tt> file and other
+files of the form <tt>out*.txt</tt>. It places report output in the
+directory <tt>../report</tt>.
+<p>
+<li><b>I am experiencing segmentation faults or bus errors. How do I fix
+this?</b>
+<p>
+We are trying to eliminate all such problems, so please send a bug report
+to <a href="mailto:bugs@signiform.com">bugs@signiform.com</a>.
+<p>
+<li><b>What size does ThoughtTreasure expect for each C type?</b>
+<pre>
+sizeof(char) = 1
+sizeof(short) = 2
+sizeof(int) = 4
+sizeof(long) = 4
+sizeof(float) = 4
+sizeof(double) = 8
+</pre>
+<p>
+<li><b>Why do I get lots of warnings about "case STBEGIN" being unreachable
+when compiling under Sequent DYNIX/ptx 4.1.2 or below?</b>
+<p>
+This is a known bug in the C compiler (Sequent log call #1035945) and has
+been fixed in 4.1.3 and above. (according to "Tigran Aivazian"
+TIGRANA@DSTIUK.CCMAIL.CompuServe.COM)
+<p>
+<li><b>Why do French words or ThoughtTreasure feature characters display
+incorrectly on my machine or with my favorite editor?</b>
+<p>
+Short answer: View the files you are interested in with a browser such
+as Netscape. If you are using Emacs, put
+<tt>(standard-display-8bit 128 255)</tt> in your <tt>.emacs</tt> file.
+<p>
+Long answer: ThoughtTreasure uses the ISO 8859-1 character set, which is
+used on Unix and the web. Microsoft Windows Latin-1, Code Page 1252 is a
+superset of ISO 8859-1. However, DOS and many Windows applications use a
+different character set, which is in turn different from the one used by
+Macs. The characters whose codes are greater than 127 are the ones that
+differ across the platforms. These are used for French texts and for
+ThoughtTreasure features.
+<p>
+If you are on a PC or Mac and wish to view these characters properly,
+you should use an ISO 8859-1 compatible application such as Netscape
+Navigator. 
+<p>
+When downloading ThoughtTreasure, you might need to tell your downloader
+not to alter these characters. 
+<p>
+The file <tt>utilchar.c</tt> has utilities to convert between the MS-DOS,
+Mac, and ISO 8859-1 character sets. Some of the mappings are approximate,
+since not all characters are available in all character sets.
+<p>
+<li><b>How do I compile ThoughtTreasure using Symantec Think C on a Mac?</b>
+<p>
+I was unsuccessful at getting ThoughtTreasure to run on a Macintosh Centris
+650 using Mac OS version F1-7.1 and Symantec C++ Version 6.0.1. I ran into
+problems with bombing inside the library function <tt>fopen</tt>. I tried
+a few experiments but was unable to isolate the problem.
+<p>
+If you want to attempt to compile and run ThoughtTreasure on the Mac,
+you might be able to make use of the procedure I used when trying
+unsuccessfully to do this:
+<p>
+Download the ThoughtTreasure distribution to your Mac. Make sure you tell
+your downloader to convert Unix newlines into Mac newlines. Where Unix
+uses LF, the Mac OS uses CR.
+<p>
+Launch the Think C project manager.
+<p>
+Use [File] [New Project] to create a new Think C project. Name it
+ThoughtTreasure, and save it in the <tt>src</tt> directory of the
+ThoughtTreasure distribution. 
+<p>
+Use [Source] [Add Files] to add all the <tt>*.c</tt> files in the
+<tt>src</tt> directory to your project. (Click on [Add All], then [Done].)
+All the <tt>*.c</tt> files should now appear in the ThoughtTreasure project
+window.
+<p>
+Use [Source] [Add Files] to add the ANSI and unix libraries from the
+Standard Libraries folder of the Think C distribution. 
+<p>
+Use [File] [Open] to edit the file <tt>tt.h</tt>. Add the following line
+to the top of the file: 
+<pre>
+#define MACOS
+</pre>
+<p>
+Use [File] [Save] to save the file. 
+<p>
+Select [Project] [Build Application] and click on [Update]. Think C should
+compile all of the <tt>*.c</tt> files. If there are any compilation errors
+they will appear in the Compile Errors window. When Think C asks you to
+save the built ThoughtTreasure application, attempt to save it as
+<tt>tt</tt> in the bin directory. 
+<p>
+The above step will fail due to "data segment too big". In
+[Project]-[Set Project Type] select the Far Data option, set the
+Partition (K) to 35000, and click OK.
+<p>
+The Mac limits segments to 32K. You will need to go to the project window,
+and create new segments by dragging file names below the Totals line.
+Create enough new segments and move the files within the segments such
+that no segment is bigger than 32,768 bytes. This may take a bit of work.
+<p>
+Rerun [Project] [Build Application] and click on [Update]. 
+<p>
+Run ThoughtTreasure by selecting [Project] [Run]. 
+<p>
+ThoughtTreasure is bombing for me inside <tt>fopen</tt>.
+<p>
+<li><b>Why are there memory leaks in ThoughtTreasure?</b>
+<p>
+An attempt was made at first to free storage that is no longer being
+used. As the program became more complex, data structures were shared by
+more and more modules, making it difficult to determine exactly how and when
+to free storage. Programming time was saved by ignoring the problem and
+allowing some memory leaks for the time being. Some of the places in the
+code where storage might need to be freed are marked with the keyword
+<tt>todoFREE</tt>. An automatic garbage collector would also solve this
+problem.
+<p>
+<li><b>Why is there redundant (paranoid) code in ThoughtTreasure?</b>
+<p>
+Many programmers improve the efficiency of their code by eliminating
+redundant checks. For example, representation invariants are enforced
+in one part of the code and then assumed to be true in another. The
+opposite was done here: Given the notorious brittleness of AI programs,
+it was felt that each agent or module should do its best to deal with
+as many cases as possible and not to break in the face of unexpected
+input. This leads to somewhat less efficient code, but code that is
+more robust in the face of program modifications and new inputs. Some
+of the redundant code (that is, redundant provided other parts of the
+program have not been changed) is marked in the source with the
+keyword <tt>REDUNDANT</tt>.
+<p>
+<li><b>What keywords are used in the ThoughtTreasure code?</b>
+<p>
+In addition to the <tt>REDUNDANT</tt> and <tt>todoFREE</tt> keywords
+described above, here are some other keywords used in the code and database: 
+<p>
+<ul>
+<li>
+<tt>todo</tt> points out extensions that could or should be made, or
+cases which might not be handled properly by the code, outstanding
+questions and issues, and so on. 
+<li>
+<tt>todoSCORE</tt> points out places in the code where a possibility is
+rejected, but should really be accepted with an appropriate (low) score.
+For now, rejecting unlikely possibilities saves processing time, but there
+is still a nonzero probability that the possibility is the correct one.
+When additional possibilities are introduced, additional code might also
+need to be added to order and prune those possibilities. 
+<li>
+<tt>todoSCORE</tt> also points out places in the code where a score is
+not set and should be, or where the score should be tuned via a
+corpus-based statistical study. For example, in the base rule NP - NP1 NP2
+for generating appositives, how does heaviness (length) of NP1 relative
+to NP2 correspond to likelihood of the rule? How does heaviness of NP1
+and NP2 and the presence or absence of separators such as commas and
+dashes correspond to the likelihood of the rule? 
+<li>
+<tt>todoDATABASE</tt> points out places in the code where mappings from
+one value to another are hardcoded, usually as <tt>if</tt> or <tt>case</tt>
+statements. It would be more elegant for these mappings to be coded as
+assertions in a database file and retrieved from the code. 
+<li>
+<tt>todoTHREAD</tt> points out places in the code where threads could be
+used to make ThoughtTreasure run more quickly on a system with multiple
+CPUs, or where code is not yet thread safe (reentrant). 
+<li>
+<tt>todoFUNNY</tt> points out places in the code where a laugh could be
+generated if the interpretation is accepted. Examples are when a sentence
+can only be parsed by relaxing a selectional restriction (a dog teaches
+a human to play fetch), or when the depth of a word derivation is too
+high (as in ``televisionettificationizational'').
+</ul>
+<p>
+In the source code, comments are often used to provide typical examples
+of function inputs and outputs, and values of local variables at various
+points inside a function. This helps the reader understand exactly what
+is being processed. (A ThoughtTreasure object variable alone does not say
+much, since an object can take a variety of forms.) References are also
+made to specific input cases, to help the reader understand the purpose
+of a line of code. 
+<p>
+<li><b>What operating systems and hardware does ThoughtTreasure run on?</b>
+<p>
+See the <a href="require.htm">system requirements</a>.
+<p>
+<li><b>How do I download ThoughtTreasure?</b>
+<p>
+See the <a href="download.htm">download page</a>.
+<p>
+<li><b>What command-line arguments does ThoughtTreasure take?</b>
+<p>
+See the ThoughtTreasure <a href="quickref.htm">quick reference</a>.
+<p>
+<li><b>How do I learn more about ThoughtTreasure?</b>
+<p>
+Read the <a href="doc.htm">ThoughtTreasure documentation</a>.
+</ul>
+<hr>
+<center>
+<a href="tt.htm">ThoughtTreasure home</a>
+|
+<a href="/index.htm">Signiform home</a>
+</center>
+
+<hr>
+<center>
+<font size=2>
+Questions or comments?
+<a href="mailto:webmaster@signiform.com">webmaster@signiform.com</font></a>
+<br><a href="/index/legal.htm"><font size=2>Copyright &copy; 2000 Signiform.
+All Rights Reserved. Terms of use.</a></font></center>
+<hr>
+
+</BODY>
+</HTML>

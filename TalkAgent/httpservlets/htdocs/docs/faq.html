@@ -1,0 +1,467 @@
+<HTML>
+<HEAD>
+  <META NAME="Author" CONTENT="Gang Zhang">
+  <TITLE>Setup Guide</TITLE>
+</HEAD>
+
+<body bgcolor=#aaaabb>
+<ul>
+<li><b>Where to put html files?</b><br><br>
+        <UL>
+        Put all your html, jsp or other files you want the server to serve in the htdocs/ directory.
+        </UL>
+</ul>
+<br>
+<br>
+
+<ul>
+<li><b>Why my configed servlet not shown in the unload servlets dialog box</b>
+    Please note the UI is only intended to show the servlets been used,
+    not the all the servlets that are configed and mapped.  To unmap a servlet,
+    use cofnig servlet (http://localhost/srvConfig/) instead.
+</ul>
+<br>
+<br>
+<ul>
+<li><b>How to use the config servlet?</b><br><br>
+        <UL>
+        Start the server and connect to http://localhost/, click on the first link, 'Config the Server'.
+        Enter admin for both username and password.  After login click on the 'Edit user list' link
+        and change the pass word for admin.<br>
+        If you don't want to use the config servlet anymore, you can disable it by remove the srvConfig.war
+        file from wars/ directory, then either restart the server or click on the <b>Reload Wars</b> button on the UI.
+        </UL>
+</ul>
+<br>
+<br>
+
+<br>
+<br>
+<ul>
+<li><a name="HowToRunAsNTService"><b>How to run server as NT service?</b></a><br>
+    First, run <font color=#00ff00>jvmInvoker.exe -i</font> to install the service.
+    Then use NT control services applet to start the "Bajie Http Web Server" service.<br>
+    NOTE:  You must either copy the jvm.dll (found at your jdk bin/hotspot directory) to 
+    the directory where jvmInvoker is installed, or your JDK must be installed instead of
+    just copied (so the registory values can be found).  The code for getting the registry
+    values is copied from <a href="http://www.kcmultimedia.com/javaserv/">KC Multimedia</a>, 
+    and the source is available at <a href="service.cpp">service.cpp</a> and 
+    <a href="jvmInvoker.cpp">jvmInvoker.cpp</a>  jvmInvoker.exe can be downloaded <a href="../jvmInvoker.exe">here</a>
+</ul>
+
+<ul>
+<li><a name="HowToAddServlets"><b>How to add servlets?</b></a><br><br>       
+       First, drop your servlet in the server's classpath (you can set it from config servlet or by edit the config/jzHttpSrv.properties file).
+       <br> By default <b>htdocs/WEB-INF/classes</b> and <b>servlets/</b> directory are in classpath. (You can find the directory where you extract the server).  So drop your servlet class files in those directory.
+       If your servlet is a jar, you can drop it in either <b>lib/</b> or
+       <b>htdocs/WEB-INF/lib</b> directory, where all *.jar file will be automaticaly added in server classpath.  Or you can add it to server classpath (to change server classpath, you can either manuly edit htodcs/WEB-INF/web.xml file and restart the server, or use config servlet http://localhost/srvConfig and click on <i>edit webapp config</i> link and edit it there).
+	<br>If you have parameters for your servlet, put them in a files named servletClassName.params.properties.   For example, if you wrote a servlet counter.class, then 
+put your servlet params as key=val in counter.params.properties, in the same place as counter.class.
+	<br>Now use your browser go to http://localhost/servlet/ServletClassName  and your servlet will be in action (example, if your servlet is counter.class, then use http://localhost/servlet/counter  and your servlet will be invoked).
+	<br> If you wish to map your servlet to a different url, then use the following step:
+       <br>Use your browser and connect to:
+       <br>http://localhost/srvConfig/ , this will open the config servlet.  
+       <br>Click <b>Edit Servlets</b> , which is on the top of the screen.
+        It will show you
+        a list of servlet alias.  To automatically find and add new servlets, click on the
+        <b>Show auto alias action</b> button, this will go to a screen show all the servlets
+        in the servlets/ directory.  Select the servlets you want to add by check the check box on the left and
+        change the alias name if you want to, then click on the <b>submit</b> button.<br>
+         
+        The servlet can be invoke by: http://localhost/servlet/servletAliasName.
+    
+       You can also change the servlet mapping so the servlet request url can be anything by either use the config servlet or
+       edit the WEB-INF/web.xml file (just as webapp).<br><br>
+	With the server class path feature, you can also add specical path for special
+        classes.  For example, you can add filters/ directory in your classpath and only put
+	filter classes in that directory.<br><br>
+
+	To edit the server classpath, use config servlet http://localhost/srvConfig/
+	, login using admin/admin and click on the "<b>Edit WebApp Config</b>" button
+	on top right corner of the screen, and append/delete classpath in the
+	"Set Server Class Path" box.
+
+
+<br><br>
+Note:  If you jar your servlet, and you wish to use classname.params.properties file to provide parameters, then you need to jar the file with your classes.
+       </ul>
+
+</ul>
+
+<ul>
+<li>  <b>How to add .war files?</b><br>
+      <br>
+      There are 2 ways to add .war files.  <br>
+      <ul>
+      <li>Put your .war files in wars/ directory, and start the server.  If the server
+          is already started, click on the 'Reload Wars' button.  The .war file will be
+          listed with war context name same as the .war file name.  For example, if your
+          .war file is named tagTest.war, you can access it via http://localhost/tagTest/......<br>
+      <li>If you want to give your war context other name then the .war file name, then put
+          the .war file in any directory under the install root, and edit the config/war.properties file and
+          add /yourContext/=path/yourWarFileName.war <br>
+          you can use tagtest.war in wap.properties as an example.
+      </ul>
+
+</ul>
+
+<ul>
+<li><a name="PreventAUTOServletAliasMapping"><b>How to prevent server automatically map servlet alias 
+to /servlet/ServletAlias?</b></a>
+<ul>
+This feature is in versions 0.94z+. I don't have time to update the documents yet, 
+another config option is available to 
+set if the server automatically map servlets to URL mapping (if servlet will be mapped to
+/servlet/serveltAlias).  It is AUTOADDSERVLETMAPPING=true/false in config/jzHttpSrv.properties.
+<br><br>
+	<ul>
+	Historic note ;-)   Long long time ago, the server automatically pick up servlets classes in servlets/ directory.
+	People can drop their classes in there and access their servlet via http://host/servlet/ServletName directly without
+	any config.  However later on for speed and expandablity, web.xml file is used to map url and servlet, and config servlet
+	is used to automatically give servlet a name and map it to a url.  To ensure a smooth transition, any servlet that is
+	given a alias is automatically mapped to /servlet/servletAlias.  You can now disable it by set the propertie.
+	</ul>
+</ul>
+</ul>
+<ul>
+<li> <b>How was the .tld file for jsp located?</b>
+
+     <br>
+     <ul>
+        The search order for .tld files are:
+        <li>  If the .jsp file request the tld is in a war, then the WAR's web.xml file is searched for a matching
+             <taglib-location> for the uri.  If match found,  use the <taglib-location> value as the uri.  <br>
+              If no match found, the engine will try to find the uri with in the WAR file, related to the root of the WAR.
+              (So if the tld is in WEB-INF/tlds/test.tld, the request uri should be WEB-INF/tlds/test.tld, with or with our a leading '/').<br>
+              If the uri ends with ".jar" extension, the engine will search for META-INF/taglib.tld as the tld file.
+              For example, if the request uri is /WEB-INF/lib/tag.jar, then the engine will search for META-INF/taglib.tld in 
+              /WEB-INF/lib/tag.jar.  
+              <br>If the above method failed, then the engine will try to locate the tld as if the jsp is not in a WAR (see step below).
+        <li>  If the .jsp file is not in a war, the engine will try to find the matching <taglib-location> in the common web.xml file
+              (htdocs/WEB-INF/web.xml).  If match found, then the engine will try to open it as a file, related to webroot (related to htdocs directory).
+              If no match found, and the uri starts with http:// or file://, then the engine will open a URL to it.  Otherwise
+              the engine will test if the request uri is a file.  If the request uri is a file with path related to the htdocs/ directory, the engine
+              will open it.  If all the above failed, the engine will search for htdocs/WEB-INF/classes directory for the file and look into
+              all .jar files in htdocs/WEB-INF/lib directory for the file.  For example, if the request uri is test/test.tld, and htdocs/WEB-INF/lib/test.jar
+              contains test/test.tld, the engine will find it and use it.
+        <li>  Note: I think the best way to store and use a .tld file is, jar the .tld file
+              with other beans, tags that used by the jsp file in one jar (name the tld file /META-INF/taglib.tld in the jar).
+              And put it in WEB-INF/lib directory.  In the jsp or in the web.xml taglib mapping, set the value to /WEB-INF/lib/yourlibjar.jar. (yourlibjar.jar is the jar with all the related classes).
+              This way deploy jsps and the taglib is very easy, just 2 simple drop of file and everything will be in place.
+
+     </ul>
+</ul>
+
+
+<ul>
+<li> <b>Where to put .jsp files?  Where do I put bean classes for jsp files?</b>
+
+     <br>
+     <ul>
+     <li>  Put .jsp files anywhere under the htdocs/ directory except the WEB-INF/ directory.
+     <li>  put bean classes in WEB-INF/classes directory, and if beans is jared, put in WEB-INF/lib directory.
+           It is the same for .war files and taglib files.
+           <br>
+           If you jar your taglib, you can either put the .tld file in WEB-INF/classes directory or
+           jar it with your taglib.  However if you jar them, make sure they got different names or different
+           pathes.
+
+     </ul>
+</ul>
+
+<ul>
+<b>How to set autoreload for servlets and .war files?  </b><br>
+  <ul>
+   Open your browser and connect to:
+       http://localhost/srvConfig/, and edit your current server.  Servlet  autoreload 
+and other server properties can be set there.  Make sure you save server properties before exit.
+
+The server will compare to see if servlet class file's date is newer before treating a 
+request that access the servlet.  If it is newer the server will unload the servlet and 
+load the new version.
+<br>NOTE: if the classes is not in a jar file, autoreload can be slow because the server checks all loaded classes
+files in the classes' path to see if they are out of date.  
+<br>NOTE: If you change from not autoreload to autoreload without restart, use 'Reload classpath' button to ensure the server get all
+the class files registered.  Othewise auto reload may not work.
+  </ul>
+</ul>
+
+<ul>
+<b>CGI support</b><br>
+<ul>
+The default CGI directory is .\cgi\bin\ , changed the PERLEXECLOC property in 
+config/jzHttpSrv.properties to set the perl interperter.
+If that property is not set, all CGI are supposed to be executables.
+<br>A request of form http://hostname/cgi/bin/XXXX will execute the XXXX cgi script.
+The server checks to make sure XXXX exists in cgi\bin\ directory before execute it.
+</ul>
+</ul>
+
+<ul>
+<b> <a name="SSL_setup">HTTPS support </b><br>
+<ul>
+jzHttpSrv has build in support for sun's JSSE.  For legal reasons, the jar files are not 
+included.  If you want, go to java.sun.com to download JSSE (as long as you are in US, you can do this)
+, and add the jars in the classpath.
+Once you downloaded the zip file, unzip it and find the 3 jar files, jsse.jar, jcert.jar and jssl.jar.
+put them in the same directory with jzHttpSrv.jar, then go to that directory and type:
+java -cp jsse.jar;jcert.jar;jssl.jar;jzHttpSrv.jar jzHttpSrv
+<br>
+You can put the jars in the JDKPATH/jre/lib/ext directory so you can start the server the
+normal way.
+
+<br>
+<br> With version 0.95h, you can start server with the 'servers' menu.  After the server list
+dialog popup, click on 'add server' button.  Check the 'ssl' check box, and select the testkeys file (which is supplied by sun.  If you have a key, use your key instead).  The password for testkeys is 'passphrase'.
+</ul>
+</ul>
+
+
+<ul>
+<b><a name=Customized_logging>Customized logging is REMOVED!!</b>
+(Added since version 0.30c, removed after version 0.94z.  Use filters for customized logging.)
+</ul>
+
+<ul>
+<a name="Customizable_error_page"><b>Customizable error page</b>
+<ul>
+    You can specify which html page, jsp page or servlet to involve when a error is encountered. 
+    Use the config servlet, click on <b>Edit WebApp Config</b> button, and at the bottom of the new page,
+    you can map specific error code or exception to the html, jsp or servlet.
+    If you wish to use a servlet, you must use put its url mapping to the <i>Error Page Location</i> box.
+    
+    <br>
+    The message is passed to the jsp or servlet via:
+      request Attribute "javax.servlet.error.message" -> exception message.    
+    See htdocs/errorReport.jsp for example.
+</ul>
+</ul> 
+   
+<ul>
+<b>  Browsers with no cookie support</b>
+<ul>
+    
+    <li> For simple GET or POST operation: If browser do not support cookies, 
+    you must embedded the sessionid in forms or URL.  
+    The name must be "jsessionid" (according sun spec) or
+    classpath.  The server will pick it up automatically.  
+    See servlets/test/NoCookieSession.java for example
+
+    <li> For POST with multipart/form-data
+    com.BajieSoft.HttpSrv.gzHttpServletRequest is the under line implemention of 
+    HttpServletRequest.  Usually you don't need to use setSessionID() function. 
+    But when you are doing POST with multipart/form-data and need to deal with browsers 
+    with no cookie support, you need to embedded the server id as above, and make sure it is 
+    the first item in the form.   After parse it out, cast your HttpServletRequest to 
+    com.BajieSoft.HttpSrv.gzHttpServletRequest and use the setSessionID function to set the 
+    session id.  When compile make sure add jzHttpSrv.jar to classpath.
+</ul>
+</ul>
+
+<b><a name="SetAutoReloadOff">How to set auto servlet reload on or off?</b><br><br>
+<ul>
+  Auto servlet reload is by default on.  With auto servlet reload on, the server automatically reload updated servlet, war or jsp files when needed without your 
+attension.  It is ideal in development mode because you can fix a bug in your servlet and recompile, or for war recompile and jar it, then just use the browser the connect the it as if nothing happened, the server will automatically load the new one.  
+  <br>However, the auto reload make the server run slow, espically for servlets, it is very slow.  To turn it off, connect to 
+<a href="http://localhost/srvConfig">http://localhost/srvConfig</a> (you may need to specify the port if you use a non-default port).  Login in with admin/admin.  Click on
+"Edit common server properties" on top left of the screen, Set "Set Auto Servlet reload " to off and make sure click on the "Save" button.
+</ul>
+<b>Config Servlet Help (srcConfig)</b><br><br>
+<ul>
+<li><a name="Common_server_properties">Common server properties Screen
+        <UL>
+	<li><b>Set Auto Servlet reload</b> This setting decides if .war, servlet and .jsp files should be
+                                           automatically reloaded if source changed.
+                                           Turn it on in development mode is a very good idea
+                                           since you don't need to restart the server every
+                                           time you modified your servlet, war or jsp.
+                                           Turn it off can make the server a little faster.
+        <li><b>Set dir processing mode</b> The three modes are:
+                                   <ul>
+                                   <li>Off.  Never list the content of a directory.
+                                   <li>Process if no default file found.  Only show the content of the directory if
+                                       no welcome file is found in the directory.
+                                   <li>Always list the content of the directory no matter the condition.
+                                   </ul>
+        <li><b>Set Error Report Servlet class</b>  Set the servlet for error processing.
+               Please see <a href="#Customizable_error_page">Customizable error page</a>
+        <li><b>Set Dir Processing Servlet Class</b> Set the servlet for directory listing.
+               This allows you to do customized directory listing instead of the one provided
+               by the server.  The path will be given in pathinfo. 
+        <li><b>Set Maxium allowable threads</b>Maxium number of threads it will keep for future use.
+        <li><b>Set Initial threads</b>Threads that are useable from the start.                             
+        <li><b>Set Maxium cache size in bytes</b> Set the maxium cachable page buffer in bytes.
+               Cached files will be stored in memory so next they got requested by user they don't
+               need to be fetched form disk.
+        <li><b>Set Cache Reorg time</b>  Time in seconds how long the caches need to be looked into
+                                         (unload some not used files to make cache more effecient).
+        <li><b>Reload classpath</b> (this is on top of the screen)  Reload all the classpath (the main propose is to reload the *.jar files in WEB-INF/lib directory, because there is no other way to know new jar files are dropped there).
+                                     Use this option if you dropped new jar files to the WEB-INF/lib directory.
+        <li><b>Unload all servlets</b> (this is on top of the screen) Unload all the servlets.
+        <li><b>Debug Mode</b> Turn on debug mode to see debug messages.
+<a name="srvdb">
+        <li><b>User DataBase class</b> Specify the name of the class the server will use
+                                       to load and identify user information.  The default
+                                       class will load config/users.properties file.  If you
+                                       have a lot of users, it is best to implement your own
+                                       class and use a database instead.<br>
+                                          
+        You own class must implement the com.BajieSoft.HttpSrv.srvDB.IServerUserDB interface.  
+        Make sure your class is in the classpath and use the config Servlet to set the user 
+        database class to your class. This url shows a 
+<a href="srvDB/simpleUserDB.java"> sample source </a>
+        and here is the <a href="srvDB/ServerUser.java">ServerUser Interface</a> for storing a user and
+<a href="srvDB/IServerUserDB.java">IServerUserDB interface </a>for server user database<br>
+
+        <!-- li><b>Extract war files</b> Sepcify if .war files should be extracted.
+            If you want to edit the html, web.inf files easily, let it on so the .war file will be extracted to a directory 
+            of the same name (example, d:\srv\wars\USER.war will be extracted to directory d:\srv\wars\USER\ directory).
+            Leave it off if you want the war file as is to save some harddrive space.  There is no speed difference between the
+            2 modes.
+        -->
+        <li>The mode Extract war files is no longer supported.
+        <li><b>Set perl interpreter location</b> Set where perl interpreter is.  You need to set it before
+               can use cgi scriptes.
+        <li><b>Use existing jsp compiled classes on restart</b>  Leave it on (reuse class). This way 
+               after server is restarted, it will not recompile the jsp files if it is already compiled.
+        <li><b>Set HTTP Request Doc root</b>Set the root directory where html files will be served.
+               Default is htdocs.  Can be a absolute path or relative to where the server is installed.
+        <li><b>JSP compile string</b> The string to compile .java files generated from .jsp files.  If javac is not in the path, you need to specify the full path to javac.
+        <li><b>JSP temp dir</b> Temp dir to put .java files generated by .jsp.  This is also the directory where the compiled .class files will be stored.
+        <li><b>Set Http Logger</b>Set the class name used for logging http requests.  Please refer to <a href="#Customized_logging">customized logging</a> for instructions on how to write your own logger classes.
+        <li><b>Set Error Logger</b>Set the class name used for logging errors.
+        <li><b>Set Servlet Logger</b>Set the class name used for logging servlet logs.
+        </UL>
+<br><hr><br>
+<li><a name="WebAppConfig"><b>Edit Webapp Config</b></a> button
+<ul>
+<li><b>Set Server Class Path</b> Set the classpath where beans and classes should be loaded.
+                                         The style is just like the CLASSPATH for ordinary java classes (can be jars, pathes and seperated
+                                         by : on unix or ; on windows.
+                                         Note that even though htdocs/WEB-INF/lib directory is a special case, even if it is not
+                                         in classpath, all *.jar file in that directory will be loaded as if they are in classpath.                                         
+
+</UL>
+<br><hr><br>
+<li><a name="Virtuap_Pathes"><b>Edit Virtual Path Section</b> (located with common server properties)
+  <ul>
+  Virtual path maps url patern to a directory on the file system.
+  <li>URL Mapping.   The url patern.  Note: if url is of form /path/, /path will not mapp to virtual path. But if url is of form /path, then both /path and /path/ will be mapped. And url is always starts with /.
+  <li>Path.          Path is the directory on file system.  It could be in any format.  If it is relative, then it is relative to the location of jzHttpSrv.jar.
+  </ul>
+<br><hr><br>
+
+
+<br><hr><br>
+<li><a name="CGI_Mappings"><b>Edit CGI mappings</b> (located with common server properties)
+  <ul>
+  CGI mapping maps a url to the cgi directory.
+  <li>CGI Mapping.   The url patern.  every thing after the pattern will be passed to perl handler (usually perl.exe).
+  <li>Path.          Path is the directory on file system.  It could be in any format.  If it is relative, then it is relative to the location of jzHttpSrv.jar (example, cgi/bin directory).
+  </ul>
+<br><hr><br>
+
+<li><a name="Initial_Context_Params"><b>Initial Context Params </b> (located with common server properties)
+  <ul>
+  Initial Context Params is set so servlets can get it by ServletContext.getInitParameter().
+  </ul>
+<br><hr><br>
+
+<li><a name="Edit_Servlets">Edit Servlets Screen
+        <ul>
+        <li><b>Add New Servlet Alias</b>  Add a new servlet alias.
+        <li><b>Show&Add Servlet alias</b> This is the prefered way to add servlets since the computer will ensure the classname and path are correct, 
+               and you will have a chance to decide which servlet you want given a alias to and change the alias name before submit.
+               It will only add servlets that has not been given a alias.
+        <li><b>Add all servlets</b> Same as above except that it will make all check boxes selected.
+        <li><b>Delete</b>Delete the alias
+        <li><b>Edit</b>Edit the alias settings and add back.  If the alias name is changed, a new alias is created.
+        </ul>
+<br><hr><br>
+<li><a name="Add_New_Servlets"><b>Add New Servlets Screen</b>
+        <ul>
+        It is best to use 'Auto add all servlets' to add new servlets, unless you want to add a jsp servlet.  The following
+        method is for manual add servlet.  Don't put in both class name and jsp file name.<br>
+        After add the new servlet, make sure to use <a href="#Edit_Servlet_Mapping">Edit Servlet Mapping</a> button, located on
+        top right of the screen to map a url to the servelt so it can be used.
+        <li><b>Servlet Alias Name</b> Name of the alias.  It should not contain any space, '?', ':', '\' or '/' chars.
+        <li><b>Servlet Class Name</b> The Full Name of the servlet class.
+        <li><b>Jsp File Name</b> name of the jsp file that is used as a servlet.  The name shoulbe be the same as request from browser, without the http://hostname.
+                                 <br>Example, if the jsp is accessable via http://host/jsp/test.jsp, the jsp name should be /jsp/test.jsp
+        </ul>
+<br><hr><br>
+<li><a name="Edit_Servlet_Mapping"><b>Edit Servlet Mapping</b>
+        <ul>
+        Edit servlet mapping allows you to add or delete url->servlet alias mappings.
+        <li>URL Mapping.  The url that is mapped to servlet.  If the url ends with a /, then 
+            The server will not find the servlet if you specifi a url without the trailing '/'.
+            But if the url doesn't end with a '/', both 'url' or 'url/' will be mapped to the servelt.
+        <li>All aliased servlet will appear in a select box for you to select.
+        </ul>
+<br><hr><br>
+<li><a name="Extension_mappings"><b>Extension mappings</b>
+        <ul>
+        Extension mapping is to let the server know if you wish to use a servlet to
+        treate a special file.  One example will be map *.jsp to JspServlet.
+        </ul>
+<br><hr><br>
+<li><a name="Welcome_File_List"><b>Welcome File List</b>
+        <ul>
+        Welcome files are a list of files server need to search for if a user requested
+        a directory from the web browser.  The server will try to find if any of
+        the files in the welcome file exists before decide if it need to list the current
+        directory.  One example will be request on http://localhost/  returns http://localhost/index.html
+        if index.html is in the welcome file list.<br>
+        Set by click on <b>Edit WebApp Config</b> button.
+        </ul>
+<br><hr><br>
+<li><b>Set Session Timeout time</b>  Set the session timeout in seconds.
+        <ul>
+           Session timeout can be set by click on <b>Edit WebApp Config</b> button.
+        </ul>
+<br><hr><br>
+<li><a name="Server_Properties"><b>Server Properties</b>
+        <ul>        
+        <li><b>Clear all sessions</b>  Clear all the sessions .
+        <li><b>Reload all wars</b>     Reload all the .war files.  Use this button if you added new
+                                     .war files in the wars/ directory, or removed .war files from that
+                                     directory.
+        </ul>
+
+<br><hr><br>
+<li><a name="Server_List"><b>Server List</b>
+        <ul>
+        You can see the server list by click on the 'Show & Edit servers' link.
+        <br> This will show you all the servers running.  If you didn't start
+        any server, there will be a default web server on port 80.  Click on the
+        'Edit server' button will let you edit all the server properties include
+        Servlets, mime types and etc.
+        </ul>
+
+<br><hr><br>
+<li><a name="Start_New_Server"><b>Start a new server</b>
+        <ul>
+        <li><b>The port the server will be on</b>  The port the server is running on.
+            For http, the default is 80 and for https, the default is 443.
+            If you start a http server on port 85, then use http://localhost:85/ to access it.
+        <li><b>give a server name</b> Optional.  Can be any name you want.
+        <li><b>Check this box if it is ssl server </b>  Click on the box if the server
+            is a https server ( uses securities socket layer, used by most commerical servers).
+            Make sure sun's jsse jars are in the class path. For detailed instructions,
+            please see <a href="#SSL_setup"> SSL setup</a>.
+        <li><b>The ip address of the server</b>The server will detect all the ip addresses
+            available on the local machine, you just need to select one of them for the server
+            to bind on.  If you don't care, just select "All Local addresses" and you can access the server via
+            all the ip addresses the machine got.
+        <li><b>SSL cert file name</b>  This is for ssl only.  You only need to do it if
+            you want to start ssl and have your own cert file.  If you want to start SSL
+            but don't have your own cert file, you can use the default one come with the server.
+            The default one is provided with sun's jsse package, so if you connect
+            to the server with a browser, it will warning that the cert doesn't match.
+        <li><b>SSL cert password</b> The password for the cert file.  Again leave it as is if you don't
+            have your own cert file.  If you want your won cert file, you need to generate one
+            with jdk1.3's key tool and apply for a cert from versign or other cert providers.
+        </ul>
+</ul>
+</body>
+</html>

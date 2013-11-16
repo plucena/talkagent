@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="var" path="TOMCAT4/common/lib/servlet.jar"/>
+    <classpathentry kind="var" path="TOMCAT4/bin/bootstrap.jar"/>
+    <classpathentry kind="var" path="JDK_TOOLS"/>
+    <classpathentry kind="lib" path="D:/ta-bu-cvs/builts/Semantic-Agent-0.32/platform/bin/lib/ta-lib-common.jar"/>
+    <classpathentry kind="lib" path="D:/ta-bu-cvs/builts/Semantic-Agent-0.32/platform/bin/lib/fipa.jar"/>
+    <classpathentry kind="lib" path="D:/ta-bu-cvs/builts/Semantic-Agent-0.32/platform/bin/lib/servlet.jar"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>

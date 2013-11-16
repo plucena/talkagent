@@ -1,0 +1,119 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : 7 occurred at PC=0x405B0E5B
+Function=(null)+0x405B0E5B
+Library=/usr/java/j2sdk1.4.1/jre/lib/i386/libzip.so
+
+NOTE: We are unable to locate the function name symbol for the error
+      just occurred. Please refer to release documentation for possible
+      reason and solutions.
+
+
+Current Java thread:
+	at java.util.zip.ZipFile.getEntry(Native Method)
+	at java.util.zip.ZipFile.getEntry(ZipFile.java:145)
+	at java.util.jar.JarFile.getEntry(JarFile.java:184)
+	at java.util.jar.JarFile.getJarEntry(JarFile.java:171)
+	at sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:669)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:156)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:190)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:186)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:299)
+	- locked <0x448f5928> (a sun.misc.Launcher$ExtClassLoader)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:292)
+	- locked <0x448e7128> (a sun.misc.Launcher$AppClassLoader)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:265)
+	- locked <0x448e7128> (a sun.misc.Launcher$AppClassLoader)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:255)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:315)
+	- locked <0x448e7128> (a sun.misc.Launcher$AppClassLoader)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:140)
+	at com.BajieSoft.HttpSrv.clsLdr.gzGenClassLoader.findClass(Unknown Source)
+	at com.BajieSoft.HttpSrv.clsLdr.gzGenClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:255)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:315)
+	- locked <0x44480000> (a com.BajieSoft.HttpSrv.clsLdr.ZippedFileClassLoader)
+	at java.lang.ClassLoader.defineClass0(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:502)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:431)
+	at com.BajieSoft.HttpSrv.clsLdr.gzGenClassLoader.gzDefineClass(Unknown Source)
+	- locked <0x44480000> (a com.BajieSoft.HttpSrv.clsLdr.ZippedFileClassLoader)
+	at com.BajieSoft.HttpSrv.clsLdr.gzGenClassLoader.findClass(Unknown Source)
+	at com.BajieSoft.HttpSrv.clsLdr.gzGenClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:255)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:315)
+	- locked <0x44480000> (a com.BajieSoft.HttpSrv.clsLdr.ZippedFileClassLoader)
+	at br.usp.talkagent.useragent.UserAgent.run(UserAgent.java:342)
+	at br.usp.talkagent.useragent.GetUsrInput.runClient(GetUsrInput.java:165)
+	at br.usp.talkagent.useragent.GetUsrInput.run(GetUsrInput.java:88)
+	at br.usp.talkagent.useragent.GetUsrInput.doGet(GetUsrInput.java:23)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processExtService(Unknown Source)
+	at com.BajieSoft.HttpSrv.ServletRunner.processServletService(Unknown Source)
+	at com.BajieSoft.HttpSrv.WapInfoBag.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler$WapHndlWrapper.treateHttpRequest(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.m2(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag.access$900(Unknown Source)
+	at com.BajieSoft.HttpSrv.util.srvTag$ftcImpl.doFilter(Unknown Source)
+	at com.BajieSoft.HttpSrv.httpRequestHandler.gzHttpWork(Unknown Source)
+	at com.BajieSoft.HttpSrv.HttpWorkerGroup$HttpsWorker.run(Unknown Source)
+
+Dynamic libraries:
+08048000-0804e000 r-xp 00000000 03:01 440446     /usr/java/j2sdk1.4.1/bin/java
+0804e000-0804f000 rw-p 00005000 03:01 440446     /usr/java/j2sdk1.4.1/bin/java
+40000000-40012000 r-xp 00000000 03:01 245310     /lib/ld-2.2.93.so
+40012000-40013000 rw-p 00012000 03:01 245310     /lib/ld-2.2.93.so
+40013000-4001c000 r-xp 00000000 03:01 473491     /usr/java/j2sdk1.4.1/jre/lib/i386/native_threads/libhpi.so
+4001c000-4001d000 rw-p 00008000 03:01 473491     /usr/java/j2sdk1.4.1/jre/lib/i386/native_threads/libhpi.so
+4001e000-40021000 r--s 00000000 03:01 831452     /usr/java/j2sdk1.4.1/jre/lib/ext/dnsns.jar
+40021000-4002e000 r-xp 00000000 03:01 913585     /lib/i686/libpthread-0.10.so
+4002e000-40031000 rw-p 0000d000 03:01 913585     /lib/i686/libpthread-0.10.so
+40052000-40054000 r-xp 00000000 03:01 245795     /lib/libdl-2.2.93.so
+40054000-40055000 rw-p 00001000 03:01 245795     /lib/libdl-2.2.93.so
+40055000-4036d000 r-xp 00000000 03:01 440521     /usr/java/j2sdk1.4.1/jre/lib/i386/client/libjvm.so
+4036d000-40522000 rw-p 00317000 03:01 440521     /usr/java/j2sdk1.4.1/jre/lib/i386/client/libjvm.so
+40533000-40545000 r-xp 00000000 03:01 245799     /lib/libnsl-2.2.93.so
+40545000-40546000 rw-p 00012000 03:01 245799     /lib/libnsl-2.2.93.so
+40548000-40569000 r-xp 00000000 03:01 912139     /lib/i686/libm-2.2.93.so
+40569000-4056a000 rw-p 00021000 03:01 912139     /lib/i686/libm-2.2.93.so
+4056a000-4057a000 r-xp 00000000 03:01 848121     /usr/java/j2sdk1.4.1/jre/lib/i386/libverify.so
+4057a000-4057c000 rw-p 0000f000 03:01 848121     /usr/java/j2sdk1.4.1/jre/lib/i386/libverify.so
+4057c000-4059d000 r-xp 00000000 03:01 848109     /usr/java/j2sdk1.4.1/jre/lib/i386/libjava.so
+4059d000-4059f000 rw-p 00020000 03:01 848109     /usr/java/j2sdk1.4.1/jre/lib/i386/libjava.so
+4059f000-405b4000 r-xp 00000000 03:01 848122     /usr/java/j2sdk1.4.1/jre/lib/i386/libzip.so
+405b4000-405b6000 rw-p 00014000 03:01 848122     /usr/java/j2sdk1.4.1/jre/lib/i386/libzip.so
+405b6000-41c84000 r--s 00000000 03:01 17445      /usr/java/j2sdk1.4.1/jre/lib/rt.jar
+41cc7000-41cde000 r--s 00000000 03:01 17446      /usr/java/j2sdk1.4.1/jre/lib/sunrsasign.jar
+41cde000-41d4f000 r--s 00000000 03:01 17439      /usr/java/j2sdk1.4.1/jre/lib/jsse.jar
+41d4f000-41d62000 r--s 00000000 03:01 17438      /usr/java/j2sdk1.4.1/jre/lib/jce.jar
+41f8c000-41f9a000 r--s 00000000 03:01 831453     /usr/java/j2sdk1.4.1/jre/lib/ext/ldapsec.jar
+41f9a000-41fa3000 r-xp 00000000 03:01 245810     /lib/libnss_files-2.2.93.so
+41fa3000-41fa4000 rw-p 00008000 03:01 245810     /lib/libnss_files-2.2.93.so
+41fa4000-41faa000 r--s 00000000 03:01 782535     /usr/lib/gconv/gconv-modules.cache
+41fee000-41ff1000 r--s 00000000 03:01 832193     /usr/java/j2sdk1.4.1/jre/lib/ext/xkt-kb.jar
+41ff1000-41ff9000 r--s 00000000 03:01 831521     /usr/java/j2sdk1.4.1/jre/lib/ext/jakarta-regexp.jar
+42000000-42126000 r-xp 00000000 03:01 912138     /lib/i686/libc-2.2.93.so
+42126000-4212b000 rw-p 00126000 03:01 912138     /lib/i686/libc-2.2.93.so
+4212f000-423eb000 r--s 00000000 03:01 17426      /usr/java/j2sdk1.4.1/jre/lib/charsets.jar
+4c471000-4c636000 r--p 00000000 03:01 424530     /usr/lib/locale/locale-archive
+4c83a000-4c8d9000 r--s 00000000 03:01 831454     /usr/java/j2sdk1.4.1/jre/lib/ext/localedata.jar
+4c8d9000-4c8eb000 r--s 00000000 03:01 831517     /usr/java/j2sdk1.4.1/jre/lib/ext/ucl.jar
+4c8eb000-4c908000 r--s 00000000 03:01 831455     /usr/java/j2sdk1.4.1/jre/lib/ext/sunjce_provider.jar
+4c908000-4c98e000 r--s 00000000 03:01 831518     /usr/java/j2sdk1.4.1/jre/lib/ext/xml.jar
+4c98e000-4ca00000 r--s 00000000 03:01 831519     /usr/java/j2sdk1.4.1/jre/lib/ext/fipa.jar
+4ca00000-4ca37000 r--s 00000000 03:01 831522     /usr/java/j2sdk1.4.1/jre/lib/ext/log4j-1.2.jar
+4ca37000-4ca59000 r--s 00000000 03:01 832213     /usr/java/j2sdk1.4.1/jre/lib/ext/ta-lib-common.jar
+4ca59000-4caa3000 r--s 00000000 03:01 588603     /root/ta/0.0.1/platform/bin/usragt/httpservlets/jzHttpSrv.jar
+4d0af000-4d0bf000 r-xp 00000000 03:01 848118     /usr/java/j2sdk1.4.1/jre/lib/i386/libnet.so
+4d0bf000-4d0c1000 rw-p 0000f000 03:01 848118     /usr/java/j2sdk1.4.1/jre/lib/i386/libnet.so
+
+Local Time = Mon Oct 21 12:08:12 2002
+Elapsed Time = 9
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.1-rc-b19 mixed mode)
+#

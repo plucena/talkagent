@@ -1,0 +1,95 @@
+20040210T194101: !!!! opening display
+________________________________________________________________________________
+ThoughtTreasure version 0.00022 of 19991208 (gcc)
+Copyright 1996, 1997, 1998, 1999 Erik Thomas Mueller. All Rights Reserved.
+Bugs to bugs@signiform.com.
+ThoughtTreasure comes with ABSOLUTELY NO WARRANTY.
+By using ThoughtTreasure, you are agreeing to be bound by the terms of
+the License Agreement. (Type 'legal' to view.)
+For a list of commands type 'help'.
+________________________________________________________________________________
+20040210T194101: !!!! opening outtrans.txt
+20040210T194101: !!!! opening outlname.txt
+20040210T194101: !!!! opening outfname.txt
+20040210T194101: !!!! opening outhuman.txt
+20040210T194101: !!!! opening outlrn.txt
+20040210T194101: !!!! reading ../db/baserule.txt
+________________________________________________________________________________
+Base rules:
+E -> A    (18)
+W -> B W  (6)
+Y -> B Y  (1)
+Z -> B Z  (2)
+E -> B E  (3)
+X -> D X  (40)
+E -> D E  (1)
+X -> N    (67)
+Y -> R B  (1)
+W -> R W  (1)
+Y -> R X  (26)
+Z -> U    (1)
+W -> V    (46)
+Z -> W    (2)
+W -> W B  (4)
+W -> W V  (6)
+W -> W X  (19)
+W -> W Y  (19)
+W -> W H  (2)
+W -> W E  (4)
+W -> W 0  (1)
+X -> X W  (2)
+Z -> X W  (40)
+X -> X X  (2)
+X -> X Y  (1)
+X -> X Z  (4)
+Z -> X Z  (3)
+X -> X E  (2)
+Z -> X E  (1)
+X -> X 9  (1)
+Y -> Y Y  (1)
+Z -> Y Z  (3)
+X -> Z    (3)
+Z -> Z B  (2)
+Z -> Z Z  (2)
+X -> H    (27)
+W -> H W  (4)
+Z -> H X  (1)
+X -> K X  (1)
+Y -> K Y  (1)
+Z -> K Z  (4)
+E -> K E  (1)
+E -> E B  (1)
+Z -> E W  (1)
+X -> E X  (6)
+E -> E Y  (1)
+Z -> E Z  (1)
+E -> E E  (1)
+Z -> x    (1)
+________________________________________________________________________________
+20040210T194101: !!!! reading ../db/eninfl.txt
+20040210T194102: !!!! reading ../db/name.txt
+20040210T194103: !!!! reading ../db/fooddrug.txt
+20040210T194103: !!!! reading ../db/geog.txt
+20040210T194104: !!!! reading ../db/absobj.txt
+20040210T194104: !!!! reading ../db/street.txt
+20040210T194105: !!!! reading ../db/grid.txt
+20040210T194106: !!!! reading ../db/all.txt
+20040210T194106: !!!! reading ../db/physics.txt
+20040210T194106: !!!! reading ../db/chem.txt
+20040210T194106: !!!! reading ../db/trans.txt
+20040210T194106: !!!! reading ../db/celest.txt
+20040210T194106: !!!! reading ../db/physobj.txt
+20040210T194107: !!!! reading ../db/ling.txt
+20040210T194107: !!!! reading ../db/relation.txt
+20040210T194108: !!!! reading ../db/action.txt
+20040210T194109: !!!! reading ../db/attr.txt
+20040210T194110: !!!! reading ../db/enum.txt
+20040210T194110: !!!! reading ../db/living.txt
+20040210T194110: !!!! reading ../db/human.txt
+20040210T194151: !!!! reading ../db/clothing.txt
+20040210T194152: !!!! reading ../db/mediaobj.txt
+20040210T194153: !!!! reading ../db/music.txt
+20040210T194153: !!!! reading ../db/tv.txt
+20040210T194154: !!!! reading ../db/company.txt
+20040210T194154: !!!! reading ../db/elec.txt
+20040210T194155: !!!! Load time = 00:54.

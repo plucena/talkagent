@@ -1,0 +1,54 @@
+#!/usr/local/bin/perl
+
+&parseParameters;
+
+print  "Content-type: text/html
+
+<html>
+<head><title>CGI Test</title></head>
+<body bgcolor=#CCCCCC>
+
+
+<h1>This is CGI Demo</h1><br>
+<hr><br>
+Parameters:<br>
+<ul>";
+
+foreach $par (@pars) {
+  @a=split(/=/,$par);
+  $name=$a[0];
+  $value=$a[1];
+  $value=~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
+  $value=~ s/~!/ ~!/g;
+  $value=~ s/\+/ /g;
+  print "<li>", $name, ": <b>", $value, "</b></li>";}
+  
+print "</ul><br>
+<hr><br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+This is the long long test string<br>
+Just trying to force some error out<br>
+</table>
+</body>
+</html>";
+
+exit 0;
+
+sub parseParameters {
+  $queryStr="";
+  if ($ENV{'REQUEST_METHOD'} eq "GET") {
+    $queryStr=$ENV{'QUERY_STRING'};
+  }
+  else
+  {
+    read(STDIN, $queryStr, $ENV{'CONTENT_LENGTH'});
+  }
+  @pars=split(/&/, $queryStr);
+}

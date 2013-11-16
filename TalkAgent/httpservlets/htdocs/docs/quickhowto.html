@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+  <META NAME="Author" CONTENT="Gang Zhang">
+  <TITLE>Setup Guide</TITLE>
+</HEAD>
+
+<body bgcolor=#aaaabb>
+<ul>
+<li><a href="faq.html">How to publish html files?</a>
+<li><a href="faq.html#HowToAddServlets">How to add servlets</a>
+<li><a href="faq.html#HowToRunAsNTService">How to run as NT service</a>
+<li>How to add virtual hosts?<br>
+<ul>
+	To add a virtual host, edit the config/virtualHost.properties file.
+	<br>If you want host name myHost to server htdocs directory, put:
+	<br>myHost=htdocs in the config/virtualHost.properties file.
+</ul>
+<li><a href="faq.html#PreventAUTOServletAliasMapping">How to prevent server automatically map servlet alias to /servlet/ServletAlias?</a>
+<li>Auto reload is truned on, whey isn't the server autoload the new .war file I added
+in?<br>
+	<ul>	
+	If you added your .war file in the wars/ directory after server started, you must
+	click on the "Reload Wars" button to init it.  After the server know the .war file
+	exists, it will mapp it and reload it if new version is available.
+	</ul>
+<li>How to add a .war file in a .war file?
+<ul>
+	To add a WAR in andother WAR, add the .war file in the other war file's WEB-INF/wars directory, and zip it alone with other files of the war.  Example, you have aaa.war and bbb.war, put bbb.war in WEB-INF/wars/ directory in aaa.war and zip it.  you can then access bbb by: aaa/bbb/.
+</ul>
+<li>How to implement a different server  user DB
+<ul>
+	Server User DB is a class that the server uses to identify the users of the server (used to authenticate user accesses).  See the following link for code.  <a href="faq.html#srvdb">See the faq</a>
+</ul>
+<li>How to add users.
+<ul>
+You can either edit the <font color=#ff0000>config/users.properties</font> directly or use config servlet.
+<br>To edit the users.properties file directly, open the file, and to add user  foo password bar and assign him/her the role of both admin and mngr, add the line:   <br>
+foo=bar,admin,mngr<br>
+to the file.  Then use the 'reloadUsers.bat' in the server's directory to let server know the new user (or just restart the server)
+<br>
+To use the config servlet, connect to http://localhost/srvConfig/ and click on 'edit users' link on top.  then just set username, password, and add roles sperated by comma (,).
+</ul>
+<br>
+</body>
+</html>

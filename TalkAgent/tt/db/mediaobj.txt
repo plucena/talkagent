@@ -1,0 +1,1558 @@
+;_______________________________________________________________________________
+; ThoughtTreasure
+; Copyright 1996, 1997, 1998, 1999 Erik Thomas Mueller. All Rights Reserved.
+; See <URL:../ttlegal.txt> for legal details.
+; Bugs to <URL:mailto:bugs@signiform.com>.
+;_______________________________________________________________________________
+=media#P object*.z/information/|humanmade|
+;_______________________________________________________________________________
+==part* of#R theory#.z//
+===axiom.¹z//axiome.¹My/
+===hypothesis.z//hypothèse.Fy/
+====Katz#-Postal# hypothesis*.z//
+|comment="Transformations preserve meaning. Meaning is in deep structure."|
+===theorem.¹z//théorème.¹My/
+====corollary.¹z//corollaire.¹My/
+===theory-criterion//criterion.¹z/critère.¹My/
+====theta#-criterion*.z/theta-theory/thêta*Aß-critère*.¹My/
+===theory-condition//condition.¹z/condition.¹Fy/
+===theory-constraint//constraint.¹z/contrainte.¹Fy/
+====constraint-NIC/theory-of-binding/Nominative#A Island# Constraint*.z/NIC.tz/
+contrainte* des#RP ‹lots#MP Nominatifs#AMP.¹Fy/NIC.tFy/
+====constraint-SSC/theory-of-binding/Specified#A Subject# Constraint*.z/SSC.tz/
+contrainte* du#R Sujet#M spécifié#AM.¹Fy/SSC.tFy/
+====constraint-subjacency/bounding-theory/subjacency# constraint*.z/
+contrainte* de#R Sous#R-Jacence#.¹Fy/
+====rule-filter//filter.z/filtering# rule*.z/f#-rule*.qz/filtre.¹My/
+; In GB, causes sentences to be ruled out (starred).
+=====case# filter*.z/theory-of-case/Filtre* sur#R le#D Cas#.¹My/
+===principle.¹z//principe.¹My/
+====principle-ECP/theory-of-government/
+Principe* des#RP Catégories#FP Vides#AFP.¹My/ECP.tMy/
+===theory-proposition//proposition.z/proposition.¹Fy/
+;_______________________________________________________________________________
+==theory.z//théorie.Fy/
+;_______________________________________________________________________________
+===philosophy.z//philosophie.Fy/
+;_______________________________________________________________________________
+; todo: Implement "name that philosophy":
+;   "I believe a priori propositions are tautologies and that empirical
+;    propositions are derived from sense-experience. What am I?"
+;   "A logical positivist!"
+;_______________________________________________________________________________
+====metaphysics.z//metaphysical.Az/métaphysique.Fy/métaphysique.Ay/
+;_______________________________________________________________________________
+====ethics.z//éthique.Fy/morale.Fy/
+=====subjectivism.z//subjectivist.Az/subjectivisme.My/subjectiviste.Ay/
+=====utilitarianism.z//utilitarian.Az/utilitarisme.My/utilitariste.Ay/
+;_______________________________________________________________________________
+====essentialism.z//essentialist.Az/essentialisme.My/essentialiste.Ay/
+;_______________________________________________________________________________
+====nominalism.z//nominalist.Az/nominalisme.My/nominaliste.Ay/
+=====Hobbes-system/materialism/|believe¤Hobbes|
+part-of¤word,langage|
+;_______________________________________________________________________________
+===-rationalist#-empiricist# opposition*.z//
+;_______________________________________________________________________________
+=====rationalism.z//intellectualism.z/rationalist.Az/rationalisme.My/
+rationaliste.Ay/|believe=[equiv true exist-absolute]|
+believe=[leadto [intuit human] [know human [exist-absolute concept]]]|
+======Cartesian#A rationalism*.z//rationalisme* de#R Descartes#.My/
+|believe¤Descartes|
+======Hegelian#A rationalism*.z//rationalisme* de#R Hegel#.My/|believe¤Hegel|
+;_______________________________________________________________________________
+=====empiricism.z/empiricism-idealist-opposition/empiricist.Az/empirisme.My/
+empiriste.Ay/
+;_______________________________________________________________________________
+======British#A empiricism*.z//empirisme* anglais*A.My/
+=======Locke-system//Locke#'s philosophy*.z/philosophie* de#R Locke#M.Fy/
+|believe¤John-Locke|
+=======Hume-system//Hume#'s philosophy*.z/philosophie* de#R Hume#M.Fy/
+|believe¤David-Hume|
+=======JS-Mill-system//Mill#'s philosophy*.z/philosophie* d#R'Mill#M.Fy/
+|believe¤JS-Mill|
+;_______________________________________________________________________________
+======positivism.z//positivist.Az/positivisme.My/positiviste.Ay/
+;_______________________________________________________________________________
+=======logical#A positivism*.z//logical#A empiricism*.z/
+positivisme* logique*A.My/logicopositivisme.My/empirisme* logique*A.My/
+néo*Aß-positivisme*.My/néopositivisme.My/
+;_______________________________________________________________________________
+========Schlick-system//Schlick#'s philosophy*.z/philosophie* de#R Schlick#M.Fy/
+|believe¤Moritz-Schlick|
+========Carnap-system//Carnap#'s philosophy*.z/philosophie* de#R Carnap#M.Fy/
+|believe¤Rudolf-Carnap|
+========Neurath-system//Neurath#'s philosophy*.z/philosophie* de#R Neurath#M.Fy/
+|believe¤Otto-Neurath|
+========Tarski-system//Tarski#'s philosophy*.z/philosophie* de#R Tarski#M.Fy/
+|believe¤Alfred-Tarski|
+========Morris-system//Morris#'s philosophy*.z/philosophie* de#R Morris#M.Fy/
+|believe¤Charles-Morris|
+;_______________________________________________________________________________
+========Ayer-system//Ayer#'s philosophy*.z/philosophie* d#R'Ayer#M.Fy/
+|@193507:194601|believe¤Ayer|
+part-of¤sense-contents,a-priori-proposition,empirical-proposition|
+believe=[true a-priori-proposition]|
+believe=[probable empirical-proposition]|
+believe=[equiv a-priori-proposition tautology]|
+believe=[equiv a-priori-proposition analytic-proposition]|
+believe=[equiv empirical-proposition synthetic-proposition]|
+believe=[leadto-deduce a-priori-proposition a-priori-proposition]|
+believe=[leadto-induce sense-contents empirical-proposition]|
+believe=[meaningful metaphysics -1.0u]|
+believe=[meaningful exist-absolute -1.0u]|
+believe=[meaningful exist-mental -1.0u]|
+believe=[meaningful [exist God] -1.0u]|
+;_______________________________________________________________________________
+===-realist#-idealist# opposition*.z//
+;_______________________________________________________________________________
+=====idealism.z/materialist-idealist-opposition,empiricism-idealist-opposition/
+idealist.Az/idéalisme.My/idéaliste.Ay/
+;_______________________________________________________________________________
+======Platonic#A idealism*.z//idéalisme* platonicien*A.My/|believe¤Plato|
+=======Platonism.z/essentialism/Platonist.Az/platonisme.My/platoniste.Ay/
+;_______________________________________________________________________________
+======transcendental#A idealism*.z//idéalisme* transcendantal*A.My/
+|believe¤Kant|
+;_______________________________________________________________________________
+======dialectic#A idealism*.z//dialectic.z/idéalisme* dialectique*A.My/
+|believe¤Hegel|
+;_______________________________________________________________________________
+======Berkeley-system//Berkeley#'s philosophy*.z/
+philosophie* de#R Berkeley#M.Fy/|believe¤George-Berkeley|
+part-of¤God,human,nonhuman,exist,exist-mental,exist-perceived-by-God|
+believe=[equiv [exist nonhuman] [perceive [or human God] nonhuman]]|
+believe=[equiv exist [or exist-mental exist-perceived-by-God]]|
+;_______________________________________________________________________________
+=====realism.z//realist.Az/réaliste.Ay/réalisme.My/
+;_______________________________________________________________________________
+======neo#A-realism*.z//neo#A-realist*.Az/néo*Aß-réaliste*.Ay/
+néo*Aß-réalisme*.My/
+;_______________________________________________________________________________
+=======logical#A atomism*.z//atomisme* logique*A.My/
+;_______________________________________________________________________________
+========Russell-system//Russell#'s philosophy*.z/philosophie* de#R Russell#M.Fy/
+|believe¤Bertrand-Russell|
+part-of¤logical-atom,a-priori-proposition,empirical-proposition|
+;believe=[derives-from a-priori logical-atom]|
+;_______________________________________________________________________________
+========Wittgenstein-Tractatus-system//Wittgenstein#'s philosophy*.z/
+philosophie* de#R Wittgenstein#M.Fy/
+|believe¤Ludwig-Wittgenstein|part-of¤Tatsache,Sachverhalt|
+;_______________________________________________________________________________
+===-monism#-dualism#-pluralism# opposition*.z//
+;_______________________________________________________________________________
+=====monism.z//monist.Az/monisme.My/moniste.Ay/|believe=[one real]|
+======spiritual#A monism*.z//spiritual#A monist*.Az/monisme* spirituel*A.My/
+moniste* spirituel*A.Ay/
+;_______________________________________________________________________________
+=====dualism.z//dualist.Az/dualisme.My/dualiste.Ay/
+|believe=[part-of mind universe]|believe=[part-of matter universe]|
+;_______________________________________________________________________________
+=====pluralism.z//pluralist.Az/pluralisme.My/pluraliste.Ay/
+;_______________________________________________________________________________
+===-empiricism#-idealist# opposition*.z//
+;_______________________________________________________________________________
+===-materialist#-idealist# opposition*.z//
+=====materialism.z/monism,atheism/materialist.Az/matérialisme.My/
+matérialiste.Ay/
+;_______________________________________________________________________________
+===scientific#A theory*.z//théorie* scientifique*A.Fy/
+;_______________________________________________________________________________
+====theory* of#R cognition#.z//noologique.qAy/
+=====anthropological#A model*.z//
+======Universal#A People*.Pïz/ontology,cliche-similarity-across-cultures/UP.tz/
+; Anthropologist Donald E. Brown cited in
+; (Pinker, 1994, p. 143).
+=====connectionist#A AI# model*.z//
+=====quantum#A computing# model*.z//|create¤Roger-Penrose|
+======weak#A quantum# consciousness# theory*.z//
+|href="http://www.aimnet.com/hia/pcr/home.html"|
+=====symbolic#A AI# model*.z//|create¤Marvin-Minsky,Herbert-Simon,Allen-Newell|
+;_______________________________________________________________________________
+====theory* of#R language#.z//
+;_______________________________________________________________________________
+=====structural#A linguistics*.z//linguistique* structuraliste*A.Fy/
+structuralisme.ÎMy/
+;_______________________________________________________________________________
+=====Universal#A Grammar*.z//UG.tz/Grammaire* Universelle*A.Fy/GU.tFy/
+;_______________________________________________________________________________
+======generative#A grammar*.Éz//transformational#A grammar*.Éz/
+generative#A-transformational#A grammar*.Éz/grammaire* générative*A.¹Fy/
+grammaire* générative*A.¹Fy/grammaire* transformationnelle*A.¹Fy/
+modèle* chomskyen*.My/linguistique* chomskyenne*A.Fy/
+linguistique* générative*A.Fy/chomskyen.Ay/générativisme.ÎMy/
+|@1957|create¤Noam-Chomsky|
+=======early#A transformational#A theory*.z//
+|@1957|create¤Noam-Chomsky|
+=======standard#A theory*.kz//ST.tÉz/modèle* standard*Aß.My/
+|@1965|create¤Noam-Chomsky|
+=======extended#A standard#A theory*.kz//EST.tÉz/
+théorie* standard*Aß étendue*A.Fy/TSE.tFy/
+=======revised#A extended#A standard#A theory*.kz//trace# theory*.z/REST.tÉz/
+=======lexical#A-functional# grammar*.Éz/unification-grammar/LFG.tÉz/
+|@1976|create¤Joan-Bresnan|
+=======generative#A semantics*.Éz//|@1970|create¤George-Lakoff|
+=======lexical#A conceptual#A structure# theory*.Éz//LCS,LCS# theory*.tÉz/
+|@1983|create¤Jackendoff|
+=======GB.tÉz//GB# theory*.tÉz/government#-binding# theory*.¹Éz/
+théorie* du#R Gouvernement#M et#K du#R Liage#M.¹Fy/
+modèle* du#R Gouvernement#M et#K du#R Liage#M.My/
+modèle* GB#C.My/|@1981|create¤Noam-Chomsky|
+========principles#P and#K parameters#P theory*.z//
+========theory* of#R binding#.¹z//théorie* du#R Liage#M.¹Fy/
+========bounding#A theory*.¹z//théorie* des#RP Barrières#P.¹Fy/
+théorie* des#RP Bornes#P.Fy/
+========theory* of#R movement#.¹z//théorie* du#R déplacement#M.¹Fy/
+========theory* of#R government#.¹z//théorie* du#R Gouvernement#M.¹Fy/
+========theory* of#R government# proper#A.¹z//
+théorie* du#R Gouvernement#M Propre#AM.¹Fy/
+========theory* of#R case#.¹z//théorie* du#R Cas#M.¹Fy/
+========theory* of#R control#.¹z//théorie* du#R Contrôle#.¹Fy/
+========theta#-theory*.¹z//thêta*Aß-théorie*.¹Fy/théorie* thématique*A.Fy/
+=========theta#-marking*.¹z//theta#N-mark*.¹Vz/thêta*Aß-marquage*.¹My/
+thêta#NM-marquer*.¹Vy/marquage* thématique*A.My/
+========X#-bar# theory*.Éz//X#N-bar#N.Az/théorie* X#C-barre#.¹Fy/
+système* X#C-barre#F.My/X#NC-barre#NF.ßAy/|@1970|create¤Noam-Chomsky|
+;_______________________________________________________________________________
+=====case# grammar*.Éz//grammaire* des#RP cas#MP.¹Fy/
+|@1968|create¤Charles-Fillmore|
+;_______________________________________________________________________________
+=====Montague# Grammar*.Éz//Montague# Semantics*.z/|@1969|create¤Montague|
+;_______________________________________________________________________________
+=====systemic#A functional#A grammar*.Éz//SFG.tz/; Halliday
+;_______________________________________________________________________________
+=====generalized#A phrase#-structure# grammar*.z//GPSG.tz/
+======immediate#A dominance#\/linear#A precedence# grammar*.z//ID#\/LP*.tz/
+=====head#-driven#V phrase#-structure# grammar*.z//HPSG.tz/
+=====definite#A clause# grammar*.z//DCG.tz/
+=====CCG.tz//combinatory#A categorial#A grammar*.z/
+=====DG.z//dependency# grammar*.z/
+=====unification# grammar*.z//
+======DUG.z/DG/dependency# unification# grammar*.z/
+======chart# parser*.z//
+======link# grammar*.z//
+======TAG.tz//tree# adjoining# grammar*.z/tree#-adjoining# grammar*.z/
+=======DTG.tz//D#-tree# grammar*.z/
+======STAG.tz//synchronous#A tree# adjoining# grammar*.z/
+======LTAG.tz//lexicalized#A tree# adjoining# grammar*.z/
+=======FB#-LTAG*.tz//feature#-based#A lexicalized#A tree# adjoining# grammar*.z/
+;_______________________________________________________________________________
+====theory* of#R life#.z//
+;_______________________________________________________________________________
+=====artificial#A life*.z//
+======cellular#A automata*.Pïz//
+=======Conway-Life//Conway#'s Life# game*.z/Life.®Éz/Game* of#R Life#.z/
+|create¤John-Conway|
+======genetic#A algorithms*.Pïz//simulated#A evolution*.z/
+;_______________________________________________________________________________
+====theory* of#R everything#.z//TOE.z/théorie* du#RM grand#AM tout#HM.Fy/
+;_______________________________________________________________________________
+=====cosmological#A theory*.z//théorie* cosmologique*A.Fy/
+;_______________________________________________________________________________
+=====quantum# theory*.z//quantum# physics*,quantum# mechanics*.z/
+théorie* des#RP quanta#MP.Fy/théorie* quantique*A.Fy/
+;_______________________________________________________________________________
+=====theory* of#R relativity#.z//théorie* de#R la#D relativité#.Fy/
+======special#A relativity*.z//
+======general#A relativity*.z//
+;_______________________________________________________________________________
+=====QCD.z//quantum# chromodynamics# theory*.z/
+=====QED.z//quantum# electrodynamics# theory*.z/
+=====supersymmetry.z//supersymétrie.Fy/
+=====theory-strings//strings.Pïz/cordes.FPïy/
+======superstrings.Pïz//supercordes.FPïy/
+;_______________________________________________________________________________
+==hypermedia.Pïz//hypermédia.y/|@1969|create¤Ted-Nelson|
+===hypertext.z//hypertext.My/
+===website//web# site*.¹z/website.z/
+===web# page*.z//webpage.z/
+====homepage//home#A page*.¹z/homepage.z/
+====graphical#A web# page*.z//
+====Java#-enabled#Vd web# page*.z//
+;_______________________________________________________________________________
+==protocol.z//protocole.My/
+===FTP.z//File# Transfer# Protocol*.z/RFC# 959*.z/MIL#-STD#-1780*.z/FTP.y/
+|@1971|create¤na|; transfer de fichier.My
+====anonymous#A FTP*.z//FTP* anonyme*A.y/
+===LAPD.z//Q\.921.z/Q\.921.y/protocole* Q\.921#C.My/LAPD.y/protocole* LAPD#C.My/
+===NFS.z//NFS.y/protocole* NFS#C.My/
+===NNTP.z//Network# News# Transfer# Protocol*.z/NNTP.y/protocole* NNTP#C.My/
+===POP.z//POP.y/protocole* POP#C.My/
+===PPP.z//PPP.y/protocole* PPP#C.My/
+===SLIP.z//SLIP.y/protocole* SLIP#C.My/
+===SMTP.z//SMTP.y/protocole* SMTP#C.My/
+===TCP#\/IP*.z//TCP#\/IP#.y/
+===HTTP.z//
+===CCITT# protocol*.z//protocole* CCITT#.My/
+====Q931.Tz//Q\.931.z/Q\.931.y/protocole* Q\.931#C.My/
+====V32.Tz//V\.32.z/V32.z/V\.32.y/V32.y/protocole* V\.32#C.My/
+protocole* V32#C.My/
+====V32bis.Tz//V\.32bis.z/V32bis.z/V\.32bis.y/V32bis.y/protocole* V\.32bis#C.My/
+protocole* V32bis#C.My/
+====X25.Tz//X\.25.z/X\.25.y/protocole* X\.25#C.My/
+====X400.Tz//X\.400.z/X\.400.y/protocole* X\.400#C.My/|@1984|create¤CCITT|
+====X500.Tz//X\.500.z/X\.500.y/protocole* X\.500#C.My/|@1988|create¤CCITT|
+;_______________________________________________________________________________
+==message.z//message.My/
+;_______________________________________________________________________________
+==mail.Àz//post.gz/courrier.My/
+;_______________________________________________________________________________
+===snail# mail*.z//physical#A mail*,regular#A mail*,conventional#A mail*.z/
+normal#A mail*,standard#A mail*.z/poste.Fy/
+====US# mail*.z//
+====snail-mail-letter//letter.z/lettre.Fy/|part-of¤envelope,sheet-of-paper|
+;_______________________________________________________________________________
+===electronic#A mail*.mz//courrier* électronique*A.My/
+;_______________________________________________________________________________
+====email.mz//e#-mail*.mz/E#-mail*.mz/mail.Tmz/message.z/electronic#A mail*.omz/
+computer# mail*.omz/email.¹My/e#-mail*.My/E#-mail*.My/mél.My/
+messagerie* électronique*A.Fy/
+messagerie.Fy/message.My/message* électronique*A.My/
+;_______________________________________________________________________________
+=====email1-NICI//|@19950302|[send-email Wietske-NICI Carla-Huls email1-NICI]|
+=====email2-NICI//|@19950212|[send-email Alice-NICI Wim-Claassen email2-NICI]|
+=====email3-NICI//|@19950213|[send-email Alice-NICI Koen-NICI email3-NICI]|
+=====email4-NICI//|@19950216|[send-email Alice-NICI Carla-Huls email4-NICI]|
+;_______________________________________________________________________________
+=====email# header*.z//
+======standard#A email# header*.z//
+======FirstClass# email# header*.z//
+======post#A email# header*.z//
+;_______________________________________________________________________________
+====mailing# list*.z//liste* de#R diffusion#.¹Fy/liste* de#R messagerie#.Fy/
+liste.Fy/
+;_______________________________________________________________________________
+====fax.z//fax.My/télécopie.Fy/
+;_______________________________________________________________________________
+====newsgroup.z//discussion# group*.z/news.mz/forum.z/forum.¹My/
+groupe* de#R news#FP.My/groupe.TMy/groupe* de#R messagerie#F.My/news.¹kFPïy/
+News.kFPïy/News.kMy/Newsgroup.kMy/
+=====Usenet# newsgroup*.z/ontology,four-level-semantic-net/net# news*.z/
+netnews.z/Usenet# news*.z/Net# news*.z/Usenet# hierarchy*.z/
+Usenet# newsgroup# hierarchy*.z/groupe* Usenet#.¹My/niouzegroupe.aMy/
+forum* Usenet#.My/news* de#R Usenet#M.FPïy/
+|@1980|create¤na|
+=====Usenet# posting*.z//Usenet# post*.z/Usenet# article*.z/
+posting,post,article.z/article* Usenet#.¹My/article.My/
+;_______________________________________________________________________________
+====voice# mail*.mz//
+=====answering# machine# message*.z//message.z/message.My/
+;_______________________________________________________________________________
+==advertisement.z//ad.Tz/advert.gTz/campaign,advertising# campaign*.Îz/
+publicité.¹Fy/pub.TFy/réclame.Fy/
+===classified# ad*.z/text/classified# advertisement*.z/want#V ad*.Àz/
+annonce.Fy/petite*A annonce*.Fy/
+===job# description*.z//description* de#R poste#NM.Fy/
+===television# commercial*.z/video/commercial.z/
+===infomercial.z//publi*A-information*.ÎFz/
+;_______________________________________________________________________________
+==art.z//fine#A art*.z/art.¹My/beaux*A-arts*.MPïy/
+;_______________________________________________________________________________
+===architecture.mz//architecture.Fy/
+===art-comics//cartoons.Pïz/comics,funnies.ÀPïz/comic# strip*.z/
+strip# cartoon*.gz/bande* dessinée*A.Fy/neuvième*A art*.kMy/
+===art-picture//picture.z/tableau.My/peinture.Fy/
+===drawing.z//dessin.My/
+===graffiti.z//spraycan# art*.z/graf.Tz/
+===museum# piece*.z//
+===painting.z//tableau.My/peinture.Fy/|free-object|
+===*Le-Dejeuner-sur-l-herbe//Le#D Déjeuner#M sur#R l#D'herbe#F.Éy/
+|@1862|create-paint¤Manet|
+===performance# art*.z//
+===photograph.z//photographie.Fy/
+===sculpture.z//sculpture.Fy/
+====statue.z//statue.Fy/
+===watercolor.z//aquarelle.Fy/
+====art-schema//schema.z/schéma.My/
+;_______________________________________________________________________________
+===American#A art*.z//|create¤human-American|
+====colonial#A silver*.z//
+===Oriental#A art*.z//
+;_______________________________________________________________________________
+==broadcast.z//show.z/broadcasting.Îz/émission.¹Fy/diffusion.Fy/
+;_______________________________________________________________________________
+==genetic# code*.z//code* génétique*.¹My/
+===genome.z//genomic.Ay/génome.¹My/|part-of¤gene|
+===gene.z//gène.My/
+;_______________________________________________________________________________
+==computer-program//computer# programÝprogram*.¹z/code.Tz/programÝprogram.z/
+software.z/procedural#A representation*.z/procedural.Az/programme.¹My/
+logiciel.My/représentation* procédurale*A.Fy/procédural.Az/
+;_______________________________________________________________________________
+===programming# construct*.z//
+;_______________________________________________________________________________
+====instruction.z//instruction.¹Fy/
+;_______________________________________________________________________________
+====branch.z//branching.Îz/transfer* of#R control#.z/
+rupture* de#R séquence#.¹Fy/
+=====goto.z//unconditional#A branch*.z/unconditional#A transfer*.z/
+unconditional#A jump*.z/jump,JMP.z/saut* inconditionnel*A.¹My/
+=====conditional#A branch*.z//conditional#A transfer*.z/conditional#A jump*.z/
+saut* conditionnel*A.¹My/
+======if# statement*.z//
+;_______________________________________________________________________________
+====invocation.z//procedure# invocation*.z/function# invocation*.z/CALL.z/
+;_______________________________________________________________________________
+====loop.z//boucle.¹Fy/
+=====for#R loop*.z//
+=====do#V loop*.z//
+=====while#K loop*.z//
+;_______________________________________________________________________________
+====module.z//modular.Az/module.¹My/modularité.ÎFy/
+;_______________________________________________________________________________
+=====main#A program*.z//main.z/programme* principal*A.¹My/
+=====subroutine.z//procedure.z/routine.z/sous#R-programme*.¹My/procédure.Fy/
+=====function.z//fonction.¹Fy/
+;_______________________________________________________________________________
+=====programming-construct-rule//rule.z/règle.¹Fy/
+======if-then//if#K-then#B rule*.z/si#K alors#B.y/
+=======production# rule*.z//production.z/règle* de#R production#.¹Fy/
+======phrase#-structure# rule*.z//production.z/rewrite# rule*.z/b#-rule*.qz/
+règle* de#R réécriture#.¹Fy/règle* P#C-S#C.¹Fy/
+======transformational#A rule*.z/generative-grammar/transformation.z/
+règle* transformationelle*A.@Fy/transformation.¹Fy/
+=======Heavy#A NP# shift*.z//Déplacement* de#R NP# lourd#A.My/
+=======Move#V-alpha#.z/GB/movement.Îz/déplacer#V alpha#.y/déplacement.ÎMy/
+========NP#-movement*.z//déplacement* de#R NP#.My/
+========wh#-movement*.z//déplacement* de#R wh#C.My/
+======projection# rule*.z//
+======stylistic#A rule*.z//règle* stylistique*A.¹Fy/
+======phonological#A rule*.z//règle* phonologique*A.¹Fy/
+======deletion#A rule*.z//effacement.¹My/
+;_______________________________________________________________________________
+=====FSM.z//finite#A-state# machine*.z/
+======ATN.z//augmented# transition# network*.z/
+réseau* de#R transition#F augmenté*A.¹My/ATN.My/
+;_______________________________________________________________________________
+=====society* of#R mind#.z/symbolic-AI-model/SOM.tz/
+société* de#R l#D'esprit#M.¹Fy/|@1981|create¤Marvin-Minsky|
+;_______________________________________________________________________________
+======agent.z//agent.¹My/
+=======NA//NA.z/net# agent*.¹z/softbot.z/
+=======PA//PA.z/planning# agent*.¹z/
+=======TA//TA.z/text# agent*.¹z/
+=======UA//UA.z/understanding# agent*.¹z/
+=======AI-actor//actor.z/
+=======AI-critic//critic.z/
+=======AI-demon//demon.z/démon.¹My/
+=======AI-expert//expert.z/
+=======AI-specialist//specialist.z/
+=======AI-sprite//sprite.z/
+;_______________________________________________________________________________
+======agency.z//service.¹My/
+;_______________________________________________________________________________
+=======language# agency*.z//language# module*,language# faculty*.z/
+========semantics# agency*.z//semantic#A component*.z/
+composant* sémantique*A.¹My/
+=========lexical#A-semantic#A component*.z//
+|part-of¤projection-rule|
+========syntax# agency*.z//syntactic#A component*.z/composant* syntaxique*A.¹My/
+|part-of¤phrase-structure-rule,transformational-rule|
+========composant* morpho#Aß-phonologique*A.¹My//
+========phonology# agency*.z//phonological#A component*.z/
+composant* phonologique*A.¹My/|part-of¤phonological-rule|
+;_______________________________________________________________________________
+======censor.z//censeur.¹My/
+;_______________________________________________________________________________
+======A#-brain*.z//cerveau* A#.¹My/
+======B#-brain*.z//blunder# stopper*,blunderstopper.z/timeout# mechanism*.qz/
+cerveau* B#.¹My/
+;_______________________________________________________________________________
+======neme.z//C#-line*.z/nème.¹y/ligne* C#M.Fy/
+=======microneme.z//micronème.¹y/
+=======polyneme.z//polynème.¹y/
+;_______________________________________________________________________________
+======nome.z//nome.¹y/
+=======isonome.z//isonome.¹y/
+========pronome.z//pronome.¹y/
+=========paranome.z//paranome.¹y/
+;_______________________________________________________________________________
+===window# system*.z//windowing# system*.oz/
+====X-window-system//X.z/X# Window# system*.z/X# Windows#P.Tz/
+=====X11R4.z//
+=====X11R5.z//
+====Motif.z//
+=====Motif# 1\.1*.z//
+=====Motif# 1\.2*.z//
+;_______________________________________________________________________________
+===operating# system*.z//OS.z/système* d#R'exploitation#F.¹My/
+;_______________________________________________________________________________
+====CP#\/M*.®z//
+=====CP#\/M# 86*.®z//
+====CHORUS.z//
+====Coherent.z//
+=====Coherent# 4\.0\.1r72*.z//
+====EMCOS.®z//
+====GEOS.z//
+====GNU# Hurd*.z//
+====ICL.z//
+====Multics.z//
+====MVS.z//
+====NetWare.®z//
+====OnSite.z//
+====Plan9.®z//
+====SINIX#-Z*.z//
+====ODT.z//|product-of=SCO|
+=====ODT# 1\.1*.z//
+=====ODT# 2\.0*.z//
+=====ODT# 3\.0*.z//
+====OSF#\/1*.z//|product-of=DEC|
+====QNX.z//
+====VM.®z//|product-of=IBM|
+====VMS.®z//|product-of=DEC|
+=====Open#A VMS# AXP# 1\.5*.®z//
+=====Open#A VMS# 6\.1*.®z//
+;_______________________________________________________________________________
+====DOS.®z//
+=====Free#-DOS*.®z//
+=====Super#-DOS*.®z//
+=====MS#-DOS*.®z//|product-of=Microsoft|
+======MS#-DOS# 3\.3*.®z//
+======MS#-DOS# 4\.x*.®z//
+======MS#-DOS# 5\.0*.®z//
+======MS#-DOS# 6*.®z//
+;_______________________________________________________________________________
+====OS#\/2*.®z//OS2.z/
+=====OS#\/2# Version# 1*.®z//OS#\/2# 1\.x*.®z/
+======OS#\/2# 1\.29*.®z//OS#\/2# v1\.29*.®z/
+======OS#\/2# 1\.3*.®z//OS#\/2# v1\.3*.®z/
+=====OS#\/2# Warp*.®z//Warp.®z/OS2# Warp*.®z/|product-of=IBM|
+======OS#\/2# Warp# 3\.0*.®z//
+======OS#\/2#-PPC*.®z//
+======OS#\/2#-x86*.®z//
+;_______________________________________________________________________________
+====OS#\/9*.®z//
+;_______________________________________________________________________________
+====MS#-Windows*.®z//Windows.®z/
+=====Windows# 3\.x*.®z/window-system/
+======Windows# 3\.0*.®z//
+======Windows# 3\.1*.®z//
+=======Windows# 3\.11*.®z//
+=====Windows# 95#\/98*.®z//Windows95#\/98*.®z/
+======Windows# 95*.®z//Windows95.®z/
+======Windows# 98*.®z//Windows98.®z/
+=====Windows# NT*®.®z//
+======Windows# NT#® 3\.51*.z//
+;_______________________________________________________________________________
+====Mac# OS*.®z//MacOS.®z/Macintosh# OS*.®z/
+;_______________________________________________________________________________
+=====Mac# OS# System# 3\.0*.z//Mac# OS# 3\.0*.z/System# 3\.0*.z/
+=====Mac# OS# System# 3\.2*.z//Mac# OS# 3\.2*.z/System# 3\.2*.z/
+=====Mac# OS# System# 4\.0*.z//Mac# OS# 4\.0*.z/System# 4\.0*.z/
+=====Mac# OS# System# 4\.2*.z//Mac# OS# 4\.2*.z/System# 4\.2*.z/
+=====Mac# OS# System# 5\.1*.z//Mac# OS# 5\.1*.z/System# 5\.1*.z/
+;_______________________________________________________________________________
+=====Mac# OS# System# 6*.z//System# 6*.z/
+======Mac# OS# System# 6\.0\.x*.z//Mac# OS# 6\.0\.x*.z/System# 6\.0\.x*.z/
+=======Mac# OS# System# 6\.0\.2*.z//Mac# OS# 6\.0\.2*.z/System# 6\.0\.2*.z/
+=======Mac# OS# System# 6\.0\.3*.z//Mac# OS# 6\.0\.3*.z/System# 6\.0\.3*.z/
+=======Mac# OS# System# 6\.0\.7*.z//Mac# OS# 6\.0\.7*.z/System# 6\.0\.7*.z/
+=======Mac# OS# System# 6\.0\.8*.z//Mac# OS# 6\.0\.8*.z/System# 6\.0\.8*.z/
+=======Mac# OS# System# 6\.0\.8L*.z//Mac# OS# 6\.0\.8L*.z/System# 6\.0\.8L*.z/
+======Mac# OS# System# 6\.4*.z//Mac# OS# 6\.4*.z/System# 6\.4*.z/
+;_______________________________________________________________________________
+=====Mac# OS# System# 7*.z//System# 7*.z/
+======Mac# OS# System# 7\.0*.z//Mac# OS# 7\.0*.z/System# 7\.0*.z/
+=======Mac# OS# System# 7\.0\.1*.z//Mac# OS# 7\.0\.1*.z/System# 7\.0\.1*.z/
+======Mac# OS# System# 7\.1*.z//Mac# OS# 7\.1*.z/System# 7\.1*.z/
+=======Mac# OS# System# 7\.1\.2*.z//Mac# OS# 7\.1\.2*.z/System# 7\.1\.2*.z/
+=======Mac# OS# System# 7\.1\.3*.z//Mac# OS# 7\.1\.3*.z/System# 7\.1\.3*.z/
+;_______________________________________________________________________________
+======Mac# OS# System# 7\.5*.z//Mac# OS# 7\.5*.z/System# 7\.5*.z/
+Mac# OS# System# 7\.5\.x*.z/Mac# OS# 7\.5\.x*.z/System# 7\.5\.x*.z/
+=======Mac# OS# System# 7\.5\.1*.z//Mac# OS# 7\.5\.1*.z/System# 7\.5\.1*.z/
+Mac# OS# System# 7\.5# Update# 1\.0*.z/Mac# OS# 7\.5# Update# 1\.0*.z/
+System# 7\.5# Update# 1\.0*.z/
+=======Mac# OS# System# 7\.5\.2*.z//Mac# OS# 7\.5\.2*.z/System# 7\.5\.2*.z/
+Mac# OS# System# 7\.5# Update# 2\.0*.z/Mac# OS# 7\.5# Update# 2\.0*.z/
+System# 7\.5# Update# 2\.0*.z/
+;_______________________________________________________________________________
+======Mac# OS# System# 7\.6*.z//Mac# OS# 7\.6*.z/System# 7\.6*.z/
+======Mac# OS# System# 7\.9*.z//Mac# OS# 7\.9*.z/System# 7\.9*.z/
+;_______________________________________________________________________________
+=====Mac# OS# System# 8*.z//System# 8*.z/Copland.¹®z/
+=====Mac# OS# System# 9*.z//System# 9*.z/Gershwin.®z/
+;_______________________________________________________________________________
+====Apple# Newton# OS*.®z//Newton# OS*.®z/
+;_______________________________________________________________________________
+====Unix.®z//
+;_______________________________________________________________________________
+=====Unix# Version# 6*.z//Version# 6*.Tz/
+=====Unix# Version# 7*.z//Version# 7*.Tz/
+======Unisoft# V7# UNIX*.z//
+;_______________________________________________________________________________
+=====Unix# System# III*.z//
+;_______________________________________________________________________________
+=====Unix# System# V*.z//
+;_______________________________________________________________________________
+======Unix# SVR3*.®z//Unix# System# V# Release# 3*.z/SVR3.z/
+=======SCO# Unix# 3\.0*.z/SCO-Unix/
+=======SCO# Unix# 3\.2\.2*.z/SCO-Unix/|product-of=SCO|
+=======SCO# Unix# 3\.2\.4*.z/SCO-Unix/|product-of=SCO|
+=======ISC# Unix# 3\.0*.z/ISC-Unix/
+=======ISC# Unix# 4\.0*.z/ISC-Unix/
+=======ISC# Unix# 4\.1*.z/ISC-Unix/
+;_______________________________________________________________________________
+======Unix# SVR4*.®z//Unix# System# V# Release# 4*.z/SVR4.z/
+;_______________________________________________________________________________
+=======Unix# SVR4\.0*.®z//Unix# System# V# Release# 4\.0*.z/SVR4\.0.z/
+;_______________________________________________________________________________
+========Esix# 4\.0\.3A*.z/Esix/
+========Esix# 4\.0\.4*.z/Esix/
+========Esix# 4\.0\.4\.1*.z/Esix/
+;_______________________________________________________________________________
+========Microport.z//
+=========Microport# 2\.2*.z//
+=========Microport# 3\.1*.z//
+=========Microport# 4\.1*.z//
+=========Microport# 4\.2*.z//
+;_______________________________________________________________________________
+========Dell# Unix*.z//
+=========Dell# Unix# 2\.1*.z//
+=========Dell# Unix# 2\.2*.z//
+=========Dell# Unix# 2\.2\.1*.z//
+;_______________________________________________________________________________
+========UHC.z//
+=========UHC# 2\.0*.z//
+=========UHC# 3\.6*.z//
+;_______________________________________________________________________________
+========Consensys# 1\.2*.z/Consensys-Unix/
+;_______________________________________________________________________________
+========OS-MST//MST.z/
+=========MST# 4\.0\.3*.z//
+;_______________________________________________________________________________
+========ISC# Unix# 4\.0\.3*.z/ISC-Unix/
+;_______________________________________________________________________________
+========NCR# MP#-RAS*.z//
+;_______________________________________________________________________________
+=======Unix# SVR4\.2*.®z//Unix# System# V# Release# 4\.2*.z/SVR4\.2.z/
+========Consensys# 4\.2*.z/Consensys-Unix/Consensys# V4\.2*.z/
+========Unix# SVR4\.2\.2*.®z//Unix# System# V# Release# 4\.2\.2*.z/SVR4\.2\.2.z/
+========NCR# SVR4*.z//
+;_______________________________________________________________________________
+; todo: All "SunOS" can be "Sun OS".
+=======Solaris.®z//Solaris# 2\.x*.®z/SunOS#® 5\.x*.z/|product-of¤SunSoft|
+========Solaris#® 2\.0*.z//SunOS#® 5\.0*.z/
+========Solaris#® 2\.1*.z//SunOS#® 5\.1*.z/
+========Solaris#® 2\.2*.z//SunOS#® 5\.2*.z/
+========Solaris#® 2\.3*.z//SunOS#® 5\.3*.z/
+========Solaris#® 2\.4*.z//SunOS#® 5\.4*.z/
+========Solaris#® 2\.5*.z//SunOS#® 5\.5*.z/
+========Solaris#® 2\.6*.z//SunOS#® 5\.6*.z/
+========Solaris#® 7*.z//
+========Solaris#® x86*.®z//Solaris#® 2#\/x86*.z/
+=========Solaris#® x86# 2\.1*.®z//SunOS#® 5\.1# x86*.z/
+=========Solaris#® x86# 2\.4*.®z//SunOS#® 5\.4# x86*.z/
+=========Solaris#® x86# 2\.5*.®z//SunOS#® 5\.5# x86*.z/
+=========Solaris#® x86# 2\.6*.®z//SunOS#® 5\.6# x86*.z/
+=========Solaris#® x86# 7*.®z//
+========Solaris#® SPARC*®.®z//
+;_______________________________________________________________________________
+=====BSD.z//Berkeley# Unix*.z/BSD# Unix*.z/Berkeley# software# distribution*.z/
+;_______________________________________________________________________________
+======2\.7# BSD*.z//2\.7BSD*.z/BSD# 2\.7*.z/
+======4\.2# BSD*.z//4\.2BSD*.z/BSD# 4\.2*.z/
+======4\.3# BSD*.z//4\.3BSD*.z/BSD# 4\.3*.z/
+======4\.4# BSD*.z//4\.4BSD*.z/BSD# 4\.4*.z/
+=======4\.4# BSD# Lite*.z//4\.4BSD# Lite*.z/BSD# 4\.4# Lite*.z/
+=======ArchBSD.z//
+======BSDI.z//
+=======386#\/486# BSDI# 1\.1*.z//
+======FreeBSD.z//
+=======FreeBSD# 1\.1\.5\.1*.z//
+=======FreeBSD# 2\.0*.z//
+========386#\/486# FreeBSD# 2\.0*.z//
+=======FreeBSD# 2\.0R*.z//
+=======FreeBSD# 2\.0\.5*.z//
+======MacBSD.z//
+======NetBSD.z//
+=======NetBSD# 1\.0*.z//
+======386BSD.z//BSD#\/386*.z/
+=======386BSD# 1\.1*.z//BSD#\/386# 1\.1*.z/
+======BSD#\/OS*.z//
+=======BSD#\/OS# 2\.0*.z//
+;_______________________________________________________________________________
+======SunOS.®z//
+=======SunOS#® 3*.z//
+========SunOS#® 3\.0*.z//
+========SunOS#® 3\.2*.z//
+=======SunOS#® 4*.z//SunOS#® 4\.x*.z/
+========SunOS#® 4\.0*.z//
+========SunOS#® 4\.0\.2*.z//
+========SunOS#® 4\.0\.3Beta*.z//
+========SunOS#® 4\.0\.3*.z//
+========SunOS#® 4\.0\.3c*.z//
+========SunOS#® 4\.1*.z//SunOS#® 4\.1\.x*.z/Solaris#® 1*.z/
+=========SunOS#® 4\.1\.1*.z//
+=========SunOS#® 4\.1\.1U1*.z//
+=========SunOS#® 4\.1\.3*.z//
+==========SunOS#® 4\.1\.3# U1*.z//Solaris#® 1\.1\.1*.z/
+===========SunOS#® 4\.1\.3# U1# rev# B*.z//Solaris#® 1\.1\.1B*.z/
+==========SunOS#® 4\.1\.3C*.z//
+=========SunOS#® 4\.1\.4*.z//Solaris#® 1\.1\.2*.z/
+;_______________________________________________________________________________
+=====A#\/UX*.z//
+=====Amoeba.z//
+;_______________________________________________________________________________
+=====AIX.®z//|product-of¤IBM|
+======AIX# 2*.z//
+======AIX# 3*.z//
+=======AIX# 3\.1*.z//
+========AIX# 3\.1\.2*.z//
+========AIX# 3\.1\.5*.z//
+=======AIX# 3\.2*.z//AIX# 3\.2\.x*.z/
+========AIX# 3\.2\.1*.z//
+========AIX# 3\.2\.2*.z//
+========AIX# 3\.2\.3*.z//
+========AIX# 3\.2\.4*.z//
+========AIX# 3\.2\.5*.z//
+=========AIX# 3\.2\.5\.1*.z//
+=========AIX# 3\.2\.5\.4*.z//
+======AIX# 4*.z//AIX# 4\.x*.z/
+=======AIX# 4\.1*.z//AIX# 4\.1\.x*.z/
+========AIX# 4\.1\.1*.z//
+========AIX# 4\.1\.2*.z//
+========AIX# 4\.1\.3*.z//
+;_______________________________________________________________________________
+=====Consensys# Unix*.z//
+=====Esix.z//
+======Esix# 3\.2D*.z//
+=====GNU.z//
+=====HP#\/UX*.®z//HP#-UX*.®z/|product-of¤Hewlett-Packard|
+======HP#\/UX# 8\.0*.®z//HP#-UX# 8\.0*.®z/
+======HP#\/UX# 9\.01*.®z//HP#-UX# 9\.01*.®z/
+======DN# SR# 10\.3\.5*.z//
+=====Interactive# Unix*.z//Interactive.z/
+======Interactive# Unix# V#\/386*.z//
+=====IRIX.z//|product-of¤SGI|
+======IRIX# 5\.2*.z//IRIX# SVR# 5\.2*.z/
+======IRIX# 5\.3*.z//IRIX# SVR# 5\.3*.z/
+=====ISC# Unix*.z//
+=====Linux.®z//GNU#-Linux*.z/
+======Linux#® 1\.2\.10# i586*.z//
+======Linux#® 1\.2\.13# i486*.z//
+======Linux#® 1\.2\.8# i586*.z//
+======Red#A Hat# Linux*.z//
+=======Red#A Hat# Linux# 5\.0*.z//
+=======Red#A Hat# Linux# 5\.1*.z//
+=======Red#A Hat# Linux# 5\.2*.z//
+=======Red#A Hat# Linux# 6\.0*.z//
+=====LynxOS.z//
+======LynxOS# AT*.z//
+=======LynxOS# AT# 2\.2\.1*.z//
+=======LynxOS# AT# 2\.3*.z//
+=====Mach.®z//
+======Mach# 2*.®z//
+=======NeXT# OS*.z//
+======Mach# 3*.®z//
+======Mach# 386*.z//
+======Machten.z//MachTen.z/Mach# Ten*.z/Mach# 10*.®z/MT.Tz/; for the Mac
+=======Machten# 2\.2*.z//
+=======Machten# 4\.0*.z//
+=====Minix.®z//
+======Minix# 386*.z//
+=====SCO# Unix*.z//
+=====Ultrix.®z//|product-of=DEC|
+======Ultrix# 4\.3*.®z//
+=======Ultrix# 4\.3A*.®z//
+======Ultrix# 4\.4*.®z//
+=====UnixWare.®z//|product-of=Novell|
+======UnixWare# 1\.1*.®z//
+======UnixWare# 2\.0*.®z//
+======UnixWare# 2\.1*.®z//
+=====Venix.®z//
+=====Xenix.®z//|product-of=Microsoft|
+======Xenix286.®z//
+=====Xinu.z//; by Douglas Comer
+;_______________________________________________________________________________
+=====ATT-Unix-2-1//AT&T# Unix# 2\.1*.z/|product-of=ATT|
+=====ATT-System-V//AT&T# System# V# 3\.2*.z/|product-of=ATT|
+=====ATT-Unix-4-0//AT&T# Unix# 4\.0*.z/|product-of=ATT|
+;_______________________________________________________________________________
+===computer# language*.z//programming# language*.¹z/
+computer# programming# language*.z/
+;_______________________________________________________________________________
+====markup# language*.z//
+=====HTML.z/e-language/
+;_______________________________________________________________________________
+====machine# language*.z//langage* machine#F.¹My/LM.My/LM* codé*A.My/
+LM* numérique*A.My/langage* numérique*A.My/
+;_______________________________________________________________________________
+====assembly# language*.z//assembler.z/assembleur.¹My/LM* symbolique*A.My/
+;_______________________________________________________________________________
+====high#A-level# language*.z//HLL.z/langage* évolué*A.¹My/
+;_______________________________________________________________________________
+====-language# type*.z//
+;_______________________________________________________________________________
+======declarative#A language*.z//
+=======Prolog.Éz//Prolog.¹Éy/
+;_______________________________________________________________________________
+======functional#A language*.z//
+=======APL.Éz//APL.¹Éy/
+========EMPL.Éz//EMPL.¹Éy/|@1977|create¤Erik|
+========Softronics# APL*.Éz//Softronics# APL*.Éy/|@1979:1980|create¤Erik|
+========APL2.Éz//APL2.¹Éy/
+=========A-plus-language//A+.Éz/A+.¹Éy/
+==========J-language//J.Éz/J.¹Éy/
+==========K-language/J-language/K.Éz/K.¹Éy/
+;_______________________________________________________________________________
+=======Lisp.Éz//Lisp.¹Éy/
+========Interlisp.Éz//Interlisp.¹Éy/
+========Maclisp.Éz//Maclisp.¹Éy/
+========Common#A Lisp*.Éz//
+========Scheme.Éz//Scheme.¹Éy/
+=========T-language//T.Éz/T.¹Éy/
+;_______________________________________________________________________________
+=======Perl.Éz//Perl.¹Éy/
+=======TRAC.Éz//TRAC.¹Éy/
+;_______________________________________________________________________________
+======procedural#A language*.z//
+;_______________________________________________________________________________
+=======Algol.Éz//
+;_______________________________________________________________________________
+=======Basic.Éz//Basic.¹Éy/
+========Tiny#A Basic*.Éz//
+=========MINOL.Éz//MINOL.¹Éy/|@1975:1976|create¤Erik|
+;_______________________________________________________________________________
+=======C# language*.kz//C.Éz/C.¹Éy/
+========C-plus-plus/Clu/C++.Éz/C++.¹Éy/
+;_______________________________________________________________________________
+=======Clu.Éz/Pascal-language/Clu.¹Éy/
+=======Cobol.Éz//Cobol.¹Éy/
+=======Fortran.Éz//Fortran.¹ÉMy/
+=======Java.Éz/C-plus-plus/
+========JDK.z//Java# Development# Kit*.z/
+=========JDK# 1\.0*.z//
+=========JDK# 1\.1*.z//
+==========JDK# 1\.1\.1*.z//
+==========JDK# 1\.1\.2*.z//
+==========JDK# 1\.1\.3*.z//
+==========JDK# 1\.1\.4*.z//
+==========JDK# 1\.1\.5*.z//
+==========JDK# 1\.1\.6*.z//
+==========JDK# 1\.1\.7*.z//
+=========Java# 2*.z//Java# 2# Platform*.z/JDK# 1\.2*.oz/
+=======Javascript.Éz//
+;_______________________________________________________________________________
+=======Logo.Éz//Logo.¹Éy/
+=======Pascal-language//Pascal.Éz/Pascal.¹Éy/
+=======PL#\/I*.Éz//PL#\/I#.¹Éy/
+========PL#\/M*.Éz//PL#\/M#.¹Éy/
+=======Snobol.Éz//Snobol.¹Éy/
+========Spitbol.Éz//Spitbol.¹Éy/
+;_______________________________________________________________________________
+====AI# language*.z//AI# shell*.z/expert# system# shell*.z/AI# tool*.z/
+=====Director.Éz//Director.¹Éy/
+=====FRL.Éz//FRL.¹Éy/
+=====KEE.Éz//KEE.¹Éy/
+=====KRL.Éz//KRL.¹Éy/
+=====OPS.Éz//OPS.¹Éy/
+=====Planner.Éz//Planner.¹Éy/
+;_______________________________________________________________________________
+===application.z//application.¹Fy/
+===software# package*.z//progiciel.My/
+===version.z//release.z/generic.îz/version.Fy/
+;_______________________________________________________________________________
+===AI-program//AI# programÝprogram*.z/
+artificial#A intelligence# programÝprogram*.z/
+programme* d#R'intelligence#F artificielle#AF.¹My/programme* d#R'IA#F.@My/
+;_______________________________________________________________________________
+===*Soar.®Éz/symbolic-AI-model/Soar.®Éy/
+===*Daydreamer.®Éz/symbolic-AI-model,story-generation-system/Daydreamer.®Éy/
+|@1984:1988|create¤Erik|
+===*TT/human,aiprog-cskb,aiprog-stund,aiprog-mt,ontology,e-language,
+multilevel-semantic-net,symbolic-AI-model,chatterbot/
+ThoughtTreasure.¹®Éz/TT.®Éz/Thought# Treasure*.®Éz/ThoughtTrésor.¹®ÉMy/
+Thought#Aj Trésor*.®ÉMy/TT.®ÉMy/Thomas Tiberius.Mº/
+|male|nationality-of=country-USA|@19940401:na|create¤Erik|
+@19950529:na|uncompressed-size-of=4738120byte|
+@19940401:19951023|
+email-address-of=STRING:email-address:"Thomas_Tiberius@email.francenet.fr"|
+@19951023:19970823|
+email-address-of=STRING:email-address:"tt@signiform.com"|
+@19970823:na|
+email-address-of=STRING:email-address:"tt@signiform.com"|
+;_______________________________________________________________________________
+====story# generation# system*.z//story# generator*.z/
+story#-level# simulation# system*.z/
+====*TALE#-SPIN*.Éz//
+====*Oz.Éz//
+====*2DWORLD.Éz//Planiverse.kz/
+;_______________________________________________________________________________
+====discovery# system*.z//
+====*AM.Éz//AM.¹Éy/
+====*Bacon.Éz//Bacon.¹Éy/
+;_______________________________________________________________________________
+====expert# system*.z//système* expert*A.¹My/
+====*Dendral.Éz//Dendral.¹Éy/
+====*Meta#-Dendral*.Éz//Meta#A-Dendral*.¹Éy/
+====*Macsyma.Éz//Macsyma.¹Éy/
+====*Mycin.Éz//Mycin.¹Éy/
+====*Prospector.Éz//Prospector.¹Éy/
+;_______________________________________________________________________________
+====knowledge# base*.z//
+=====aiprog-cskb//common#A-sense# knowledge# base*.z/
+=====*Cyc.®Éz/symbolic-AI-model,aiprog-newsund,ontology,multilevel-semantic-net/
+Cyc.®Éy/
+|href="http://www.cyc.com/","http://www.mcs.net/~jorn/html/ai/cycfaq.html"|
+@1984:na|create¤Doug-Lenat|
+;_______________________________________________________________________________
+====NLP# program*.z//natural#A language# processing# program*.z/
+;_______________________________________________________________________________
+=====chatterbot.z//
+=====parser.z//analyseur.My/
+======syntactic#A parser*.z//
+;_______________________________________________________________________________
+=====aiprog-newsund//news# story# understanding# program*.z/
+;_______________________________________________________________________________
+=====aiprog-stund//story# understanding# program*.z/
+=====*BORIS.®z//|create¤Michael-Dyer|
+=====*PAM.®z//
+=====*SAM.®z//
+;_______________________________________________________________________________
+=====aiprog-mt//machine# translation# program*.z/MT# program*.z/MT.Îz/
+=====*ALPS.®z//
+=====*AMT.®z//; Carnegie Group
+=====*CANDIDE.®z//; IBM
+=====*CAT2.®z//; Prolog
+=====*DP#\/Translator*.®z//; Intergraph
+=====*Globalink.®z//; Globalink
+=====*Language# Assistant*.z//; MicroTac->Globalink
+=====*Lexitrans.®z//; Lexitrans
+=====*LINGSTAT.®z//; Dragon Systems
+=====*LMT.®z//; IBM
+=====*Logos.®z//; Logos
+=====*Metal.®z//; Sietec Systemtechnik
+=====*PANGLOSS.®z//; CRL/ISI/CMU Lisp
+=====*PIMA.®z//; Wallace Sinaiko
+=====*PC# Translator*.®z//; Linguistic Products
+=====*Power# Translator*.®z//
+=====*SPANAM.®z//
+=====*Systran.®z//; Peter Loma, La Jolla, Systran Software
+=====*TITUS.®z//; French Textile Institute
+=====*TOVNA.®z//
+=====*WINGER.®z//
+======*Winger# 92*.®z//; INFO:Partner
+=====*XLT.®z//
+;_______________________________________________________________________________
+===comms-program//communications#P programÝprogram*.z/
+comms#P programÝprogram*.z/
+====finger-program//finger.Éz/finger.Éy/
+====ftp.Éz//FTP.Éz/ftp.Éy/FTP.Éy/
+====PGP.Éz//Pretty#B Good#A Privacy*.Éz/PGP.Éy/
+====ping.Éz//ping.Véy/ping.Éy/|r2=computer|
+====telnet.Éz//telnet* to+.Véy/telnet.Éy/|r2=computer|
+====rcp.Éz//rcp.Éy/
+====rlogin.Éz//rlogin.Éy/
+====UUCP.Éz//UUCP.Éy/
+====whois.Éz//whois.Éy/
+;_______________________________________________________________________________
+===network# browser*.z//
+====Gopher.Éz//Gopher.ÉMy/
+====HotJava.Éz//HotJava.Éy/
+====Mosaic.Éz//Mosaic.Éy/
+====MacWeb.Éz//MacWeb.Éy/
+====Netscape#® Navigator*.Éz//Navigator.Éz/Mozilla.Éz/
+====Netscape#® Communicator*.Éz//Communicator.Éz/
+====Microsoft#® Internet# Explorer*.Éz//Microsoft#® Explorer*.Éz/
+Internet# Explorer*.Éz/Explorer.Éz/
+====WAIS.Éz//WAIS.Éy/
+;_______________________________________________________________________________
+===electronic#A dictionary*.z/dictionary/dictionnaire* électronique*A.My/
+;_______________________________________________________________________________
+====LADL# electronic#A dictionary*.z//
+dictionnaire* électronique*A du#R LADL#.My/
+====*DELAS.ÉMy//dictionnaire* électronique*A des#RP mots#P simples#AP.My/
+====*DELAF.ÉMy//dictionnaire* électronique*A des#RP formes#FP.My/
+====*DELAC.ÉMy//dictionnaire* électronique*A des#RP mots#P composés#AP.My/
+;_______________________________________________________________________________
+===*WordNet.®z/thesaurus,multilevel-semantic-net/
+|href="http://www.cogsci.princeton.edu/"|
+;_______________________________________________________________________________
+===text# editor*.z//
+====Emacs.Éz//
+=====GNU# Emacs*.Éz//
+====vi.Éz//
+;_______________________________________________________________________________
+===office# software*.z//office# software# suite*.z/
+====Microsoft#® Office*.®Éz//|create¤Microsoft|
+====Corel#® Office#® Professional*.®Éz//
+=====Corel#® Office#® Professional#A Suite# 6\.1*.®Éz//
+=====Corel#® Office#® Professional#A 7*.®Éz//
+====Corel#® WordPerfect#® Suite*.®Éz//
+=====Corel#® WordPerfect#® Suite# 6\.1*.®Éz//
+=====Corel#® WordPerfect#® Suite# 7*.®Éz//
+=====Corel#® WordPerfect#® Suite# 8*.®Éz//
+=====Corel#® WordPerfect#® Suite# 8# Professional*.®Éz//
+;_______________________________________________________________________________
+===word# processor*.z//word# processing*.Îz/traitement* de#R texte#.My/
+====Microsoft#® Word*.®Éz//Word.®Éz/Microsoft#® Word*.®Éy/|create¤Microsoft|
+====WordPerfect.®Éz//WordPerfect.®Éy/|product-of¤Corel|
+=====Corel#® WordPerfect#® 3\.5*.®Éz//
+=====Corel#® WordPerfect#® 5\.2*.®Éz//
+=====Corel#® WordPerfect#® 6\.0*.®Éz//
+=====Corel#® WordPerfect#® 6\.1*.®Éz//
+=====Corel#® WordPerfect#® 7*.®Éz//
+=====Corel#® WordPerfect#® 8*.®Éz//
+;_______________________________________________________________________________
+===presentation# software*.z//
+====Microsoft#® PowerPoint*.®Éz//PowerPoint.®Éz/|create¤Microsoft|
+;_______________________________________________________________________________
+===spreadsheet.z//tableur.My/
+====Lotus# 123*.®Éz//123.®Éz/|create¤Lotus|
+====Microsoft#® Excel*.®Éz//Excel.®Éz/|create¤Microsoft|
+;_______________________________________________________________________________
+===PIM.z//personal#A information# manager*.z/
+personal#A information# management*.Îz/
+====Microsoft#® Outlook*.®Éz//Outlook.®Éz/|create¤Microsoft|
+=====Microsoft#® Outlook# 97*.®Éz//Outlook# 97*.®Éz/
+=====Microsoft#® Outlook# 98*.®Éz//Outlook# 98*.®Éz/
+;_______________________________________________________________________________
+===software# sequencer*.z//sequencer.z/
+====Performer.®Éz//|product-of¤MOTU|
+=====Digital#A Performer*.®Éz//
+====Vision.®Éz//|product-of¤Opcode|
+=====Studio#A Vision*.®Éz//
+;_______________________________________________________________________________
+===video#A game*.z//jeu* vidéo*ßA.My/|entertaining|
+;_______________________________________________________________________________
+; MRBEGIN
+;_______________________________________________________________________________
+==part* of#R film#.z//part* of#R movie#.Àz/
+===film-titles//titles,credits.Pïz/
+====opening#A titles*.Pïz//opening#A credits*.Pïz/
+====closing#A titles*.Pïz//closing#A credits*.Pïz/
+===film-climax//climax.z/point* culminant*A.My/
+===scene.z//scène.Fy/
+===denouement.z//dénouement.z/dénouement.My/
+===film-trailer//trailer,preview.z/coming#S attractions*.ÎPïz/
+bande*-annonce*.Fy/
+;_______________________________________________________________________________
+==film.z//movie.Àz/motion# picture*.tz/film.My/cinéma.My/septième*A art*.ÎkMy/
+;_______________________________________________________________________________
+==-film-length-contrast//
+====feature# film*.z//feature#A-length# film*.z/full#A-length# film*.z/
+feature.Tz/long*A métrage*.My/
+====medium#A-length# film*.z//moyen*A métrage*.My/
+====short#A film*.z//short.Tz/court*A métrage*.My/
+;_______________________________________________________________________________
+==-film-budget-contrast//
+====blockbuster.z//
+====B#-movie*.z//low#A budget*.Tz/
+;_______________________________________________________________________________
+==-film-genre//
+====action# film*.z//action# movie*.Àz/
+====adventure# film*.z//adventure# movie*.Àz/
+====animated#A film*.z//animated#A movie*.Àz/
+=====Hunchback* of#R Notre#Dj Dame#Nj.kz/feature-film/|@1996|
+MPAA-rating-of=MPAA-G|product-release¤Disney|
+====cinema-verite//cinema# vérité*j.z/cinéma*-verité#F ½.My/cinéma* direct*.My/
+====comedy-film//comedy.z/
+=====black-comedy-film//
+====documentary# film*.qz//documentary.z/
+====drama-film//drama.z/
+=====film-Titanic//Titanic.Éz/|@1997|director-of=MALE:"James Cameron"|
+=====RDP/feature-film/Rendezvous# in#R Paris#.Éz/
+Rendez#VP-Vous#HP de#R Paris#S.MPïy/|@1992|director-of=MALE:"Eric Rohmer"|
+[actor-of RDP FEMALE:"Clara Bellar" na]|
+[actor-of RDP MALE:"Antoine Basler" na]|
+[actor-of RDP MALE:"Mathias Megard" na]|
+[actor-of RDP FEMALE:"Aurore Rauscher" na]|
+product-release¤na|
+====fantasy# film*.z//fantasy.z/
+====film# noir*.z//noirish.Az/
+====horror# film*.z//horror# movie*.Àz/
+====musical-film//musical#A film*.z/musical.z/
+====mystery-film//mystery.z/
+=====murder-mystery-film//murder# mystery*.z/
+====science# fiction# film*.z//science# fiction# movie*.Àz/science# fiction*.z/
+====slasher# film*.z//slasher# movie*.Àz/
+====sports#P film*.z//sports#P movie*.Àz/
+====thriller-film//thriller.z/
+;_______________________________________________________________________________
+; Albert Maysles
+==*Carnaval.My//|director-of=Henri-Verneuil|
+actor-of=Fernandel,FEMALE:Jacqueline Pagnol,FEMALE:Mireille Perrey|
+@19940526T205000:19940526T222500|video-channel-of=France-3|
+@1953|product-release¤na|
+; MREND
+;_______________________________________________________________________________
+==dance.z//danse*.Fy/
+;_______________________________________________________________________________
+===dance# performance*.z/live-performance/
+====dance1//|@19940126:19940128:mer¯ven:193000:na|cost-of=30¯370F|
+location-of=Opera-Garnier|performance-of=DANCE:Casse-Noisette::|
+dance-group-of=GROUP:Ballet de le Opéra de Paris|
+choreographer-of=MALE:John Neumeier|
+;_______________________________________________________________________________
+==-dance# form*.z//
+;_______________________________________________________________________________
+====pre#B-classic#A dance# form*.z/music-form-of-movement/court# dance*.z/
+ancienne* danse*.Fy/
+=====pavane.z//pavane.Fy/
+=====galliard.z//
+=====allemande.z//alman,almagne.qz/allemande.Fy/
+=====courante.z//courante.Fy/
+=====corrente.z//
+=====sarabande.z//sarabande.Fy/
+=====gigue.z//gigue.Fy/
+=====minuet.z//menuet.My/
+=====gavotte.z//gavotte.Fy/
+=====bourree//bourrée.z/bourrée.Fy/
+=====rigaudon.z//rigaudon,rigodon.My/
+=====passepied.z//passe#V-pied*.My/
+=====dance-chaconne//chaconne.z/chaconne,chacone.Fy/
+=====dance-passacaglia//passacaglia.z/passacaille.Fy/
+=====canaries.Pïz//
+=====loure.z//loure.Fy/
+=====passamezzo.z//
+;_______________________________________________________________________________
+====waltz.z//valse.Fy/
+====quadrille.z//cotillion.Àz/quadrille.My/
+====Virginia# Reel*.z//
+====twist.kz//twist.My/twister.Vy/
+====slam.Vz//
+====pogo.Vz//
+;_______________________________________________________________________________
+==datafeed.z//digital#A information# service*.z/flux.My/
+;_______________________________________________________________________________
+===wire# service*.z//wire,newswire,news# wire*,news# feed*.z/
+dépêche* envoyée*A aux#RP abonnés#MP.Fy/fil.TMy/
+====wire-service-AP//AP.z/Associated#A Press*.z/AP.y/
+====wire-service-AFP//AFP.z/Agence#j France# Presse*j.z/AFP.kFy/
+Agence* France# Presse#.kFy/
+=====wire-service-AFP-France//fil* France#F de#R l#D'AFP#F.My/
+French#A AFP# wire*.z/
+====wire-service-Bloomberg//Bloomberg.z/
+====wire-service-Business-Wire//Business# Wire*.z/
+====wire-service-Computerworld//Computerworld.z/
+====wire-service-Comtex//Comtex.z/
+====wire-service-GINA//GINA.z/Internet# Wire*.z/
+====wire-service-InfoWorld//InfoWorld.z/
+====wire-service-InterActive-Week//Inter@ctive# Week*.z/
+====wire-service-IT-Informer//IT# Informer*.z/MMP.z/
+====wire-service-Media-Daily//Media# Daily*.z/Cowles# New#A Media*.z/
+====wire-service-Nando//Nando.z/
+====wire-service-NYTSYN//NYTSYN.z/
+====wire-service-CNET//CNET.z/
+====wire-service-PC-Week//PC# Week*.z/
+====wire-service-Tech-Wire//Tech# Wire*.z/
+====wire-service-PRNewswire//PRNewswire.z/
+====wire-service-Reuters//Reuters.z/Reuter.z/Reuters.y/
+====wire-service-UPI//UPI.z/United#A Press# International*.z/UPI.y/
+====wire-service-Wired//Wired.z/
+====wire-service-ZDNet//ZDNet.z/
+;_______________________________________________________________________________
+===BBS.z//Bulletin# Board# System*.z/BBS.y/
+;_______________________________________________________________________________
+===financial#A information# service*.z//
+===*Reuters# Marketfeed# 2000*.®z//Reuters# IDN*.®z/IDN.®z/
+===*3615# la#D bourse*.Fy//|minitel-number-of=STRING:minitel:"3615LABOURSE"|
+feed-of=Paris-Stock-Exchange|
+===*3615-les-Echos//3615#S les#D Échos*.MPïy/
+|minitel-number-of=STRING:minitel:"3615LESECHOS",STRING:minitel:"3616LESECHOS"|
+feed-of=Paris-Stock-Exchange|
+===*3615# money*.y//|minitel-number-of=STRING:minitel:"3615MONEY"|
+feed-of=Paris-Stock-Exchange|feed-of=NYSE|
+===*3615# AJ*.y//|minitel-number-of=STRING:minitel:"3615AJ"|
+===*3615# BO*.y//|minitel-number-of=STRING:minitel:"3615BO"|
+;_______________________________________________________________________________
+==part* of#R text#.z//
+===text-cover//cover.z/couverture.Fy/
+====text-front-cover//front#A cover*.z/
+====text-back-cover//back#A cover*.z/
+===text-table-of-contents//table* of#R contents#P.z/
+table* des#RP matières#P.Fy/
+===text-preface//preface.z/préface.Fy/
+===text-introduction//introduction.z/introduction.Fy/
+===text-chapter//chapter.z/chapitre.My/
+===text-section//section.z/section.Fy/article.My/paragraphe.My/
+===text-figure//figure.z/figure.Fy/
+===text-table//table.z/table.Fy/|length-of=5in|height-of=3in|width-of=0in|
+===text-index//index.z/index.My/catalogue.My/
+===text-appendix//appendix.z/appendice.My/annexe.Fy/
+;_______________________________________________________________________________
+==media-object-text//text.¹z/text# type*.z/texte.¹My/
+|part-of¤text-front-cover,text-back-cover,text-table-of-contents,
+text-preface,text-introduction,text-chapter,text-section,text-figure,
+text-table,text-index,text-appendix|
+;_______________________________________________________________________________
+===personal# text*.z//
+====diary.z//journal.My/
+====personal-journal//journal.z/journal.My/
+====resume.Àz//resumé.Àz/CV,cv.gz/curriculum# vitae*.tgz/CV,cv.My/
+curriculum# vitae#.tßMy/
+=====academic#A CV*.z//vita.Àz/curriculum# vitae*.Àz/
+;_______________________________________________________________________________
+===student-text//
+====media-object-homework//assignment,homework.z/devoirs.MPïy/
+====media-object-exam//exam.z/examination.oz/examen.My/
+====media-object-quiz//quiz.z/interrogation.Fy/
+;_______________________________________________________________________________
+===financial#A quote*.z//
+====stock# quote*.z//
+====currency# quote*.z//FX# rate# quote*.z/
+;_______________________________________________________________________________
+===press# release*.z//
+====economic#A release*.z//
+;_______________________________________________________________________________
+=====Census# Bureau# release*.z//Census# Bureau# statistical#A release*.z/
+; monthly releases
+======c20-release//C20,C20# release*,C25# report*.z/housing#S starts*.Pïz/
+======c22-release//C22,C22# release*,C22# report*.z/housing#S completions*.Pïz/
+======c25-release//C25,C25# release*,C25# report*.z/new#A home#S sales*.Pïz/
+======c30-release//C30,C30# release*,C30# report*.z/
+value# of#R new#A construction# put#Vd in#R place*.z/
+======c40-release//C40,C40# release*,C40# report*.z/building#S permits*.Pïz/
+; quarterly releases
+======c50-release//C50,C50# release*,C50# report*.z/
+residential#A improvements* and#K repairs*.Pïz/
+;_______________________________________________________________________________
+=====Federal#A Reserve# release*.z//
+Federal#A Reserve# statistical#A release*.z/
+======Beige# Book*.z//Beige# Book# state# of#R the#D economy*.z/
+; monthly releases
+======g5-release//G5,G5# release*,G5# report*.z/foreign#A exchange#S rates*.Pïz/
+======g17-release//G17,G17# release*,G17# report*.z/
+industrial#A production# and#K capacity# utilization*.z/
+======g19-release//G19,G19# release*,G19# report*.z/consumer# credit*.z/
+;_______________________________________________________________________________
+===media-object-report//report.¹z/rapport.¹My/
+;_______________________________________________________________________________
+===media-object-article//article.¹z/article.¹My/
+;_______________________________________________________________________________
+====news# article*.z/media-object-report/news# report*.z/
+=====injury-fatality-report//injury#-fatality# report*.z/
+=====Fed-watch//Fed# watch*.z/Greenspan# mention*.z/
+=====merger-story//merger# story*.z/
+=====Congressional#A legislation*.z/legal-concept/legislation.z/
+; cf http://thomas.loc.gov
+======Congressional#A bill*.z//bill.z/
+=======House# bill*.z//HR.z/
+=======Senate# bill*.z//S.z/
+======Congressional#A concurrent#A resolution*.z//concurrent#A resolution*.z/
+=======House# concurrent#A resolution*.z//H# CON# RES*.z/
+=======Senate# concurrent# resolution*.z//S# CON# RES*.z/
+======Congressional#A resolution*.z//resolution.z/
+=======House# resolution*.z//H# RES*.z/
+=======Senate# resolution*.z//S# RES*.z/
+=======Congressional#A joint#A resolution*.z//joint#A resolution*.z/
+========House# joint#A resolution*.z//H# J# RES*.z/
+========Senate# joint#A resolution*.z//S# J# RES*.z/
+======Congressional#A amendment*.z//amendment.z/
+=======House# amendment*.z//H# AMDT*.z/
+=======Senate# amendment*.z//S# AMDT*.z/
+;_______________________________________________________________________________
+====media-object-review//review.z/
+=====book# review*.z//
+=====theater-review//review* of#R a#D play#.¹z/theater# review*.z/
+=====TV-show-review//review* of#R a#D TV# show#.¹z/TV# review*.z/
+=====film# review*.z//movie# review*.Àz/
+;_______________________________________________________________________________
+===media-object-paper//paper.¹z/article.¹My/
+;_______________________________________________________________________________
+===media-object-book//book.¹z/work.z/livre.¹My/Óuvre.Fy/ouvrage.My/
+|part-of¤cover,paper-page|
+;_______________________________________________________________________________
+====literature.mz//littérature.¹Fy/
+;_______________________________________________________________________________
+=====religious#A text*.z//
+======Bible.kz//Bible.kFy/
+;_______________________________________________________________________________
+=====fiction.mz//fiction.Fy/romans.MPïy/
+littérature* romanesque*A.Fy/
+======fiction-novel//novel.¹z/roman.¹My/
+======*Moby# Dick*.Éz//Moby# Dick# or#K the#D White#A Whale*.Éz/Moby# Dick#.¹Éy/
+Moby#M Dick#M ou#K la#D Baleine#NF blanche#AF.Éy/
+|@1851|create¤Herman-Melville|
+======*Billy# Budd*.Éz//Billy# Budd#.Éy/|@1891|create¤Herman-Melville|
+======novella.z//nouvelle.Fy/
+======media-object-story//story.z/histoire.Fy/
+=======short-story//short#A storyÝstory*.z/story.z/nouvelle.Fy/
+;_______________________________________________________________________________
+====non#B-fiction#N work*.z//non#B-fiction#N.Az/essai.My/
+;_______________________________________________________________________________
+====*Le-Fil-de-l-epee//Le#D Fil#M de#R l#D'épée#F.Éy/|@1932|create¤de-Gaulle|
+====*Vers-l-armee-de-metier//Vers#R l#D'armée#F de#R métier#M.Éy/
+|@1934|create¤de-Gaulle|
+;_______________________________________________________________________________
+====*Minsky-SOM//The#D Society* of#R Mind#.z/SOM.z/|isbn-of="0-671-60740-5"|
+unique-author-of=Marvin-Minsky|topic-of=society-of-mind
+|@1986|publish¤Simon-and-Schuster|
+====*Minsky-SOM-French//La#D société# de#R l#D'esprit#M.Fy/
+|isbn-of="2-7296-0188-0"|
+translation-of¤Minsky-SOM|
+unique-author-of=Marvin-Minsky|topic-of=society-of-mind|
+@1988|publish¤InterEditions|
+====*Kahn-TCPQRNC//Tout#H change#V parce#B que#K rien#H ne#B change#V.y/
+|isbn-of="2-213-02967-9"|unique-author-of=Jean-Francois-Kahn|@1994|
+publish¤Fayard|
+====*Couliano-Eliade-DR//dictionnaire* des#RP religions#FP.My/
+|isbn-of="2-259-02030-5"|
+first-author-of=HUMAN:Ioan Couliano|second-author-of=MALE:Mircea Eliade|
+@1990|publish¤Plon|
+;_______________________________________________________________________________
+=====essay.z//essai.My/
+;_______________________________________________________________________________
+=====history.z//histoire.Fy/
+;_______________________________________________________________________________
+=====technical#A book*.z//
+;_______________________________________________________________________________
+======science#A book*.z//
+=======Barrow-Tipler-ACP//The#D Anthropic#A Cosmological#A Principle*.z/
+|first-author-of=John-Barrow|second-author-of=Frank-Tipler
+|@1986|publish¤Oxford-Press|
+=======Barrow-PITS//Pi# in#R the#D Sky#.z/|unique-author-of=John-Barrow|
+@1992|publish¤Oxford-Press|
+;_______________________________________________________________________________
+======philosophy#A book*.z//
+=======Ayer-LTL//Language#\, Truth# and#K Logic#.z/|unique-author-of=Ayer|
+=======Russell-HWP//A#D History#N of#R Western#A Philosophy#.z/
+|unique-author-of=Bertrand-Russell|
+;_______________________________________________________________________________
+======linguistics# book*.z//
+======*ter-Meulen-Time//Representing# Time* in#R Natural#A Language*.z/
+======*Lyons-Semantics//Semantics.z/|unique-author-of=John-Lyons|
+topic-of=semantics|@1977|publish¤CUP|
+======*Jackendoff-SIGG//
+Semantic#A Interpretation# in#R Generative#A Grammar#.z/
+|unique-author-of=Jackendoff|topic-of=semantics,generative-grammar|
+@1972|publish¤MIT-Press|
+======*Benveniste-PLG//Problèmes#P de#R linguistique#F générale#AF.My/
+|unique-author-of=Benveniste|
+======*Syntactic#A Structures#P.z//
+|unique-author-of=Noam-Chomsky|topic-of=generative-grammar|@1957|publish¤Mouton|
+======*Structures#FP syntaxiques#FP.y//
+|unique-author-of=Noam-Chomsky|translation-of¤Syntactic-Structures|
+topic-of=generative-grammar|@1969|publish¤Seuil|
+======*Chomsky-Aspects//Aspects.Tz/Aspects#P of#R the#D Theory# of#R Syntax#.z/
+|unique-author-of=Noam-Chomsky|topic-of=generative-grammar|@1965|
+publish¤MIT-Press|
+======*Chomsky-Aspects-French//
+Aspects#MP de#R la#D théorie#F syntaxique#AF.y/Aspects.Ty/
+|unique-author-of=Noam-Chomsky|translation-of¤Chomsky-Aspects|
+topic-of=generative-grammar|@1971|publish¤Seuil|
+======*LGB.tz//Lectures* on#R Government#S and#K Binding#S.Pïz/LGB.ÉMy/
+|unique-author-of=Noam-Chomsky|topic-of=GB|@1981|publish¤MIT-Press|
+======*SCC.tz//SCC.ÉMy/
+Some#D Concepts#P and#K Consequences#P of#R the#D Theory# of#R Government# and#K Binding#.z/
+|unique-author-of=Noam-Chomsky|topic-of=GB|@1982|publish¤MIT-Press|
+======*La#D nouvelle#A syntaxe#.Éy//
+|translation-of¤SCC|unique-author-of=Noam-Chomsky|
+topic-of=GB|unique-translator-of=FEMALE:Lélia Picabia|@198701|publish¤Seuil|
+;_______________________________________________________________________________
+======computer# science# book*.z//
+======*Internet# Business# Book*.kz//|topic-of=Internet|
+first-author-of=FEMALE:Jill H\. Ellsworth|
+second-author-of=MALE:Matthew V\. Ellsworth|
+@1994|publish¤John-Wiley|
+======*Microsoft#® Word#® Guide* de#R l#D'utilisateur#.My//
+|topic-of=Microsoft-Word|@1992|publish¤Microsoft|
+======*Natural#A Language# Processing*.z//|topic-of=NLP-program|
+first-editor-of=MALE:Fernando C\. Pereira|
+second-editor-of=FEMALE:Barbara J. Grosz|
+@1994|publish¤MIT-Press|
+======*Principles#P of#R Artificial#A Intelligence*.z//|topic-of=AI-program|
+unique-author-of=MALE:Nils J\. Nilsson|@1980|publish¤Morgan-Kaufmann|
+======*Strategies#P for#R Natural#A Language# Processing*.z//
+|topic-of=NLP-program|
+first-editor-of=FEMALE:Wendy G. Lehnert|second-editor-of=MALE:Martin H\. Ringle|
+@1982|publish¤LEA|
+======*Thinking# between#R the#D Lines#P.z//|topic-of=AI-program|
+unique-author-of=MALE:Gary C\. Borchardt|@1994|publish¤MIT-Press|
+;_______________________________________________________________________________
+=====reference# work*.z//reference.z/reference# book*.z/
+ouvrage* de#R référence#F.¹My/
+;_______________________________________________________________________________
+======library# classification# system*.z/ontology/
+=======Dewey# decimal# system*.z//Dewey# decimal#A classification*.z/
+Dewey# decimal*.Tz/|@1876|create¤Melvil-Dewey|
+=======LCSH.z/multilevel-semantic-net/
+Library# of#R Congress# Subject# Headings#P.z/
+Library# of#R Congress# Classification*.z/
+|@1898|create¤Library-of-Congress|
+========LCSH1.z//|@1909|publish¤Library-of-Congress|
+========LCSH11.z//|isbn-of="0-8444-0591-4"|@1988|publish¤Library-of-Congress|
+;_______________________________________________________________________________
+======encyclopedia.z/ontology/encyclopédie.¹Fy/
+======*Petit*A Robert* 2#A.kMy//
+|@1993|publish¤Dictionnaires-Le-Robert|
+======*World# Almanac# and#K Book# of#R Facts#P 1995#.kz//
+|@1994|publish¤Funk-Wagnalls|
+;_______________________________________________________________________________
+======thesaurus.z/ontology/dictionnaire* analogique*A.¹My/thésaurus.My/
+=======Roget#'s Thesaurus*.z/three-level-semantic-net/Roget#'s.z/
+=======*Roget-1852//Roget#'s Thesaurus# First#A Edition*.z/
+Roget#'s 1852# Thesaurus*.z/Roget#'s Thesaurus# 1852# Edition*.z/
+|unique-author-of=Roget|@1852|publish¤na|
+=======*Roget-1911//Roget#'s Thesaurus# 1911# Edition*.z/
+Roget#'s 1911# Thesaurus*.z/
+|href="ftp://clr.nmsu.edu/CLR/lexica/roget-1911"|
+href="ftp://mrcnext.cso.uiuc.edu/pub/etext/"|
+href="ftp://src.doc.ic.ac.uk/literary/collections/project_gutenberg/"|
+@1911|publish¤na|
+========Roget#'s International#A Thesaurus*.z//
+========*Roget-Intl-1992//
+Roget#'s International#A Thesaurus# Fifth#A Edition*.z/
+|unique-editor-of=MALE:Robert L\. Chapman|isbn-of="0-06-270046-4"|
+@1992|publish¤HarperCollins|
+;_______________________________________________________________________________
+======synonym# dictionary*.z/ontology/dictionnaire* des#RP synonymes#P.¹My/
+;_______________________________________________________________________________
+======activator.z/ontology,three-level-semantic-net/
+======*Longman# Language# Activator*.®z//Language# Activator*.®z/
+|isbn-of="0-582-04093-0"|@1993|publish¤Longman|
+;_______________________________________________________________________________
+======dictionary.z/ontology/dictionnaire.¹My/
+;_______________________________________________________________________________
+=======visual#A dictionary*.z//
+========Le#Dj Visuel*.z/three-level-semantic-net/Visuel.kMy/
+|isbn-of="2-7619-1083-4"|@1993|publish¤Editions-Quebec-Amerique|
+;_______________________________________________________________________________
+=======specialty# dictionary*.z//
+=======*Cambridge# Word# Routes#P.z//|topic-of=F122,F121|
+@1994|publish¤CUP|
+=======*Oxford# Dictionary* of#R English#A Christian#A Names#P.kz//
+|topic-of=Anglo-American-male-given-name,Anglo-American-female-given-name|
+edition-of=3u|unique-author-of=HUMAN:E\. G\. Withycombe|
+@1977|publish¤Oxford-Press|
+=======*Tous-les-prenoms//Tous*A les#DP prénoms#MP.y/
+|topic-of=French-male-given-name,French-female-given-name|
+unique-author-of=MALE:Jean-Maurice Barbé|
+@1994|publish¤Editions-Jean-Paul-Gisserot|
+=======*British#A\/American#A Language# Dictionary*.z//|topic-of=F103,F203|
+unique-author-of=MALE:Norman Moss|@1991|publish¤Passport-Books|
+========Collection-le-francais-retrouve//
+Collection* le#D français#M retrouvé#A.kFy/
+========*Tresors-des-noms-de-familles//
+Trésors* des#R noms#M de#RS familles#FP.MPïy/|topic-of=French-surname|
+unique-author-of=MALE:Jacques Cellard|@1983|publish¤Belin|
+;_______________________________________________________________________________
+=======bilingual#A dictionary*.z//
+=======*Dictionnaire* Hachette#-Oxford#.kMy//|topic-of=F122,F121|
+@1994|publish¤Oxford-Press,Hachette|
+;_______________________________________________________________________________
+=======monolingual#A dictionary*.z//unilingual#A dictionary*.z/
+=======*Nouveau*A Petit*A Robert* 1#A.kMy/thesaurus/|topic-of=F121|
+@1993|publish¤Dictionnaires-Le-Robert|
+=======*Webster#'s New#A World# Dictionary*.kz//|topic-of=F122|
+========*Webster#'s New#A World# Dictionary# Third#A College# Edition*.kz//
+|edition-of=3u|@1994|publish¤Prentice-Hall|
+;_______________________________________________________________________________
+====poetry.z//poésie.Fy/
+=====poem.z//poème.¹My/
+=====lyrics.Pïz//paroles.FPïy/
+;_______________________________________________________________________________
+===thesis.z//dissertation.z/diss.Tz/thèse.¹Fy/
+====doctoral#A thesis*.z//doctoral#A dissertation*.z/thèse* de#R doctorat#M.¹Fy/
+thèse* d#R'État#M.Fy/thèse* de#R doctorat#M d#R'Université#.Fy/
+thèse* de#R doctorat#M d#R'État#M.Fy/
+;_______________________________________________________________________________
+===periodical.z//print#S media*.kPïz/|free-object|
+;_______________________________________________________________________________
+====amateur#A periodical*.z//
+=====Paper*.kz//
+;_______________________________________________________________________________
+====low#A circulation# periodical*.z//
+=====fanzine.z//fanzine.¹My/magazine* des#RP fans#P.My/
+;_______________________________________________________________________________
+====daily# newspaper*.z//newspaper.z/daily,daily#A paper*.z/paper.Tz/
+quotidien.¹My/presse* quotidienne*A.ÎFy/journal.My/
+=====Newsday.®Éz//Newsday.®Éy/
+=====morning# newspaper*.z//morning# paper*.z/
+======InfoMatin.®ßy/French-company/Info#® Matin*ß®.y/|fr|
+======New#A York# Times*.®kz/US-company/NYT.z/Times.kTz/
+New#Aj York#C Times*j.¹®kMy/NYT.kMy/
+All#D the#D News#N That#K'sÝbe#V Fit#A to#R Print#V.xz/
+Toutes#D les#DP nouvelles#NFP qu#K'il#H convient#V d#R'imprimer#V.xy/|us|
+======New#A York# Daily#A News*.®kz/US-company/
+New#Aj York#C Daily#Aj News*.¹®kMy/|us|
+======Los#D Angeles# Times*.®kz/US-company/Los#Dj Angeles# Times*j.¹®kMy/
+======Washington# Post*.®kz/US-company/Washington#C Post*j.¹®kMy/
+======Wall# Street# Journal*.®kz/US-company/
+Wall#Cj Street#Cj Journal*.¹®kMy/
+======USA# Today*.®Éz/US-company/USA#MP Today*.¹®Éy/
+======San#Aj Francisco# Chronicle*.®kz/US-company/
+Chronicle# Publishing# Company*.kz/Chronicle.kTz/|href="http://www.sfgate.com"|
+=====afternoon# newspaper*.z//afternoon# paper*.z/
+======San#Aj Francisco# Examiner*.®kz/US-company/Examiner.kTz/
+|href="http://www.examiner.com"|
+=====evening# newspaper*.z//evening# paper*.z/
+======Figaro.®kMy/French-company/Le#Dj Figaro*j.®Éz/|fr|
+======France#F-Soir#M.®Éy/French-company/France#-Soir*j.®Éz/|fr|
+======newspaper-Liberation/French-company/Libération.®ÉFy/Libé.@kTFy/
+Libération.®Éz/|fr|
+======Le-Monde/French-company/Monde.®kMy/Le#Dj Monde*j.®Éz/|fr|
+=====Sunday# newspaper*.z//Sunday# paper*.z/
+;_______________________________________________________________________________
+====weekly#A magazine*.z//
+=====Evenement-du-jeudi//Événement* du#R jeudi#.®kMy/
+L#Dj'Événement#j du#Rj jeudi*j.®Éz/|fr|
+=====Newsweek.®Éz//
+=====Nouvel#A Observateur#.®kMy//Nouvel#A Obs#ß.®kMy/
+Le#Dj Nouvel#Aj Observateur*.®Éz/|fr|
+=====television# guide*.z//
+======TV# Guide*.®Éz//
+=====Time.®Éz//
+;_______________________________________________________________________________
+====monthly#A magazine*.z//
+;_______________________________________________________________________________
+====bimonthly#A magazine*.z//
+;_______________________________________________________________________________
+====quarterly#A magazine*.z//
+;_______________________________________________________________________________
+====journal.z//technical#A journal*.z/revue* technique*A.¹Fy/revue.Fy/
+=====Cognitive# Science*.Éz//|publish¤Ablex|
+=====Artificial#A Intelligence*.Éz//|publish¤Elsevier|
+======AIJ-61//Artificial#A Intelligence# 61*.z/
+======AIJ-62//Artificial#A Intelligence# 62*.z/
+======AIJ-63//Artificial#A Intelligence# 63*.z/|@1993|publish¤Elsevier|
+;_______________________________________________________________________________
+==opera.z/music/opéra.My/
+===opera# performance*.z/live-performance/
+====opera1//|@19940129T203000|performance-of=OPERA:Cosi Fan Tutte:Mozart:|
+cost-of=160¯180F|
+location-of=BUILDING:Théâtre* du#R Vésinet#.My:59:boulevard Carnot:78:Le Vésinet::country-FRA|
+director-of=HUMAN:Ruszard Peryt|
+musical-conductor-of=HUMAN:Mierczyslaw Nowakowski|
+theatrical-group-of=GROUP:Opéra de Chambre de Varsovie|
+musical-group-of=GROUP:Warsaw Sinfonietta|
+====Don-Pasquale-run1//
+|@19940525:19940605:jeu+mar:1930:na,19940525:19940605:dim:1630:na|
+performance-of=OPERA:Don Pasquale:Donizetti:|cost-of=50¯490F|
+phone-number-of=STRING:pstn:"33142868883"|
+location-of=Opera-Comique|director-of=MALE:Alain Marcel|
+musical-conductor-of=HUMAN:Maurizio Barbacini,FEMALE:Françoise Macciochi|
+theatrical-group-of=GROUP:Opéra de Chambre de Varsovie|
+musical-group-of=GROUP:Ensemble Instrumental Jean-Walter Audoli|
+musical-group-of=GROUP:ChÓur de le Opéra Comique|
+singer-of=MALE:Gabriel Bacquier,HUMAN:Leontina Vaduva,HUMAN:Alessandro Corbelli|
+singer-of=HUMAN:Raul Gimenez,HUMAN:Ken Chester|
+;_______________________________________________________________________________
+==media-object-script//script.z/scénario.My/texte.My/
+===media-object-screenplay/literature/screenplay.z/scénario.My/
+====media-object-teleplay//teleplay.z/
+;_______________________________________________________________________________
+==media-object-play/literature/play.z/theater.Îz/pièce* de#R théâtre#M.¹Fy/
+===drama.z//drame.My/
+===musical-play//musical.z/
+===performance* of#R a#D play#.z/live-performance/
+====play1//|@19940128:Inf:tue¯sat:204500:na,19940128:na:sun:150000:na|
+cost-of=60¯230F|
+performance-of=PLAY:Ce qui arrive et ce que on attend:Jean-Marie Besset:|
+location-of=BUILDING:Mathurins.y:36:rue des Mathurins:75008:Paris::country-FRA|
+director-of=MALE:Patrice Kerbrat|
+actor-of=FEMALE:Judith Magre,HUMAN:Sabine Haudepin,MALE:Patrice Kerbrat,
+MALE:Samuel Labarthe,MALE:Emmanuel Patron,MALE:Jacques Connort,
+MALE:Philippe Etesse|
+;_______________________________________________________________________________
+==video.z//video# film*.z/videotape,video# tape*.oz/video.Az/vidéo.Fy/vidéo.ßAy/
+huitième*A art*.kMy/
+===promotional#A video*.z//vidéo* publicitaire*A.Fy/
+===training#A video*.z//vidéo* d#R'entraînement#M.Fy/
+===music# video*.z//clip* vidéo*A.My/
+===video#A art*.z//art* vidéo*A.My/
+===video#A book*.z//livre* vidéo*A.My/
+===video#A clip*.z//clip.My/
+;_______________________________________________________________________________

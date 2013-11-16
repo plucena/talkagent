@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# You can redistribute this software and/or modify it under the terms of
+# the Ozone Library License version 1 published by softwarebuero m&b (SMB).
+#
+# The original code and portions created by SMB are
+# Copyright (C) 1997-1999 by softwarebuero m&b (SMB). All rights reserved.
+#
+# $Id: ozone,v 1.1 2002/11/27 16:30:28 cvs Exp $
+
+#if test -z $OZONE_HOME; then
+#	echo "\$OZONE_HOME is not set!"
+#	exit;
+#fi
+
+# setup CLASSPATH
+. `dirname $0`/ozoneEnv
+
+#exec nice -20 $OZONE_JVM $VM_TYPE -mx32000000 $VM_ARGS org.ozoneDB.core.Server $OZONE_ARGS
+#exec $OZONE_JVM $VM_TYPE -mx32000000 $VM_ARGS org.ozoneDB.core.Server $OZONE_ARGS
+
+exec $OZONE_JVM $VM_TYPE -mx128m $VM_ARGS org.ozoneDB.core.Server $OZONE_ARGS
+
+# java -mx64000000 $OZONE_JVM $VM_ARGS org.ozoneDB.core.Server $OZONE_ARGS
+# nice -20 $OZONE_JVM -prof:profile.txt -Djava.compiler= -mx64000000 org.ozoneDB.core.Server $@
+

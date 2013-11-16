@@ -1,0 +1,87 @@
+<jndiCfg>
+
+<!-- first resource, for use with the new database based user auth system -->
+<resource-env-ref>
+<description>
+  This resource is for people who want to use a database as user/pass auth type.
+  The default database name is set to httpusers.
+
+  The daabase must have 2 tables, one named 'users' with fields 'username' 'password'
+  the other table named 'roles' with fields 'username' 'role'
+
+  Users table is used for username/password paires, and roles table allows each user to
+  have different roles.  The current build in role required by config servlet is 'admin'.
+
+  Source code for the build in database user auth hook is available on the website.
+
+  The following xml statment is the standarded way to set up DataSource object
+     with JDBC class, connection string for database.  I have provided samples
+     for MySQL, Microsoft SQL and JDBC-ODBC drivers and connection strings.
+ 
+</description>
+<res-env-ref-name>/jdbc/__BajieServer/UserDB</res-env-ref-name>
+<res-env-ref-type>javax.sql.DataSource</res-env-ref-type>
+  <ResourceParams>
+    <parameter>
+      <name>user</name> 
+      <value>admin</value> 
+    </parameter>
+    <parameter>
+      <name>password</name> 
+      <value>admin</value> 
+    </parameter>
+    <parameter>
+      <name>driverClassName</name> 
+      <value>org.gjt.mm.mysql.Driver</value> 
+<!-- for mysql, use:   org.gjt.mm.mysql.Driver                       -->
+<!-- Microsoft SQL :   com.microsoft.jdbc.sqlserver.SQLServerDriver  -->
+<!-- for JDBC-ODBC :   sun.jdbc.odbc.JdbcOdbcDriver                  -->
+    </parameter>
+    <parameter>
+      <name>driverName</name> 
+      <value>jdbc:mysql://localhost/httpusers</value> 
+<!-- for mysql, use:   jdbc:mysql://localhost/httpusers                             -->
+<!-- Microsoft SQL :   jdbc:microsoft:sqlserver://localhost;DatabaseName=httpusers  -->
+<!-- for JDBC-ODBC :   jdbc:odbc:httpusers                                          -->
+    </parameter>
+  </ResourceParams>
+</resource-env-ref>
+<!-- end of first resource -->
+
+
+
+<resource-ref>
+<description>description</description>
+<res-ref-name>msg/test1</res-ref-name>
+<res-type>java.lang.String</res-type>
+<res-auth>Container</res-auth>
+</resource-ref>
+
+
+<resource-env-ref>
+<description>you can remove.  to use,  
+javax.sql.DataSource ds=(javax.sql.DataSource)it.lookup("java:cmp/env/jdbc/myDb");
+</description>
+<res-env-ref-name>jdbc/myDb</res-env-ref-name>
+<res-env-ref-type>javax.sql.DataSource</res-env-ref-type>
+  <ResourceParams>
+    <parameter>
+      <name>user</name> 
+      <value>admin</value> 
+    </parameter>
+    <parameter>
+      <name>password</name> 
+      <value>admin</value> 
+    </parameter>
+    <parameter>
+      <name>driverClassName</name> 
+      <value>org.gjt.mm.mysql.Driver</value> 
+    </parameter>
+    <parameter>
+      <name>driverName</name> 
+      <value>jdbc:mysql://localhost/myDatabase</value> 
+    </parameter>
+  </ResourceParams>
+</resource-env-ref>
+
+</jndiCfg>

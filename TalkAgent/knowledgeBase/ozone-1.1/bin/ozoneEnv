@@ -1,0 +1,97 @@
+#!/bin/sh
+#
+# You can redistribute this software and/or modify it under the terms of
+# the Ozone Library License version 1 published by softwarebuero m&b (SMB).
+#
+# The original code and portions created by SMB are
+# Copyright (C) 1997-1999 by softwarebuero m&b (SMB). All rights reserved.
+#
+# $Id: ozoneEnv,v 1.1 2002/11/27 16:30:29 cvs Exp $
+
+
+# This script sets up the environment for compiling and running the ozone
+# server and applications.
+
+# Cygwin support.  $cygwin _must_ be set to either true or false.
+case "`uname`" in
+  CYGWIN*) cygwin=true ;;
+  *) cygwin=false ;;
+esac
+
+# For Cygwin, ensure paths are in UNIX format before anything is touched
+if $cygwin; then
+  [ -n "$JAVA_HOME" ] &&
+    JAVA_HOME=`cygpath --unix "$JAVA_HOME"`
+  [ -n "$CLASSPATH" ] &&
+    CLASSPATH=`cygpath --path --unix "$CLASSPATH"`
+fi
+
+if test -z "$JAVA_HOME" ; then
+  JAVA=`which java`
+  if [ -z "$JAVA" ] ; then
+    echo "Cannot find JAVA. Please set your PATH."
+    exit 1
+  fi
+  JAVA_BIN=`dirname $JAVA`
+  JAVA_HOME=$JAVA_BIN/..
+fi
+
+if test -z "$OZONE_HOME"; then
+    OZONE_HOME=`dirname $0`/..
+    echo OZONE_HOME not set, guessing it to be $OZONE_HOME
+    export OZONE_HOME
+else
+    echo "OZONE_HOME set to: $OZONE_HOME"
+fi
+
+# distinguish between arguments of the VM and ozone
+VM_ARGS=
+export VM_ARGS
+VM_TYPE=
+export VM_TYPE
+OZONE_ARGS=
+export OZONE_ARGS
+for ARG in $@; do
+    if expr $ARG : "-D.*" > /dev/null; then
+        VM_ARGS="$VM_ARGS $ARG"
+    elif expr $ARG : "-X.*" > /dev/null; then
+        VM_ARGS="$VM_ARGS $ARG"
+    elif expr $ARG : "-server" > /dev/null; then
+        VM_TYPE="$VM_TYPE $ARG"
+    elif expr $ARG : "-classic" > /dev/null; then
+        VM_TYPE="$VM_TYPE $ARG"
+    elif expr $ARG : "-native" > /dev/null; then
+        VM_TYPE="$VM_TYPE $ARG"
+    else
+        OZONE_ARGS="$OZONE_ARGS $ARG"
+    fi
+done
+
+# search all JARs from the lib dir and construct OZONE_JARS
+
+OZONE_JARS=`echo $OZONE_HOME/lib/*.jar | tr ' ' ':'`
+
+# use the classes, if the JAR _and_ the classes exists
+CLASSPATH=$OZONE_HOME:$OZONE_HOME/classes:$OZONE_JARS:$OZONE_HOME/samples:$CLASSPATH
+
+# For Cygwin, switch paths to Windows format before running java
+if $cygwin; then
+  CLASSPATH=`cygpath --path --windows "$CLASSPATH"`
+fi
+
+export CLASSPATH
+
+# use "java" as the default, if nothing is set
+if test -z "$OZONE_JVM"; then
+    OZONE_JVM=java
+    export OZONE_JVM
+fi
+
+# use "javac" as the default compiler, if nothing is set
+if test -z "$OZONE_JAVAC"; then
+    OZONE_JAVAC=javac
+#    OZONE_JAVAC=jikes
+    export OZONE_JAVAC
+fi
+
+
